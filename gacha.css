@@ -63,7 +63,7 @@
     
 }
 .addOne{
-    width:240px;
+    width:250px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -270,7 +270,7 @@
     border: none;
 }
 .remove{
-    width:252px;
+    width:254px;
     height:30px;
     border: 1px solid #222222;
     background-color: #111111;
