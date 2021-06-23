@@ -183,12 +183,6 @@ p {
     height:10px;
     background:black;
 }
-
-
-
-
-
-
 .main{
     display: flex;
     width:1000px;
@@ -196,7 +190,7 @@ p {
     position: relative;
     margin: 0 auto;
     background-color: #222222;
-    background-image: url(Pictures/geovishap.png); 
+    background-image: url("Pictures/geovishap.png"); 
     background-size: 350px;
     background-repeat: no-repeat;
     background-position: center top;
