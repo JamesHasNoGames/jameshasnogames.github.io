@@ -7,13 +7,13 @@
 
 /* Dropdown Content (Hidden by Default) */
 [class*="dropdown-content"]{
-    margin-left:200px;
+    margin-left:250px;
     margin-top:-30px;
     display: none;
     position: absolute;
     background-color: #222222;
     font-size: 16px;
-    width: 200px;
+    width: 250px;
     line-height: 26px;  
     z-index: 1;
 }
@@ -53,7 +53,7 @@
         font-size: 0;
 }
 [class*="buttonarea1"]{
-    width:200px;
+    width:250px;
     height:30px;
     display:block;
     font-size: 0;
@@ -63,7 +63,7 @@
     
 }
 .addOne{
-    width:200px;
+    width:250px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -230,7 +230,7 @@
 .bannerName{
     font-size: 20px;
     text-align: center;
-    width:198px;
+    width:250px;
     height:30px;
     color: #ddd;
     border: 1px solid #111111;
@@ -241,7 +241,7 @@
 
 .entry{
     text-align: center;
-    width:198px;
+    width:250px;
     height:22px;
     font-size: 16px;
     line-height: 26px;
@@ -269,7 +269,7 @@
     border: none;
 }
 .remove{
-    width:200px;
+    width:250px;
     height:30px;
     border: 1px solid #222222;
     background-color: #111111;
@@ -297,7 +297,7 @@
 .ueberschriftName{
     font-size: 20px;
     text-align: center;
-    width:198px;
+    width:250px;
     height:30px;
     color: #ddd;
     border: 1px solid #111111;
@@ -305,7 +305,7 @@
     background-color: #222222;
 }
 .freeWeapon{
-    width:200px;
+    width:250px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -319,7 +319,7 @@
     cursor:pointer;
 }
 .freeChar{
-    width:200px;
+    width:250px;
     height:30px;
     border: 1px solid#222222;
     display:block;
