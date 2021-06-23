@@ -183,21 +183,5 @@ p {
     height:10px;
     background:black;
 }
-.main{
-    display: flex;
-    width:1000px;
-    height:400px;
-    position: relative;
-    margin: 0 auto;
-    background-color: #222222;
-    background-image: url("Pictures/geovishap.png"); 
-    background-size: 350px;
-    background-repeat: no-repeat;
-    background-position: center top;
-    border: 5px solid #111111;
-    line-height: 20px;
-}
-.main p{
-    margin-top:260px;
-}
+/*------------------------------------>end of main<----------------------------*/
 
