@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 
 <html style="font-size: 12px;">
+<meta charset="utf-8">
 <head>
  <title>Characters</title>
  <link rel="stylesheet" href="characters.css">
  <script src="char.js"></script>
+ <script src="gacha.js"></script>
 <link rel="shortcut icon" href="Pictures/logo.png" type="image/png">
 </head>
-<body>
+<body onload="starting()" class ="b">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Questrial&display=swap');
 </style>
-
-        <div class="menu">
-            <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>
-            <dic class="menuIns">
-                <a href="index.html"class="hovers">home</a>
-                <a href="gacha.html"class="hovers">gacha</a>
-                <a href="statistics.html" class="hovers">statistics</a>
-                <a href="characters.html"class="hovers">characters</a>
-                <a href="weapons.html"class="hovers">weapons</a>
-                <a href="materials.html"class="hovers">materials</a>             
-                <a href="artifacts.html"class="hovers">artifacts</a>
-                <a href="domains.html"class="hovers">domains</a>
-                <a href="banners.html"class="hovers">banners</a>
-                <a href="housing.html"class="hovers">housing</a>
-                <a href="cooking.html"class="hovers">cooking</a>
-                <a href="about.html"class="hovers">about</a>
+<div class ="bb">
+    <div class="menu">
+        <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>          
+            <div class="menuIns">
+                <a href="index.html" class="hovers">home</a>
+                <a href="gacha.html" class="hovers">gacha</a>
+                <!--<a href="#" class="hovers">statistics</a>-->
+                <a href="characters.html" class="hovers">characters</a>
+                <a href="weapons.html" class="hovers">weapons</a>
+               <!-- <a href="#" class="hovers">materials</a>             
+                <a href="#" class="hovers">artifacts</a>
+                <a href="#" class="hovers">domains</a>
+                <a href="#" class="hovers">banners</a>
+                <a href="#" class="hovers">housing</a>
+                <a href="#" class="hovers">cooking</a>
+                <a href="#" class="hovers">about</a>-->
+                <div class="updown">
+                    <input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
+                    <div title="Upload JSON" class="upload" id="upload">
+                        <input type="file" accept="application/JSON" onchange="readFile(this)">
+                    </div>
                 </div>
-        </div>
+            </div>
+        
+    </div>
 <script>
-window.onload =highLightMenu();
+function starting(){
+    highLightMenu();   
+    updown(); 
+}
 function highLightMenu() {
     var h = document.getElementsByClassName("hovers");
     var url = window.location.href;
@@ -43,7 +55,7 @@ function highLightMenu() {
 }
 </script>
 <!--end of menu-->
-
+<div class="empty"></div>
 <div class="title">
             <table class="weaponE1" cellspacing="0" cellpadding="0">
 				<tbody>
@@ -179,7 +191,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--2-->
+            <!--2 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                 
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" cellspacing="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--3-->
             <!--4-->
             <!--5-->
@@ -244,7 +314,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>  
-            <!--6-->
+            <!--6 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                 
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" cellspacing="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--7-->
             <!--8-->
             <!--9-->      
@@ -829,10 +957,127 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--26-->
+            <!--26 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                 
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" cellspacing="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  cellspacing="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" cellspacing="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--27-->
             <!--28-->
             <!--29 empty-->
+            <table class="charTableOne" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
+            <!--30 empty-->
             <table class="charTableTwo" cellspacing="0" cellpadding="0">        
                 <tbody class="charTBody" cellspacing="0" cellpadding="0">
                 <!--Picture-->
@@ -891,7 +1136,6 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--30-->
             <!--31-->
             <!--32-->
             <!--33-->
@@ -1477,7 +1721,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--50-->
+            <!--50 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--51-->
             <!--52-->
             <!--53-->
@@ -1542,7 +1844,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--54-->
+            <!--54 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--55-->
             <!--56-->
             <!--57-->
@@ -2121,7 +2481,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--74-->
+            <!--74 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--75-->
             <!--76-->
             <!--77-->
@@ -2186,7 +2604,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--78-->
+            <!--78 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--79-->
             <!--80-->
             <!--81-->
@@ -2770,7 +3246,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>        
-            <!--98-->
+            <!--98 empty-->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--99-->
             <!--100-->
             <!--101-->
@@ -2835,7 +3369,65 @@ function highLightMenu() {
                 </tr>
                 </tbody>
             </table>
-            <!--102-->
+            <!--102 empty -->
+            <table class="charTableTwo" cellspacing="0" cellpadding="0">        
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" colspan="2" cellspacing="0" cellpadding="0" id="empty">   
+                    </td>
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="empty">
+                    </td>
+                </tr>
+                <!--Lvl-->  
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"cellspacing="0" id="empty"><b></b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0" id="empty">                    
+                    </td>
+                </tr>
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0" id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0" id="empty"><b></b></td>
+                    <td class="text2" cellpadding="0"  id="empty" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="empty">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="empty">
+                    </td>
+                    <script>
+                        
+                    </script> 
+                </tr>
+                </tbody>
+            </table>
             <!--103-->
             <!--104-->
             <!--105-->  
@@ -3409,8 +4001,14 @@ function highLightMenu() {
 				</tbody>
 			</table>
 
-</div>	
-
+</div>	</div>
+<div class="empty"></div>
+<div class="footer">
+    <!--<p><a href="#" onclick="setLanguage('en')">English</a> | 
+    <a href="#" onclick="setLanguage('ru')">Русский</a> |  
+    <a href="#" onclick="setLanguage('de')">Deutsch</a> <br>-->
+    <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd. This site is not affiliated with or endorsed by miHoYo. Images and data © MiHoYo Co., Ltd.</p>
+</div>
 
 
 

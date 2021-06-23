@@ -5,25 +5,26 @@
 <title>Gacha</title>
 <link rel="stylesheet" href="gacha.css">
 <script src="char.js"></script>
+<script src="weapons.js"></script>
 <script src="gacha.js"></script>
-<script src="updown.js"></script>
 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 <link rel="shortcut icon" href="Pictures/logo.png" type="image/png">
 </head>
-<body onload="starting()">
+<body onload="starting()" class="b">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Questrial&display=swap');
 </style>
+<div class ="bb">
         <div class="menu">
             <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>
             
-            <dic class="menuIns">
-                <a href="#" class="hovers">home</a>
-                <a href="gacha.html" class="hovers">gacha</a>
-                <!--<a href="#" class="hovers">statistics</a>-->
-                <a href="characters.html" class="hovers">characters</a>
-                <a href="weapons.html" class="hovers">weapons</a>
+            <div class="menuIns">
+                <a href="index.html" class="hovers" id="home">home</a>
+                <a href="gacha.html" class="hovers" id="gacha">gacha</a>
+                <!--<a href="#" class="hovers" id="hovers">statistics</a>-->
+                <a href="characters.html" class="hovers" id="characters">characters</a>
+                <a href="weapons.html" class="hovers" id="weapons">weapons</a>
                <!-- <a href="#" class="hovers">materials</a>             
                 <a href="#" class="hovers">artifacts</a>
                 <a href="#" class="hovers">domains</a>
@@ -31,28 +32,31 @@
                 <a href="#" class="hovers">housing</a>
                 <a href="#" class="hovers">cooking</a>
                 <a href="#" class="hovers">about</a>-->
-                <div class="updown"><input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
-                <input type="button" title="Upload JSON" class="upload" id="upload" onclick="uploadJSON()"></div>
+                <div class="updown">
+                    <input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
+                    <div title="Upload JSON" class="upload" id="upload">
+                        <input type="file" accept="application/JSON" onchange="readFile(this)">
+                    </div>
                 </div>
+            </div>
         </div>
 <script>
 function starting(){
     highLightMenu();  
     prepare(); 
-    updown(); 
+    updown();
 }
 function highLightMenu() {
     var h = document.getElementsByClassName("hovers");
     var url = window.location.href;
     for (var i = 0; i < h.length; i++) {
-            if(h[i] == url){
+            if(h[i] == url|h[i]+'#' == url){
                 h[i].className = "hoversa";
             }
     }
 }
 </script>
 <!--end of menu-->
-
 <div class="empty"></div>
 <div class="middle">
     <div class="event">
@@ -62,8 +66,12 @@ function highLightMenu() {
         </div>
         <div id="myDropdown1" class="dropdown-content1">
         </div>  
-        <div id="myDropdown4" class="dropdown-content4">
+        <div id="myDropdown2" class="dropdown-content2">
         </div>  
+        <div id="myDropdown4" class="dropdown-content4">
+        </div>
+        <div id="myDropdown5" class="dropdown-content5">
+        </div>   
         <div id ="buttonArea21" class ="buttonArea21"></div>  
             <div id="container1" class="container1">
             </div>
@@ -75,15 +83,34 @@ function highLightMenu() {
         <div id ="buttonArea12" class ="buttonArea12">
             <button onclick="addStuff(2)" id="addOne" class="addOne"></button>
         </div>
-            <div id="container2">
+        <div id="myDropdown6" class="dropdown-content6">
+        </div>  
+        <div id="myDropdown7" class="dropdown-content7">
+        </div>  
+        <div id="myDropdown9" class="dropdown-content9">
+        </div>
+        <div id="myDropdown10" class="dropdown-content10">
+        </div>   
+        <div id ="buttonArea22" class ="buttonArea22"></div>  
+            <div id="container2" class="container2">
             </div>        
     </div>
+
     <div class="standard">
         <div class="bannerName">Standard Banner</div>
         <div id ="buttonArea13" class ="buttonArea13">
             <button onclick="addStuff(3)" id="addOne" class="addOne"></button>
         </div>
-            <div id="container3">
+        <div id="myDropdown11" class="dropdown-content11">
+        </div>  
+        <div id="myDropdown12" class="dropdown-content12">
+        </div>  
+        <div id="myDropdown14" class="dropdown-content14">
+        </div>
+        <div id="myDropdown15" class="dropdown-content15">
+        </div>   
+        <div id ="buttonArea23" class ="buttonArea23"></div>  
+            <div id="container3" class="container3">
             </div>        
     </div>
     <div class="newbie">
@@ -91,23 +118,52 @@ function highLightMenu() {
         <div id ="buttonArea14" class ="buttonArea14">
             <button onclick="addStuff(4)" id="addOne" class="addOne"></button>
         </div>
-            <div id="container4">
+        <div id="myDropdown16" class="dropdown-content16">
+        </div>  
+        <div id="myDropdown17" class="dropdown-content17">
+        </div>  
+        <div id="myDropdown19" class="dropdown-content19">
+        </div>
+        <div id="myDropdown20" class="dropdown-content20">
+        </div>   
+        <div id ="buttonArea24" class ="buttonArea24"></div>  
+            <div id="container4" class="container4">
             </div>       
     </div>
+    
+    
+    
     <div class="free">
-         <div id ="buttonArea1" class ="buttonArea1">
-            <button onclick="addStuff()" id="addOne" class="addOne"></button>
+        <div class="ueberschriftName">Free Characters</div>
+         <div id ="buttonArea15" class ="buttonArea15">
+            <button onclick="addStuff()" id="freeChar" class="freeChar"></button> 
         </div>
-            <div id="container1">
+            <div id="container5">
             </div> 
 
+        <div class="ueberschriftName">Free Weapons</div>
+         <div id ="buttonArea16" class ="buttonArea16">
+            <button onclick="addStuff()" id="freeWeapon" class="freeWeapon"></button>
+        </div>
+            <div id="container6">
+            </div> 
     </div>
+
 </div>
+
+
     <div class="demo" id="demo">
     
     </div>
+
 </div>
-
-
+</div>
+<div class="empty"></div>
+<div class="footer">
+    <!--<p><a href="#" onclick="setLanguage('en')">English</a> | 
+    <a href="#" onclick="setLanguage('ru')">Русский</a> |  
+    <a href="#" onclick="setLanguage('de')">Deutsch</a> <br>-->
+    <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd. This site is not affiliated with or endorsed by miHoYo. Images and data © MiHoYo Co., Ltd.</p>
+</div>
 </body>
 </html>

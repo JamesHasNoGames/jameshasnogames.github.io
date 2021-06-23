@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 body {
-	background: black;
+	background: #000000;
 	font-size:15px;
 	line-height: 32px;
 	color: #ddd;
@@ -13,7 +13,14 @@ body {
 	word-wrap:break-word !important;
 	font-family: 'Kumbh Sans', sans-serif;
 	}
-
+.b{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.bb{
+    flex: 1;
+}
 h1 {
 	font-size: 20px;
 	text-align: center;
@@ -63,7 +70,8 @@ p {
     height:60px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 5px solid #374c2e;   
+    border-bottom: 5px solid #374c2e;  
+    min-width: 1500px; 
 }
 .menu a{
     display: flex;
@@ -106,10 +114,83 @@ p {
   outline: 3px solid #222222;
 }
 
+.download{
+    height: 35px;
+    width: 35px;
+    border:none;
+    background-color: #333333;
+    background-image: url("/Pictures/UI_CookTabIcon_Attackd.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    margin-top:12px;
+    cursor:pointer;
+    margin-right: 5px;
+}
+.downloadl{
+    height: 35px;
+    width: 35px;
+    border:none;
+    background-color: #333333;
+    background-image: url("/Pictures/UI_CookTabIcon_Attackdl.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    margin-top:12px;
+    margin-right: 5px;
+}
+.updown{
+    display:flex;
+    padding-left: 20px;
+    padding-right: 35px;  
+}
+.upload{
+    height: 35px;
+    width: 35px;
+    border:none;
+    position:relative;
+    font-size: 20px;
+    background-color: #333333;
+    background-image: url("/Pictures/UI_CookTabIcon_Attack.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    margin-top:12px;
+    
+}
+.upload input{
+    position:absolute;
+    width:30px;
+    height:50px;
+    left:0;
+    top:0;
+    margin-top:-12px;
+    cursor:pointer;
+    opacity:0;
+}
+.footer {   
+    position: relative;
+    padding: 10px 0px 0px 0px;
+    bottom: 0;
+    border-top: 5px solid #374c2e;   
+    height: 50px;
+    line-height: 15px;
+    background: #333333;
+    font-size: 12px;
+    min-width: 1500px;
+}
+.empty{
+    height:10px;
+    background:black;
+}
+
+
+
+
 
 .sword,.claymore,.polearm, .catalyst, .bow{
     background-color: #111111;
-	width: 1222px;
+	width: 1452px;
     text-align:center;
     vertical-align:middle;  
 	display:flex;
@@ -120,7 +201,7 @@ p {
     display: flex;
     text-align:center;
     vertical-align:middle;  
-	width: 1222px;
+	width: 1452px;
     margin: 0 auto;
 	
 }
@@ -129,40 +210,12 @@ p {
     display: flex;
     text-align:center;
     vertical-align:middle;  
-	width: 1222px;
+	width: 1452px;
     margin: 0 auto;
 	border-bottom:5px solid #111111;
 }
 
-.geo{
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	text-align: center;
-	background-color: #222222;	
-	float:left;
-	width:115px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: none;
-	border-bottom: none;
-    padding: 0px 0px 0px 0px;
-}
-.anemo {
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	text-align: center;
-	background-color: #222222;	
-	float:left;
-	width:115px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: none;
-	border-bottom: none;
-    padding: 0px 0px 0px 0px;
-}
-.pyro, .electro, .cryo {
+.geo, .anemo, .pyro, .electro, .cryo {
     color:#111111;
 	font-weight: bold;
 	font-size: 17px;
@@ -368,6 +421,7 @@ p {
     height:12px;
     float: left;
     width: 24%;
+    cursor: pointer;
 }
 #button1 {
     padding-left: 4px;
@@ -390,5 +444,6 @@ p {
     font-size:15px;
 }
 #empty {
-	background-color: #111111;
+	background-color: #222222;
+    border-color: #222222;
 }

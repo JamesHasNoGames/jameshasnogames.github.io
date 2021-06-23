@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-
+<meta charset="utf-8">
 <html style="font-size: 12px;">
 <head>
  <title>Weapons</title>
  <link rel="stylesheet" href="weapons.css">
  <script src="weapons.js"></script>
+ <script src="gacha.js"></script>
  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <link rel="shortcut icon" href="Pictures/logo.png" type="image/png">
 </head>
-<body>
+<body onload="starting()" class ="b">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Questrial&display=swap');
 </style>
-        
+<div class ="bb">        
         <div class="menu">
             <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>
-            <dic class="menuIns">
-                <a href="#"class="hovers">home</a>
-                <a href="gacha.html"class="hovers">gacha</a>
-                <a href="#" class="hovers">statistics</a>
-                <a href="characters.html"class="hovers">characters</a>
-                <a href="weapons.html"class="hovers">weapons</a>
-                <a href="#"class="hovers">materials</a>             
-                <a href="#"class="hovers">artifacts</a>
-                <a href="#"class="hovers">domains</a>
-                <a href="#"class="hovers">banners</a>
-                <a href="#"class="hovers">housing</a>
-                <a href="#"class="hovers">cooking</a>
-                <a href="#"class="hovers">about</a>
+            
+            <div class="menuIns">
+                <a href="index.html" class="hovers">home</a>
+                <a href="gacha.html" class="hovers">gacha</a>
+                <!--<a href="#" class="hovers">statistics</a>-->
+                <a href="characters.html" class="hovers">characters</a>
+                <a href="weapons.html" class="hovers">weapons</a>
+               <!-- <a href="#" class="hovers">materials</a>             
+                <a href="#" class="hovers">artifacts</a>
+                <a href="#" class="hovers">domains</a>
+                <a href="#" class="hovers">banners</a>
+                <a href="#" class="hovers">housing</a>
+                <a href="#" class="hovers">cooking</a>
+                <a href="#" class="hovers">about</a>-->
+                <div class="updown">
+                    <input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
+                    <div title="Upload JSON" class="upload" id="upload">
+                        <input type="file" accept="application/JSON" onchange="readFile(this)">
+                    </div>
                 </div>
+            </div>
         </div>
 <script>
-window.onload =highLightMenu();
+function starting(){
+    highLightMenu();   
+    updown(); 
+}
 function highLightMenu() {
     var h = document.getElementsByClassName("hovers");
     var url = window.location.href;
@@ -45,7 +56,7 @@ function highLightMenu() {
 }
 </script>
 <!--end of menu-->
-
+<div class="empty"></div>
 <div class="title">
 
 			<table class="titleFirst" cellspacing="0" cellpadding="0">
@@ -872,6 +883,203 @@ function highLightMenu() {
                 </script>
 			</table>          			            
 </div>
+<div class="main">
+            <!--1021-->
+			<table class="weaponFirst" cellspacing="0" cellpadding="0">
+                <tr style="height: 25px;">
+                    <td colspan = "3" cellspacing="0" cellpadding="0" class = "weapontitle" id = "weapontitle1021">
+                    </td>                    
+                </tr>
+				<tr style="height: 100px;">                    
+                    <td colspan = "2" cellspacing="0" cellpadding="0" class = "picture" id = "pic1021">
+                    </td>                   
+                    <td rowspan = "6" class = "descr" id = "descr1021">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "stars" id = "stars1021">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "twoinone" id = "c1021"></td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1"><b>Lvl:</b></td>
+                    <td class="buttons1" cellpadding="0"cellspacing="0">
+                        <button onclick="leVelDown(1021)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1021" class="counter1021"></div>
+                        <button onclick="leVelUp(1021)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1"><b>ATK:</b></td>
+                    <td class = "text2" id = "atk1021"></td>
+                </tr>
+                 <tr style="height: 21px;">
+                    <td class = "textf1" id = "attrname1021"></td>
+                    <td class = "textf2" id = "attr1021"></td>
+                </tr>
+                <script>
+                    tableContent(1021); 
+                </script>
+			</table>
+            <!--1012 empty-->
+			<table class="weaponFirst" cellspacing="0" cellpadding="0"  id = "empty">
+                <tr style="height: 25px;">
+                    <td colspan = "3" cellspacing="0" cellpadding="0" class = "weapontitle" id = "empty">
+                    </td>                    
+                </tr>
+				<tr style="height: 100px;">                    
+                    <td colspan = "2" cellspacing="0" cellpadding="0" class = "picture" id = "empty">
+                    </td>                   
+                    <td rowspan = "6" class = "descr" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "stars" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "twoinone" id = "empty"></td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class="buttons1" cellpadding="0"cellspacing="0"id="empty">
+                        <!--<button onclick="leVelDown(1001)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1001" class="counter1001"></div>
+                        <button onclick="leVelUp(1001)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>-->
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class = "text2" id="empty"></td>
+                </tr>
+                 <tr style="height: 21px;">
+                    <td class = "textf1" id = "empty"></td>
+                    <td class = "textf2" id = "empty"></td>
+                </tr>
+                <script>
+                    tableContent(1001); 
+                </script>
+			</table> 
+            <!--1013-->
+			<table class="weaponFirst" cellspacing="0" cellpadding="0">
+                <tr style="height: 25px;">
+                    <td colspan = "3" cellspacing="0" cellpadding="0" class = "weapontitle" id = "weapontitle1013">
+                    </td>                    
+                </tr>
+				<tr style="height: 100px;">                    
+                    <td colspan = "2" cellspacing="0" cellpadding="0" class = "picture" id = "pic1013">
+                    </td>                   
+                    <td rowspan = "6" class = "descr" id = "descr1013">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "stars" id = "stars1013">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "twoinone" id = "c1013"></td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1"><b>Lvl:</b></td>
+                    <td class="buttons1" cellpadding="0"cellspacing="0">
+                        <button onclick="leVelDown(1013)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1013" class="counter1013"></div>
+                        <button onclick="leVelUp(1013)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1"><b>ATK:</b></td>
+                    <td class = "text2" id = "atk1013"></td>
+                </tr>
+                 <tr style="height: 21px;">
+                    <td class = "textf1" id = "attrname1013"></td>
+                    <td class = "textf2" id = "attr1013"></td>
+                </tr>
+                <script>
+                    tableContent(1013); 
+                </script>
+			</table>
+            <!--1014 empty-->
+			<table class="weaponFirst" cellspacing="0" cellpadding="0"  id = "empty">
+                <tr style="height: 25px;">
+                    <td colspan = "3" cellspacing="0" cellpadding="0" class = "weapontitle" id = "empty">
+                    </td>                    
+                </tr>
+				<tr style="height: 100px;">                    
+                    <td colspan = "2" cellspacing="0" cellpadding="0" class = "picture" id = "empty">
+                    </td>                   
+                    <td rowspan = "6" class = "descr" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "stars" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "twoinone" id = "empty"></td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class="buttons1" cellpadding="0"cellspacing="0"id="empty">
+                        <!--<button onclick="leVelDown(1001)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1001" class="counter1001"></div>
+                        <button onclick="leVelUp(1001)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>-->
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class = "text2" id="empty"></td>
+                </tr>
+                 <tr style="height: 21px;">
+                    <td class = "textf1" id = "empty"></td>
+                    <td class = "textf2" id = "empty"></td>
+                </tr>
+                <script>
+                    tableContent(1001); 
+                </script>
+			</table>  
+            <!--1015 empty-->
+			<table class="weaponLast" cellspacing="0" cellpadding="0"  id = "empty">
+                <tr style="height: 25px;">
+                    <td colspan = "3" cellspacing="0" cellpadding="0" class = "weapontitle" id = "empty">
+                    </td>                    
+                </tr>
+				<tr style="height: 100px;">                    
+                    <td colspan = "2" cellspacing="0" cellpadding="0" class = "picture" id = "empty">
+                    </td>                   
+                    <td rowspan = "6" class = "descr" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "stars" id = "empty">
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td colspan = "2" class = "twoinone" id = "empty"></td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class="buttons1" cellpadding="0"cellspacing="0"id="empty">
+                        <!--<button onclick="leVelDown(1001)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1001" class="counter1001"></div>
+                        <button onclick="leVelUp(1001)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>-->
+                    </td>
+                </tr>
+                <tr style="height: 21px;">
+                    <td class = "text1" id="empty"><b></b></td>
+                    <td class = "text2" id="empty"></td>
+                </tr>
+                 <tr style="height: 21px;">
+                    <td class = "textf1" id = "empty"></td>
+                    <td class = "textf2" id = "empty"></td>
+                </tr>
+                <script>
+                    tableContent(1001); 
+                </script>
+			</table>           			            
+</div>
 
 <div class="title2">
 			<table class="titleFirst" cellspacing="0" cellpadding="0">
@@ -909,6 +1117,13 @@ function highLightMenu() {
                         background-size: 35px;"><h style="text-shadow: -2px 0 #222222, 0 2px #222222, 2px 0 #222222, 0 -2px #222222; margin: 10px;" >bow</td>
                 </tr>
 			</table>
+</div></div>
+<div class="empty"></div>
+<div class="footer">
+    <!--<p><a href="#" onclick="setLanguage('en')">English</a> | 
+    <a href="#" onclick="setLanguage('ru')">Русский</a> |  
+    <a href="#" onclick="setLanguage('de')">Deutsch</a> <br>-->
+    <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd. This site is not affiliated with or endorsed by miHoYo. Images and data © MiHoYo Co., Ltd.</p>
 </div>
 </body>
 </html>

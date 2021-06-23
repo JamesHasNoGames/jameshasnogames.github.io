@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="font-size: 12px;">
+<meta charset="utf-8">
+<head>
+ <title>Home</title>
+ <link rel="stylesheet" href="main.css">
+ <script src="gacha.js"></script>
+ <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <link rel="shortcut icon" href="Pictures/logo.png" type="image/png">
+</head>
+<body onload="starting()" class ="b">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Questrial&display=swap');
+</style>
+<div class ="bb">        
+        <div class="menu">
+            <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>            
+            <div class="menuIns">
+                <a href="index.html" class="hovers">home</a>
+                <a href="gacha.html" class="hovers">gacha</a>
+                <!--<a href="#" class="hovers">statistics</a>-->
+                <a href="characters.html" class="hovers">characters</a>
+                <a href="weapons.html" class="hovers">weapons</a>
+               <!-- <a href="#" class="hovers">materials</a>             
+                <a href="#" class="hovers">artifacts</a>
+                <a href="#" class="hovers">domains</a>
+                <a href="#" class="hovers">banners</a>
+                <a href="#" class="hovers">housing</a>
+                <a href="#" class="hovers">cooking</a>
+                <a href="#" class="hovers">about</a>-->
+                <div class="updown">
+                    <input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
+                    <div title="Upload JSON" class="upload" id="upload">
+                        <input type="file" accept="application/JSON" onchange="readFile(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+function starting(){ 
+    updown(); 
+    highLightMenu();
+}
+function highLightMenu() {
+    var h = document.getElementsByClassName("hovers");
+    var url = window.location.href;
+    for (var i = 0; i < h.length; i++) {
+            if(h[i] == url|(i == 0 & url == "http://jameshasnogames.ga/")){
+                h[i].className = "hoversa";
+            }
+    }
+}
+</script>
+<!--end of menu-->
+<div class="empty"></div>
+<div class="main">
+    
+<p>
+    Some dude asked me once if I had a website. Aftefwards he even told me a story about a guy who made a website with whiskey bottles and showed it to those damn HRs. And they were like impressed or something.<br> And since I am studying informatics I also must have a website, you see. <br>But I had jack shit at that point, so that job interview did not end well. And now I am like da hell shoud I do, I don't even drink whiskey ok?! <br>So here we go. <br>A website. 
+</p>
+
+</div>
+<div class="empty"></div>
+</div>
+<div class="footer">
+    <!--<p><a href="#" onclick="setLanguage('en')">English</a> | 
+    <a href="#" onclick="setLanguage('ru')">Русский</a> |  
+    <a href="#" onclick="setLanguage('de')">Deutsch</a> <br>-->
+    <p>Genshin Impact™ is a registered trademark of MiHoYo Co., Ltd. This site is not affiliated with or endorsed by miHoYo. Images and data © MiHoYo Co., Ltd.</p>
+</div>
+</body>
+</html>

@@ -132,19 +132,20 @@ function tableContent(x){
     //var c = document.getElementById("element"+x);
     //var d = document.getElementById("weapon"+x);
     var e = document.getElementById("stars"+x);
-    //var f = document.getElementById("c"+x);
+    var f = document.getElementById("c"+x);
     var g = document.getElementById("counter"+x);
     var h = document.getElementById("hp"+x);
     var i = document.getElementById("atk"+x);
     var j = document.getElementById("def"+x);
     var k = document.getElementById("attrname"+x);
     var l = document.getElementById("attr"+x);
+    //var loc = localStorage.getItem
     a.innerHTML = '<img src="Pictures/Characters/'+chars[x][4]+'" width="110px">';
     b.innerHTML = '<b>'+chars[x][1]+'</b>';
     //c.innerHTML = chars[x][7];
     //d.innerHTML = chars[x][6];
     e.innerHTML = '<img src="Pictures/Icon_'+chars[x][5]+'_Stars.png" width = "73px">'; 
-    //f.innerHTML = 
+    f.innerHTML = "ssrsr";
     g.innerHTML = "90";
     h.innerHTML = numberWithSpaces(chars[x][21]);
     i.innerHTML = numberWithSpaces(chars[x][35]);
