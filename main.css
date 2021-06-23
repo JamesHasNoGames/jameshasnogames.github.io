@@ -190,8 +190,9 @@ p {
     height:400px;
     position: relative;
     margin: 0 auto;
+background-image: url('Pictures/geovishap.png'); 
     background-color: #222222;
-    background-image: url('Pictures/logo.png'); 
+    
     background-size: 350px;
     background-repeat: no-repeat;
     background-position: center top;
