@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+ <head></head>
+ <body onload="highLightMenu()">
+ 
+  
+    <textarea  style="width: 500px; height:250px;" placeholder='Enter char table' id ='name' rows="5" cols="80"></textarea>
+    <button onclick="funktion()">Char brrrrrr</button>
+    <div id='response'></div>
+    <textarea  style="width: 500px; height:250px;" placeholder='Enter weapon table' id ='name2' rows="5" cols="80"></textarea>
+    <button onclick="funktion2()">Weapon brrrrrr</button>
+    <div id='response2'></div>
+  
+  <!-- Script -->
+  <script>
+ function funktion(){
+    var a = document.getElementById("name").value;
+    var b = document.getElementById("response");
+    var c;
+    a = a.replaceAll(',', '');
+    a = a.replaceAll('%', '');
+    a = a.split('\n');
+    a0 = a[0].split('\t');
+        a0.splice(0, 2);
+        a0[3]=0;        
+    a1 = a[1].split('\t');
+        a1.splice(0, 1);
+        a1[3]=0;
+    a2 = a[2].split('\t');
+        a2.splice(0, 2);
+        a2[3]=0;
+    a3 = a[3].split('\t');
+        a3.splice(0, 1);
+        a3[3]=0;   
+    a4 = a[4].split('\t');
+        a4.splice(0, 2);   
+    a5 = a[5].split('\t');
+        a5.splice(0, 1);
+        a5[3] = a4[3];     
+    a6 = a[6].split('\t');
+        a6.splice(0, 2);
+    a7 = a[7].split('\t');
+        a7.splice(0, 1);  
+        a7[3] = a6[3];       
+    a8 = a[8].split('\t');
+        a8.splice(0, 2); 
+    a9 = a[9].split('\t');
+        a9.splice(0, 1); 
+        a9[3] = a8[3];        
+    a10 = a[10].split('\t');
+        a10.splice(0, 2);
+    a11 = a[11].split('\t');
+        a11.splice(0, 1); 
+        a11[3] = a10[3];     
+    a12 = a[12].split('\t');
+        a12.splice(0, 2);
+    a13 = a[13].split('\t');
+        a13.splice(0, 1);   
+        a13[3] = a12[3];
+    //c[0]=a = a.split('\t');
+
+    
+    b.innerHTML = a0[0] + ", " + a1[0] + ", " + a2[0] + ", " + a3[0] + ", " + a4[0] + ", " + a5[0] + ", " + a6[0] + ", " + a7[0] + ", " + a8[0] + ", " + a9[0] + ", " + a10[0] + ", " + a11[0] + ", " + a12[0] + ", " + a13[0] + ", " + a0[1] + ", " + a1[1] + ", " + a2[1] + ", " + a3[1] + ", " + a4[1] + ", " + a5[1] + ", " + a6[1] + ", " + a7[1] + ", " + a8[1] + ", " + a9[1] + ", " + a10[1] + ", " + a11[1] + ", " + a12[1] + ", " + a13[1] + ", " + a0[2] + ", " + a1[2] + ", " + a2[2] + ", " + a3[2] + ", " + a4[2] + ", " + a5[2] + ", " + a6[2] + ", " + a7[2] + ", " + a8[2] + ", " + a9[2] + ", " + a10[2] + ", " + a11[2] + ", " + a12[2] + ", " + a13[2] + "<br>" + a0[3] + ", " + a1[3] + ", " + a2[3] + ", " + a3[3] + ", " + a4[3] + ", " + a5[3] + ", " + a6[3] + ", " + a7[3] + ", " + a8[3] + ", " + a9[3] + ", " + a10[3] + ", " + a11[3] + ", " + a12[3] + ", " + a13[3];
+}
+
+ function funktion2(){
+    var a = document.getElementById("name2").value;
+    var b = document.getElementById("response2");
+    //a = a.replaceAll(',', '');
+    a = a.replaceAll('%', '');
+    a = a.split('\n');
+    a0 = a[0].split('\t');
+    a1 = a[1].split('\t');
+    a2 = a[2].split('\t');
+    a3 = a[3].split('\t');
+    a4 = a[4].split('\t');
+    a5 = a[5].split('\t');
+    a6 = a[6].split('\t');
+    a7 = a[7].split('\t');
+    b.innerHTML = a0[0]+ ", " +a1[0]+ ", " +a1[1]+ ", " +a2[0]+ ", " +a2[1]+ ", " +a3[0]+ ", " +a3[1]+ ", " +a4[0]+ ", " +a4[1]+ ", " +a5[0]+ ", " +a5[1]+ ", " +a6[0]+ ", " +a6[1]+ ", " +a7[0]+ ", '" +a0[1]+  "', " +a0[2]+  ", " +a1[2]+  ", " +a1[2]+  ", " +a2[2]+  ", " +a2[2]+  ", " +a3[2]+  ", " +a3[2]+  ", " +a4[2]+  ", " +a4[2]+  ", " +a5[2]+  ", " +a5[2]+  ", " +a6[2]+  ", " +a6[2]+  ", " +a7[2];
+    }
+
+
+    
+  </script>
+<div id = "demo3"></div>
+<script>
+
+function highLightMenu(){
+    var menuPunkte = document.getElementById("menuIns");
+    var hvrs = menuPunkte.getElementsByClassName("hovers");
+    var loc = window.location.href;
+    var demo = document.getElementById("demo3");
+    demo.innerHTML = "sdf";
+}
+
+</script>
+ </body>
+</html>

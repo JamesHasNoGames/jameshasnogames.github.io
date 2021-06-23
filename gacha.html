@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html style="font-size: 12px;">
+<head>
+<meta charset="utf-8">
+<title>Gacha</title>
+<link rel="stylesheet" href="gacha.css">
+<script src="char.js"></script>
+<script src="gacha.js"></script>
+<script src="updown.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<link rel="shortcut icon" href="Pictures/logo.png" type="image/png">
+</head>
+<body onload="starting()">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Questrial&display=swap');
+</style>
+        <div class="menu">
+            <div id="logo" style="text-shadow: -2px 0 #333333, 0 2px #333333, 2px 0 #333333, 0 -2px #333333; ">JamesHasNoGames</div>
+            
+            <dic class="menuIns">
+                <a href="#" class="hovers">home</a>
+                <a href="gacha.html" class="hovers">gacha</a>
+                <!--<a href="#" class="hovers">statistics</a>-->
+                <a href="characters.html" class="hovers">characters</a>
+                <a href="weapons.html" class="hovers">weapons</a>
+               <!-- <a href="#" class="hovers">materials</a>             
+                <a href="#" class="hovers">artifacts</a>
+                <a href="#" class="hovers">domains</a>
+                <a href="#" class="hovers">banners</a>
+                <a href="#" class="hovers">housing</a>
+                <a href="#" class="hovers">cooking</a>
+                <a href="#" class="hovers">about</a>-->
+                <div class="updown"><input type="button" title="Download JSON" class="downloadl" id="download" onclick="downloadJSON()">
+                <input type="button" title="Upload JSON" class="upload" id="upload" onclick="uploadJSON()"></div>
+                </div>
+        </div>
+<script>
+function starting(){
+    highLightMenu();  
+    prepare(); 
+    updown(); 
+}
+function highLightMenu() {
+    var h = document.getElementsByClassName("hovers");
+    var url = window.location.href;
+    for (var i = 0; i < h.length; i++) {
+            if(h[i] == url){
+                h[i].className = "hoversa";
+            }
+    }
+}
+</script>
+<!--end of menu-->
+
+<div class="empty"></div>
+<div class="middle">
+    <div class="event">
+        <div class="bannerName">Event Banner</div>
+        <div id ="buttonArea11" class ="buttonArea11">
+            <button onclick="addStuff(1)" id="addOne" class="addOne"></button>
+        </div>
+        <div id="myDropdown1" class="dropdown-content1">
+        </div>  
+        <div id="myDropdown4" class="dropdown-content4">
+        </div>  
+        <div id ="buttonArea21" class ="buttonArea21"></div>  
+            <div id="container1" class="container1">
+            </div>
+        
+        
+    </div>
+    <div class="weapon">
+        <div class="bannerName">Weapon Banner</div>
+        <div id ="buttonArea12" class ="buttonArea12">
+            <button onclick="addStuff(2)" id="addOne" class="addOne"></button>
+        </div>
+            <div id="container2">
+            </div>        
+    </div>
+    <div class="standard">
+        <div class="bannerName">Standard Banner</div>
+        <div id ="buttonArea13" class ="buttonArea13">
+            <button onclick="addStuff(3)" id="addOne" class="addOne"></button>
+        </div>
+            <div id="container3">
+            </div>        
+    </div>
+    <div class="newbie">
+        <div class="bannerName">Newbie Banner</div>
+        <div id ="buttonArea14" class ="buttonArea14">
+            <button onclick="addStuff(4)" id="addOne" class="addOne"></button>
+        </div>
+            <div id="container4">
+            </div>       
+    </div>
+    <div class="free">
+         <div id ="buttonArea1" class ="buttonArea1">
+            <button onclick="addStuff()" id="addOne" class="addOne"></button>
+        </div>
+            <div id="container1">
+            </div> 
+
+    </div>
+</div>
+    <div class="demo" id="demo">
+    
+    </div>
+</div>
+
+
+</body>
+</html>
