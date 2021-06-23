@@ -102,7 +102,7 @@
 }
 .button3, .button8, .button13, .button18{
     cursor:pointer;
-    width:130px;
+    width:132px;
     height:30px;
     background-color: #111111;
     padding: 0px 0px 0px 0px;
@@ -301,9 +301,9 @@
     width:250px;
     height:30px;
     color: #ddd;
-    border: 1px solid #111111;
+    border: 1px solid #222222;
     border-bottom:none;
-    background-color: #222222;
+    background-color: #111111;
 }
 .freeWeapon{
     width:250px;
