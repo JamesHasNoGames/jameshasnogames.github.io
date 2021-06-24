@@ -1618,9 +1618,9 @@ function parseStorage(x){
         }
     }else{}
 }
-addFreeChar(x){
+/*addFreeChar(x){
 	for(var i = 0; i<chars.length; i++){
 		
 	}
 
-}
+}*/
