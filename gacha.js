@@ -1204,7 +1204,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style=" font-weight: bold; background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1233,7 +1233,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="font-weight: bold; background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1618,6 +1618,9 @@ function parseStorage(x){
         }
     }else{}
 }
+addFreeCh(x){
+	for(var i = 0; i<chars.length; i++){
+		
+	}
 
-
-
+}
