@@ -495,7 +495,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
             //event
             eventBanner.push([counterE4,y,4,counterE5]);
             changes = 1;
@@ -723,7 +723,7 @@ function add5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterE5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterE5+'</div></div>';
         //event
         eventBanner.push([counterE4,y,5,counterE5]);
         localStorage.removeItem("eventBanner");
@@ -1204,7 +1204,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style=" font-weight: bold; background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1233,7 +1233,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="font-weight: bold; background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1618,7 +1618,7 @@ function parseStorage(x){
         }
     }else{}
 }
-addFreeCh(x){
+addFreeChar(x){
 	for(var i = 0; i<chars.length; i++){
 		
 	}
