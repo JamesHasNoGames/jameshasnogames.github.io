@@ -295,7 +295,7 @@
     height:30px;
 
 }
-.container1, .container2, .container3, .container4{
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8{
     margin-top:-5px;
 } 
 .ueberschriftName{
@@ -313,7 +313,7 @@
     height:30px;
     border: 1px solid#222222;
     display:block;
-    background-image: url("/Pictures/UI_Icon_Add.png");
+    background-image: url("/Pictures/UI_BtnIcon_RelicType2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -327,7 +327,7 @@
     height:30px;
     border: 1px solid#222222;
     display:block;
-    background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
+    background-image: url("/Pictures/UI_BtnIcon_RelicType2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
