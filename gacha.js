@@ -495,7 +495,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
             //event
             eventBanner.push([counterE4,y,4,counterE5]);
             changes = 1;
