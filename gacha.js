@@ -495,7 +495,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
             //event
             eventBanner.push([counterE4,y,4,counterE5]);
             changes = 1;
@@ -551,7 +551,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterW4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterW5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterW4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterW5+'</div></div>';
             //event
             weaponBanner.push([counterW4,y,4,counterW5]);
             changes = 1;
@@ -607,7 +607,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterS4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterS5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterS4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterS5+'</div></div>';
             //event
             standardBanner.push([counterS4,y,4,counterS5]);
             changes = 1;
@@ -663,7 +663,7 @@ function add4(x, y) {
                     }
                 }
             }
-            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterN4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterN5+'</div></div>';
+            newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterN4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterN5+'</div></div>';
             //event
             newbieBanner.push([counterN4,y,4,counterN5]);
             changes = 1;
@@ -723,7 +723,7 @@ function add5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterE5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterE5+'</div></div>';
         //event
         eventBanner.push([counterE4,y,5,counterE5]);
         localStorage.removeItem("eventBanner");
@@ -775,7 +775,7 @@ function add5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterW4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterW5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterW4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterW5+'</div></div>';
         //event
         weaponBanner.push([counterW4,y,5,counterW5]);
         localStorage.removeItem("weaponBanner");
@@ -827,7 +827,7 @@ function add5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterS5+'</div></div>';
         //event
         standardBanner.push([counterS4,y,5,counterS5]);
         localStorage.removeItem("standardBanner");
@@ -879,7 +879,7 @@ function add5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterN5+'</div></div>';
         //event
         newbieBanner.push([counterN4,y,5,counterN5]);
         localStorage.removeItem("newbieBanner");
@@ -1024,7 +1024,7 @@ function addS4(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterE4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterE5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1053,7 +1053,7 @@ function addS4(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterW4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterW5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterW4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterW5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1082,7 +1082,7 @@ function addS4(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterS4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterS5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterS4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterS5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1111,7 +1111,7 @@ function addS4(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: bold; color: #111111;">'+counterN4+'</div><div class="name" style="background-color: #887bad; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterN5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4" style="background-color: #887bad; font-weight: 900; color: #111111;">'+counterN4+'</div><div class="name" style="background-color: #887bad; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5">'+counterN5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1146,7 +1146,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterE5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterE4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterE5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1175,7 +1175,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterW4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterW5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterW4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterW5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1204,7 +1204,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterS5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterS4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterS5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
@@ -1233,7 +1233,7 @@ function addS5(x, y) {
                 }
             }
         }
-        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: bold; color: #111111;">'+counterN5+'</div></div>';
+        newcontent.innerHTML = '<div class="entry"><div class="nr4">'+counterN4+'</div><div class="name" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+a+'</div><div class="nr5" id="nr5" style="background-color: #b6a16d; font-weight: 900; color: #111111;">'+counterN5+'</div></div>';
         if (parent.hasChildNodes()) {
             parent.insertBefore(newcontent, parent.firstChild);
         }else{
