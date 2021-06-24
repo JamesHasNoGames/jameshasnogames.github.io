@@ -336,3 +336,17 @@
     background-color: #111111;
     cursor:pointer;
 }
+.entry2{
+    text-align: center;
+    width:230px;
+    height:22px;
+    font-size: 16px;
+    line-height: 26px;
+    display:flex;
+    color: #ddd;
+    background-color: #111111;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+    border-top: none;
+    border-bottom: 1px solid #222222;
+}
