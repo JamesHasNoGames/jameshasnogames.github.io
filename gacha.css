@@ -301,7 +301,7 @@
 .ueberschriftName{
     font-size: 20px;
     text-align: center;
-    width:250px;
+    width:230px;
     height:30px;
     color: #ddd;
     border: 1px solid #222222;
@@ -309,7 +309,7 @@
     background-color: #111111;
 }
 .freeWeapon{
-    width:250px;
+    width:230px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -323,7 +323,7 @@
     cursor:pointer;
 }
 .freeChar{
-    width:250px;
+    width:230px;
     height:30px;
     border: 1px solid#222222;
     display:block;
