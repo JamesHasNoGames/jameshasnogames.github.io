@@ -351,6 +351,14 @@
     border-bottom: 1px solid #222222;
 }
 .bempty1{
+    background: none;
+    width: 9px;
+}
+.bempty2{
+    background: none;
+    width: 9px;
+}
+.b1{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -358,11 +366,11 @@
     width: 9px;
     cursor: pointer;
 }
-.bempty2{
+.b2{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 9px;
     width: 9px;
     cursor: pointer;
-} 
+}  
