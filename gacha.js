@@ -1619,7 +1619,7 @@ function parseStorage(x){
         }
     }else{}
 }
-function parseFreeChar(x){
+function parseFreeChar(){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
     if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
