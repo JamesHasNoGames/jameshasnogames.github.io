@@ -1664,13 +1664,14 @@ function addChar(x, y, z){
 	}
 	parent.appendChild(newcontent);
 }
-function editChar(x){
+function editChar(x, y){
 	var id = document.getElementById("container"+x);
+	var buttons = document.getElementById("buttonArea"+y);
 	var children = id.getElementsByClassName("entry2hide");	
+	buttons.innerHTML = '<button onclick="" id="freeChar" class="ok"></button><button onclick="" id="freeChar" class="notok"></button> ';
 	demo.innerHTML = children.length;
 	var i = 0; 
 	while(i < children.length){
-			children[i].className = "entry2";
-			
+			children[i].className = "entry2";			
 	}
 }

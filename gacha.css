@@ -308,12 +308,12 @@
     border-bottom:none;
     background-color: #111111;
 }
-.freeWeapon{
+.freeWeapon, .freeChar{
     width:252px;
     height:30px;
     border: 1px solid#222222;
     display:block;
-    background-image: url("/Pictures/UI_BtnIcon_RelicType2.png");
+    background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -322,12 +322,26 @@
     background-color: #111111;
     cursor:pointer;
 }
-.freeChar{
-    width:252px;
+.ok{    
+	width:126px;
     height:30px;
     border: 1px solid#222222;
     display:block;
-    background-image: url("/Pictures/UI_BtnIcon_RelicType2.png");
+    background-image: url("/Pictures/UI_IconYesSmall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0;
+    line-height: 0;  
+    background-color: #111111;
+    cursor:pointer;
+}
+.notok{    
+	width:126px;
+    height:30px;
+    border: 1px solid#222222;
+    display:block;
+    background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -351,18 +365,7 @@
     border-bottom: 1px solid #222222;
 }
 .entry2hide{
-	text-align: center;
-    width:250px;
-    height:22px;
-    font-size: 16px;
-    line-height: 26px;
-    display:flex;
-    color: #ddd;
-    background-color: red;
-    border-left: 1px solid #222222;
-    border-right: 1px solid #222222;
-    border-top: none;
-    border-bottom: 1px solid #222222;
+	display:none;
 }
 .bempty1{
     background: none;
