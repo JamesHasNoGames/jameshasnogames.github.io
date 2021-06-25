@@ -1665,8 +1665,8 @@ function addChar(x, y, z){
 	parent.appendChild(newcontent);
 }
 function editChar(x){
-	var parent = document.getElementById("container"+x);
-	var children = parent.getElementsByClassName("entry2hide");
+	var id = document.getElementById("container"+x);
+	var children = id.getElementsByClassName("entry2hide");
 	demo.innerHTML = children[0].innerHTML+children[1].innerHTML+children[2].innerHTML+children[3].innerHTML+children[4].innerHTML;
 	for(var i = 0; i < children.length; i++){
 			children[i].className = "entry2";
