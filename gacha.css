@@ -350,6 +350,9 @@
     border-top: none;
     border-bottom: 1px solid #222222;
 }
+.entry2hide{
+	display:none;
+}
 .bempty1{
     background: none;
     width: 9px;
