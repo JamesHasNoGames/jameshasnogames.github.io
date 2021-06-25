@@ -1670,6 +1670,6 @@ function editChar(x){
 	demo.innerHTML = children.innerHTML;
 	for(i = 0; i<=children.length; i++){
 			children[i].className = "entry2";
-			demo.innerHTML = demo + "dddddddddddddddd" +children[i].innerHTML;
+			demo.innerHTML = demo.innerHTML + "dddddddddddddddd" +children[i].innerHTML;
 	}
 }
