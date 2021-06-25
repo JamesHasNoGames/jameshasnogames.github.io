@@ -309,7 +309,7 @@
     background-color: #111111;
 }
 .freeWeapon, .freeChar{
-	display:flex;
+	display:block;
     width:252px;
     height:30px;
     border: 1px solid#222222;
@@ -324,7 +324,6 @@
     cursor:pointer;
 }
 .ok{    
-	display:flex;
 	width:126px;
     height:30px;
     border: 1px solid#222222;
@@ -339,7 +338,6 @@
     cursor:pointer;
 }
 .notok{ 
-	display:flex;
 	width:126px;
     height:30px;
     border: 1px solid#222222;
