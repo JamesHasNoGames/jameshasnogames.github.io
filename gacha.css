@@ -350,15 +350,19 @@
     border-top: none;
     border-bottom: 1px solid #222222;
 }
-.bempty1, .bempty2 {
+.bempty1{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 10px;
-    /*text-decoration: none; 
-    border:none; 
-    height:12px;
-    float: left;*/
+    background-size: 9px;
     width: 10px;
     cursor: pointer;
 }
+.bempty2{
+    background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 9px;
+    width: 10px;
+    cursor: pointer;
+} 
