@@ -313,7 +313,6 @@
     width:252px;
     height:30px;
     border: 1px solid#222222;
-    display:block;
     background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +326,7 @@
 	width:126px;
     height:30px;
     border: 1px solid#222222;
-    display:block;
+    display:flex;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -338,10 +337,10 @@
     cursor:pointer;
 }
 .notok{ 
-	width:126px;
+	width:120px;
     height:30px;
     border: 1px solid#222222;
-    display:block;
+    display:flex;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
