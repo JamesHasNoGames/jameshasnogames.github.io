@@ -1667,9 +1667,9 @@ function addChar(x, y, z){
 function editChar(x){
 	var parent = document.getElementById("container"+x);
 	var children = parent.getElementsByClassName("entry2hide");
-	demo.innerHTML = children[0].innerHTML+children[1].innerHTML;
+	//demo.innerHTML = children[0].innerHTML+children[1].innerHTML;
 	for(var i = 0; i < children.length; i++){
 			children[i].className = "entry2";
-			//demo.innerHTML = demo.innerHTML + "dddddddddddddddd" +children[i].innerHTML;
+			demo.innerHTML = demo.innerHTML + " " +i;
 	}
 }
