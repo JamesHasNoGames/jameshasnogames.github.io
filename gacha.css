@@ -337,14 +337,14 @@
     cursor:pointer;
 }
 .notok{ 
-	width:120px;
+	width:126px;
     height:30px;
     border: 1px solid#222222;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 18px;
     font-size: 0;
     line-height: 0;  
     background-color: #111111;
@@ -374,6 +374,10 @@
 .bempty2{
     background: none;
     width: 9px;
+}
+.buttonArea15{
+    font-size: 0;
+    line-height: 0px;	
 }
 .b1{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
