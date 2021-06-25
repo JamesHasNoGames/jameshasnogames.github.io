@@ -326,7 +326,7 @@
 	width:126px;
     height:30px;
     border: 1px solid#222222;
-    display:flex;
+    display:inline-block;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@
 	width:120px;
     height:30px;
     border: 1px solid#222222;
-    display:flex;
+    display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
