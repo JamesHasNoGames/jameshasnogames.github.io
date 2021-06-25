@@ -301,7 +301,7 @@
 .ueberschriftName{
     font-size: 20px;
     text-align: center;
-    width:230px;
+    width:250px;
     height:30px;
     color: #ddd;
     border: 1px solid #222222;
@@ -309,7 +309,7 @@
     background-color: #111111;
 }
 .freeWeapon{
-    width:232px;
+    width:252px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -323,7 +323,7 @@
     cursor:pointer;
 }
 .freeChar{
-    width:232px;
+    width:252px;
     height:30px;
     border: 1px solid#222222;
     display:block;
@@ -338,7 +338,7 @@
 }
 .entry2{
     text-align: center;
-    width:230px;
+    width:250px;
     height:22px;
     font-size: 16px;
     line-height: 26px;
@@ -349,4 +349,16 @@
     border-right: 1px solid #222222;
     border-top: none;
     border-bottom: 1px solid #222222;
+}
+#bempty1, #bempty2 {
+    background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    /*text-decoration: none; 
+    border:none; 
+    height:12px;
+    float: left;
+    width: 24%;*/
+    cursor: pointer;
 }
