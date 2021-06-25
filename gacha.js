@@ -14,6 +14,7 @@ var newbieBanner = [];
 var newbieBannerLast = 0;
 var counterN4;
 var counterN5;
+var freeChars = [];
 
 //Buttons onclick auf +
 function addStuff(y) {
@@ -1618,9 +1619,24 @@ function parseStorage(x){
         }
     }else{}
 }
-/*addFreeChar(x){
-	for(var i = 0; i<chars.length; i++){
-		
+function parseFreeChar(x){
+	var jason = JSON.parse(localStorage.getItem("freeChars"));
+    if(jason!=null){ 
+		for (var k = 0; k< jason.length; k++) {    
+                freeChars[k] = jason[k];
+        }	
+	}else{
+		addChar(5,105,1);
 	}
+}
 
-}*/
+function addChar(x, y, z){
+	var parent = document.getElementById("container"+x);
+	var newcontent = document.createElement('div');
+	newcontent.innerHTML = '<div class="entry2"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
+    if (parent.hasChildNodes()) {
+        parent.insertBefore(newcontent, parent.firstChild);
+    }else{
+        parent.appendChild(newcontent);
+    }
+}
