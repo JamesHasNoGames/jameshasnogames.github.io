@@ -1655,23 +1655,25 @@ function parseFreeChar(){
 
 function addChar(x, y, z){
 	var parent = document.getElementById("container"+x);
-	var demo = document.getElementById("demo");
 	var newcontent = document.createElement('div');
 	if(z > 0){
-	newcontent.innerHTML = '<div class="entry2"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
+	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
     }else{
-	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
+	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
 	}
 	parent.appendChild(newcontent);
 }
 function editChar(x, y){
 	var id = document.getElementById("container"+x);
 	var buttons = document.getElementById("buttonArea"+y);
-	var children = id.getElementsByClassName("entry2hide");	
+	var children = id.getElementsByClassName("entry2hide");
+	var b1 = id.getElementsByClassName("bempty1");	
 	buttons.innerHTML = '<button onclick="" id="freeChar" class="ok"></button><button onclick="" id="freeChar" class="notok"></button> ';
-	demo.innerHTML = children.length;
 	var i = 0; 
 	while(i < children.length){
 			children[i].className = "entry2";			
+	}
+	while(i < b1.length){
+			b1[i].className = "b1";			
 	}
 }
