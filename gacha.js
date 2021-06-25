@@ -1663,3 +1663,10 @@ function addChar(x, y, z){
 	}
 	parent.appendChild(newcontent);
 }
+function editChar(x){
+	var parent = document.getElementById("container"+x);
+	var children = parent.getElementsByClassName("entry2hide");
+	for(i = 0; i<=children.length; i++){
+			children[i].className = "entry2";
+	}
+}
