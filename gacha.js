@@ -1657,7 +1657,7 @@ function addChar(x, y, z){
 	var parent = document.getElementById("container"+x);
 	var demo = document.getElementById("demo");
 	var newcontent = document.createElement('div');
-	if(z >= 1){
+	if(z > 0){
 	newcontent.innerHTML = '<div class="entry2"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
     }else{
 	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
@@ -1668,7 +1668,7 @@ function editChar(x){
 	var parent = document.getElementById("container"+x);
 	var children = parent.getElementsByClassName("entry2hide");
 	demo.innerHTML = children[0].innerHTML+children[1].innerHTML;
-	for(var i = 0; i <= children.length; i++){
+	for(var i = 0; i < children.length; i++){
 			children[i].className = "entry2";
 			//demo.innerHTML = demo.innerHTML + "dddddddddddddddd" +children[i].innerHTML;
 	}
