@@ -309,6 +309,7 @@
     background-color: #111111;
 }
 .freeWeapon, .freeChar{
+	display:flex;
     width:252px;
     height:30px;
     border: 1px solid#222222;
