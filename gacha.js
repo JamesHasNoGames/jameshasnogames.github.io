@@ -1655,6 +1655,7 @@ function parseFreeChar(){
 
 function addChar(x, y, z){
 	var parent = document.getElementById("container"+x);
+	var demo = document.getElementById("demo");
 	var newcontent = document.createElement('div');
 	if(z >= 1){
 	newcontent.innerHTML = '<div class="entry2"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
@@ -1668,5 +1669,6 @@ function editChar(x){
 	var children = parent.getElementsByClassName("entry2hide");
 	for(i = 0; i<=children.length; i++){
 			children[i].className = "entry2";
+			demo.innerHTML = demo + children[i];
 	}
 }
