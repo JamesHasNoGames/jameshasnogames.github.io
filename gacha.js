@@ -1657,9 +1657,5 @@ function addChar(x, y, z){
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
 	newcontent.innerHTML = '<div class="entry2"><div class="name" style="font-weight: bold; color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style="font-weight: bold; color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
-    if (parent.hasChildNodes()) {
-        parent.insertBefore(newcontent, parent.firstChild);
-    }else{
-        parent.appendChild(newcontent);
-    }
+    parent.appendChild(newcontent);
 }
