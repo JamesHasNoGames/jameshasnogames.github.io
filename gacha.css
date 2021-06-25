@@ -351,7 +351,18 @@
     border-bottom: 1px solid #222222;
 }
 .entry2hide{
-	display:none;
+	text-align: center;
+    width:250px;
+    height:22px;
+    font-size: 16px;
+    line-height: 26px;
+    display:flex;
+    color: #ddd;
+    background-color: red;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
+    border-top: none;
+    border-bottom: 1px solid #222222;
 }
 .bempty1{
     background: none;
