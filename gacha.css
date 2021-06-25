@@ -323,6 +323,7 @@
     cursor:pointer;
 }
 .ok{    
+	display:flex;
 	width:126px;
     height:30px;
     border: 1px solid#222222;
@@ -336,7 +337,8 @@
     background-color: #111111;
     cursor:pointer;
 }
-.notok{    
+.notok{ 
+	display:flex;
 	width:126px;
     height:30px;
     border: 1px solid#222222;
