@@ -1656,6 +1656,8 @@ function parseFreeChar(){
 function addChar(x, y, z, n){
 	var par;
 	var newcontent;
+	var demo1 = document.getElementById("demo1");
+	
 	//if(x==5){
 	//freeChars.push([x, y, z, n]);
 	/*localStorage.removeItem("freeChars");
@@ -1666,7 +1668,8 @@ function addChar(x, y, z, n){
 	par = document.getElementById("container"+x);
 	newcontent = document.createElement('div');
 	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
-    }else{
+    demo1.innerHTML = "dddhdddd";
+	}else{
 	par = document.getElementById("container"+x);
 	newcontent = document.createElement('div');
 	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
@@ -1703,8 +1706,6 @@ function editChar(x, y){
 	}
 }
 function max(x,y,z,n){
-	var demo1 = document.getElementById("demo1");
-	demo1.innerHTML = "ddddddd";
 	var container = document.getElementById("container"+x);
 	x = x + 10;
 	var name;
