@@ -1695,7 +1695,7 @@ function max(x,y,z,n){
 				demo.innerHTML = "ok" + name[0];
 				x = x-10;
 				if(z++ == n){
-					z++;
+					
 				arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div>';			
 
 				}else{
