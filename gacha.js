@@ -1621,7 +1621,7 @@ function parseFreeChar(){
 	var kaka = document.getElementById("container5");
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
 	
-    if(jason!=null){ 
+    if(jason.length!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
