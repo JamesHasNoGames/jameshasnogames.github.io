@@ -1667,9 +1667,9 @@ function addChar(x, y, z, n){
 	if(z > 0){
 	var demo = document.getElementById("demo");
 	demo.innerHTML = "bleh";
-	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+	newcontent.innerHTML = "beh";//'<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
     }else{
-	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+	newcontent.innerHTML = "meh";//'<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
 	}
 	par.appendChild(newcontent);
 	
