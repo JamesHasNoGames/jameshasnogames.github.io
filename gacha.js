@@ -1627,39 +1627,39 @@ function parseFreeChar(){
         }	
 	}else{
 		//Amber
-		addChar(5,105,1);
+		addChar(5,105,1,1);
 		//Kaeya
-		addChar(5,13,1);
+		addChar(5,13,1,1);
 		//Lisa
-		addChar(5,89,1);
+		addChar(5,89,1,1);
 		//Barbara
-		addChar(5,93,0);
+		addChar(5,93,0,2);
 		//Xiangling
-		addChar(5,57,0);
+		addChar(5,57,0,1);
 		//Fischl
-		addChar(5,113,0);
+		addChar(5,113,0,1);
 		//Xinyan
-		addChar(5,34,0);
+		addChar(5,34,0,1);
 		//Beidou
-		addChar(5,41,0);
+		addChar(5,41,0,1);
 		//Ningguang
-		addChar(5,73,0);
+		addChar(5,73,0,1);
 		//Xingqiu
-		addChar(5,21,0);
+		addChar(5,21,0,1);
 		//Chongyun
-		addChar(5,37,0);
+		addChar(5,37,0,1);
 		//Diona
-		addChar(5,109,0);
+		addChar(5,109,0,1);
 	}
 }
 
-function addChar(x, y, z){
+function addChar(x, y, z, n){
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
 	if(z > 0){
-	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
+	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+n+','+y+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+n+','+y+')"></div></div>';
     }else{
-	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
+	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+n+','+y+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+n+','+y+')"></div></div>';
 	}
 	parent.appendChild(newcontent);
 }
@@ -1680,4 +1680,11 @@ function editChar(x, y){
 	while(i < b2.length){
 			b2[i].className = "b2";			
 	}
+}
+function max(n, y){
+	var demo = document.getElementById("demo");
+	demo.innerHTML = "here";
+}
+function min(n, y){
+	
 }
