@@ -1683,7 +1683,8 @@ function editChar(x, y){
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
-	var buttonAr = document.getElementById("buttonArea"+x+10);
+	x = x + 10;
+	var buttonAr = document.getElementById("buttonArea"+x);
 	var demo = document.getElementById("demo");
 	//if(buttonAr.getElementsByClassName("ok") != empty){
 		demo.innerHTML = buttonAr.innerHTML;
