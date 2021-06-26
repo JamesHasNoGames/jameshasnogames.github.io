@@ -1707,13 +1707,13 @@ function editChar(x){
             //freeChars[k] = jason[k];
 			//addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
 		parent.appendChild(newcontent);
-        }
+       }
 	
 	}
 	
 	
 	
-	var i = 0; 
+	/*var i = 0; 
 	while(i < children.length){
 			children[i].className = "entry2";			
 	}
@@ -1722,7 +1722,7 @@ function editChar(x){
 	}
 	while(i < b2.length){
 			b2[i].className = "b2";			
-	}
+	}*/
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
