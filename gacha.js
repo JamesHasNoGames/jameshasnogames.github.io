@@ -1651,12 +1651,13 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
+		var demo = document.getElementById("demo");
+		demo.innerHTML = "bleh";
 	}
 }
 
 function addChar(x, y, z, n){
-	//var demo = document.getElementById("demo");
-	demo.innerHTML = "bleh";
+
 	var par;
 	var newcontent;
 	//if(x==5){
