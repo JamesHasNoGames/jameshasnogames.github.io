@@ -1668,7 +1668,7 @@ function editChar(x, y){
 	var buttons = document.getElementById("buttonArea"+y);
 	var children = id.getElementsByClassName("entry2hide");
 	var b1 = id.getElementsByClassName("bempty1");
-	var b2 = id.getElementsByClassName("bempty1");		
+	var b2 = id.getElementsByClassName("bempty2");		
 	buttons.innerHTML = '<button onclick="" id="freeChar" class="ok"></button><button onclick="" id="freeChar" class="notok"></button> ';
 	var i = 0; 
 	while(i < children.length){
