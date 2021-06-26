@@ -307,7 +307,6 @@ function add3(x) {
     var parent = document.getElementById("container"+x);
     var buttons = document.getElementById("buttonArea1"+x);
     var drop = document.getElementById("buttonArea2"+x);
-    var demo = document.getElementById("demo");
     var newcontent = document.createElement('div');
     if (x == 1){
         if(counterE4==null || counterE5==null){
@@ -1490,7 +1489,6 @@ function drop(x){
         updown();
 }
 function parseStorage(x){
-    var demo = document.getElementById("demo");
     var drop = document.getElementById("buttonArea2"+x);
     if(x == 1){  
         //demo.innerHTML =  "here";     
@@ -1711,7 +1709,6 @@ function max(x,y,z,n){
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	var demo = document.getElementById("demo");
 	if(buttonAr.getElementsByClassName("ok").length != 0){
 		var arr = container.getElementsByClassName("entry2");
 		for (var i = 0; i<arr.length; i++){
@@ -1740,7 +1737,6 @@ function min(x,y,z,n){
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	var demo = document.getElementById("demo");
 	if(buttonAr.getElementsByClassName("ok").length != 0){
 		var arr = container.getElementsByClassName("entry2");
 		for (var i = 0; i<arr.length; i++){
