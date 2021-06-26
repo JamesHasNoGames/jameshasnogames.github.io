@@ -1620,10 +1620,10 @@ function parseStorage(x){
 function parseFreeChar(){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
     if(jason!=null){ 
-		/*for (var k = 0; k< jason.length; k++) {    
+		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
-        }*/	
+        }
 	}else{
 		//Amber
 		addChar(5,105,1,1);
@@ -1670,7 +1670,7 @@ function addChar(x, y, z, n){
 			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
 		}
 		par.appendChild(newcontent);
-	}else{
+	}else{//container7
 	}	
 }
 function addCharS(x, y, z, n){
