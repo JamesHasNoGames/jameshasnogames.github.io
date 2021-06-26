@@ -1621,14 +1621,14 @@ function parseStorage(x){
 function parseFreeChar(){
 	var kaka = document.getElementById("kaka");	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	kaka.innerHTML = "dddddddddddddd" + jason.length;
-    /*if(jason.length!=null){ 
-	kaka.innerHTML = "dddddddddddddd" + jason[0];
-		for (var k = 0; k< jason.length; k++) {    
+	kaka.innerHTML = "dddddddddddddd";
+    if(jason!=null){ 
+		kaka.innerHTML = "dddddddddddddd" + jason[0];
+		/*for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
-        }
-	}else{*/
+        }*/
+	}else{
 		//Amber
 		addChar(5,105,1,1);
 		//Kaeya
