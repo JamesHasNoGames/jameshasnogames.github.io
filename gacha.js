@@ -1649,7 +1649,7 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
-		var demo = document.getElementById("demo");
+		var demo = document.getElementById('demo');
 		demo.innerHTML = "bleh";
 	}
 }
