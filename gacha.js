@@ -1686,7 +1686,7 @@ function max(x,y,z,n){
 	var buttonAr = document.getElementById("buttonArea"+x+10);
 	var demo = document.getElementById("demo");
 	//if(buttonAr.getElementsByClassName("ok") != empty){
-		demo.innerHTML = "ok";
+		demo.innerHTML = x+10;
 	//}else{
 	//	demo.innerHTML = "notok";
 	//}
