@@ -1655,9 +1655,9 @@ function parseFreeChar(){
 }
 
 function addChar(x, y, z, n){
+	var demo = document.getElementById("demo");
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
-	var demo = document.getElementById("demo");
 	//if(x==5){
 	//freeChars.push([x, y, z, n]);
 	/*localStorage.removeItem("freeChars");
