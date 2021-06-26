@@ -1688,7 +1688,8 @@ function max(x,y,z,n){
 	var demo = document.getElementById("demo");
 	if(buttonAr.getElementsByClassName("ok").length != 0){
 		var arr = container.getElementsByClassName("entry2");
-		var name = arr[0].textContent.match(/[a-zA-Z]+|[0-9]+/g).split(',');
+		var name = arr[0].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+		name = name.split(',');
 		demo.innerHTML = "ok" + name[0];
 		
 	}else{
