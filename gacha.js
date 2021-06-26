@@ -1685,11 +1685,11 @@ function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
 	var buttonAr = document.getElementById("buttonArea"+x+10);
 	var demo = document.getElementById("demo");
-	if(buttonAr.getElementsByClassName("ok") != empty){
+	//if(buttonAr.getElementsByClassName("ok") != empty){
 		demo.innerHTML = "ok";
-	}else{
-		demo.innerHTML = "notok";
-	}
+	//}else{
+	//	demo.innerHTML = "notok";
+	//}
 	
 	
 	
