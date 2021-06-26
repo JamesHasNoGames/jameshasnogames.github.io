@@ -1619,6 +1619,8 @@ function parseStorage(x){
 }
 function parseFreeChar(){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	var demo = document.getElementById('demo1');
+	demo.innerHTML = "bleh";
     if(jason!=null){ 
 		/*for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
@@ -1649,8 +1651,7 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
-		var demo = document.getElementById('demo');
-		demo.innerHTML = "bleh";
+
 	}
 }
 
