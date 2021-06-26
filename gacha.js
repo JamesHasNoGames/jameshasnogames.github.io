@@ -1684,14 +1684,17 @@ function editChar(x, y){
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
 	x = x + 10;
+	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
 	var demo = document.getElementById("demo");
 	if(buttonAr.getElementsByClassName("ok").length != 0){
 		var arr = container.getElementsByClassName("entry2");
-		var name = arr[0].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-		//name = name.split(',');
-		demo.innerHTML = "ok" + name[0];
-		
+		for (var i = 0; i<arr.length; i++){
+			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+			if (name == chars[y][1]){
+				demo.innerHTML = "ok" + name[i];
+			}
+		}
 	}else{
 		demo.innerHTML = "notok";
 	}
