@@ -1767,7 +1767,7 @@ function accept(x){
 function abort(x){
 	var container = document.getElementById("container"+x);
 	if(x==5){
-	container.innerHTML = parseFreeChar(x);	
+	container.innerHTML = parseFreeChar();	
 	}
 	
 }
