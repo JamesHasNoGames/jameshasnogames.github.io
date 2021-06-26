@@ -1624,10 +1624,10 @@ function parseFreeChar(){
 	kaka.innerHTML = "dddddddddddddd";
     if(jason!=null){ 
 		kaka.innerHTML = "dddddddddddddd" + jason[0];
-		/*for (var k = 0; k< jason.length; k++) {    
+		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
-        }*/
+        }
 	}else{
 		//Amber
 		addChar(5,105,1,1);
