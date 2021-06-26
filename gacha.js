@@ -1690,7 +1690,7 @@ function max(x,y,z,n){
 		var arr = container.getElementsByClassName("entry2");
 		var name = arr[0].textContent.match(/[a-zA-Z]+|[0-9]+/g);
 		//name = name.split(',');
-		demo.innerHTML = "ok" + name;
+		demo.innerHTML = "ok" + name[0];
 		
 	}else{
 		demo.innerHTML = "notok";
