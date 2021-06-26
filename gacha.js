@@ -1622,13 +1622,14 @@ function parseFreeChar(){
 	var kaka = document.getElementById("kaka");
 	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	
+    if(jason.length!=null){ 
 	kaka.innerHTML = "dddddddddddddd" + jason[0];
-    /*if(jason.length!=null){ 
 		/*for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
-				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
+				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);*/
         }
-	}else{*/
+	}else{
 		//Amber
 		addChar(5,105,1,1);
 		//Kaeya
@@ -1653,7 +1654,7 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
-	//}
+	}
 }
 
 function addChar(x, y, z, n){
