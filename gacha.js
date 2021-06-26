@@ -1621,7 +1621,7 @@ function parseStorage(x){
 function parseFreeChar(){
 	var kaka = document.getElementById("kaka");
 	
-	var jason = localStorage.getItem("freeChars");
+	var jason = JSON.parse(localStorage.getItem("freeChars"));
 	kaka.innerHTML = "dddddddddddddd" + jason;
     /*if(jason.length!=null){ 
 		/*for (var k = 0; k< jason.length; k++) {    
@@ -1662,7 +1662,7 @@ function addChar(x, y, z, n){
 	if(x==5){
 		freeChars.push([x, y, z, n]);
 		localStorage.removeItem("freeChars");
-		localStorage.setItem("freeChars", freeChars);
+		localStorage.setItem("freeChars", JSON.stringify(freeChars));
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
