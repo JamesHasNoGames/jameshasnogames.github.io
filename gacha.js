@@ -1699,7 +1699,7 @@ function max(x,y,z,n){
 				}else{
 					z++;
 				}		*/		
-				arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
+				arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div>'+z+'<div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
 			}
 		}
 	}else{
