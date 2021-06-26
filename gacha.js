@@ -1662,7 +1662,7 @@ function addChar(x, y, z, n){
 	//freeChars.push([x, y, z, n]);
 	/*localStorage.removeItem("freeChars");
     localStorage.setItem("freeChars", freeChars);*/
-	demo.innerHTML = "bleh" + x;
+	//demo.innerHTML = "bleh" + x;
 	//}else{
 	//}
 	if(z > 0){
