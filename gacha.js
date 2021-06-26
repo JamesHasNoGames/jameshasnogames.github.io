@@ -1620,7 +1620,7 @@ function parseStorage(x){
 function parseFreeChar(){
 	var kaka = document.getElementById("container5");
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	kaka.innerHTML = "kakaka";
+	kaka.innerHTML = "kakaka"+jason;
     /*if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
