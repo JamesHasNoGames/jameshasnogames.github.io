@@ -1693,6 +1693,7 @@ function max(x,y,z,n){
 			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
 			if (name[0] == chars[y][1]){
 				demo.innerHTML = "ok" + name[0];
+				arr[i].innerHTML = "beh";
 			}
 		}
 	}else{
