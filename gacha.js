@@ -1655,8 +1655,8 @@ function parseFreeChar(){
 }
 
 function addChar(x, y, z, n){
-	var demo = document.getElementById("demo");
-	demo.innerHTML = "bleh";
+	//var demo = document.getElementById("demo");
+	//demo.innerHTML = "bleh";
 	var par = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
 	//if(x==5){
