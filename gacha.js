@@ -1691,8 +1691,8 @@ function max(x,y,z,n){
 		var arr = container.getElementsByClassName("entry2");
 		for (var i = 0; i<arr.length; i++){
 			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-			if (name == chars[y][1]){
-				demo.innerHTML = "ok" + name[i];
+			if (name[0] == chars[y][1]){
+				demo.innerHTML = "ok" + name[0];
 			}
 		}
 	}else{
