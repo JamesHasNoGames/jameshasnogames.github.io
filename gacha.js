@@ -1657,7 +1657,7 @@ function parseFreeChar(){
 function addChar(x, y, z, n){
 	var demo = document.getElementById("demo");
 	demo.innerHTML = "bleh";
-	var parent = document.getElementById("container"+x);
+	var par = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
 	//if(x==5){
 	//freeChars.push([x, y, z, n]);
@@ -1670,7 +1670,7 @@ function addChar(x, y, z, n){
     }else{
 	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
 	}
-	parent.appendChild(newcontent);
+	par.appendChild(newcontent);
 	
 }
 function addCharS(x, y, z, n){
