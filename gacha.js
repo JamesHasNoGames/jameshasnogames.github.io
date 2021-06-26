@@ -1622,10 +1622,10 @@ function parseStorage(x){
 function parseFreeChar(){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
     if(jason!=null){ 
-		for (var k = 0; k< jason.length; k++) {    
+		/*for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
-        }	
+        }*/	
 	}else{
 		//Amber
 		addChar(5,105,1,1);
@@ -1660,8 +1660,8 @@ function addChar(x, y, z, n){
 	var demo = document.getElementById("demo");
 	if(x==5){
 	freeChars.push([x, y, z, n]);
-	localStorage.removeItem("freeChars");
-    localStorage.setItem("freeChars", freeChars);
+	/*localStorage.removeItem("freeChars");
+    localStorage.setItem("freeChars", freeChars);*/
 	demo.innerHTML = freeChars;
 	}else{
 	}
