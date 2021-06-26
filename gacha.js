@@ -1620,8 +1620,8 @@ function parseStorage(x){
 function parseFreeChar(){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
 	var demo = document.getElementById("demo1");
-    if(jason!=null){ 
 	demo.innerHTML = "dsadasd";
+    if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
