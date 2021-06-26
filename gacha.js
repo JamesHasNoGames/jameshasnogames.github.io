@@ -1705,11 +1705,31 @@ function max(x,y,z,n){
 		}
 	}else{
 		demo.innerHTML = "notok";
-	}
-	
-	
-	
+	}	
 }
 function min(x,y,z,n){
-	
+	var container = document.getElementById("container"+x);
+	x = x + 10;
+	var name;
+	var buttonAr = document.getElementById("buttonArea"+x);
+	var demo = document.getElementById("demo");
+	if(buttonAr.getElementsByClassName("ok").length != 0){
+		var arr = container.getElementsByClassName("entry2");
+		for (var i = 0; i<arr.length; i++){
+			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+			if (name[0] == chars[y][1]){
+				demo.innerHTML = "ok" + name[0];
+				x = x-10;
+				if(z==0){
+					z = n;					
+				}else{
+					z--;
+				}				
+				arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
+				break;
+			}
+		}
+	}else{
+		demo.innerHTML = "notok";
+	}		
 }
