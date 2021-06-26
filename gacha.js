@@ -1686,8 +1686,9 @@ function addCharS(x, y, z, n){
 	}
 	parent.appendChild(newcontent);
 }
-function editChar(x, y){
+function editChar(x){
 	var id = document.getElementById("container"+x);
+	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
 	var children = id.getElementsByClassName("entry2hide");
 	var b1 = id.getElementsByClassName("bempty1");
@@ -1766,8 +1767,12 @@ function accept(x){
 }
 function abort(x){
 	var container = document.getElementById("container"+x);
+	var y = x + 10;
+	var buttons = document.getElementById("buttonArea"+y);
+	
 	if(x==5){
 	container.innerHTML = "";
+	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseFreeChar();	
 	}
 	
