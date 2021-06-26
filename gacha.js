@@ -1618,8 +1618,7 @@ function parseStorage(x){
     }else{}
 }
 function parseFreeChar(){
-	
-	var kaka = document.getElementById("kaka");
+	var kaka = document.getElementById("container5");
 	kaka.innerHTML = "dsadasd";
 	//var jason = JSON.parse(localStorage.getItem("freeChars"));
     /*if(jason!=null){ 
