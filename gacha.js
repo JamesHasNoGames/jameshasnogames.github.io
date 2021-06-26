@@ -1619,8 +1619,8 @@ function parseStorage(x){
 }
 
 function parseFreeChar(){
-	var kaka = document.getElementById("container5");
-	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	var kaka = document.getElementById("kaka");
+	//var jason = JSON.parse(localStorage.getItem("freeChars"));
 	
     /*if(jason.length!=null){ 
 		/*for (var k = 0; k< jason.length; k++) {    
@@ -1652,7 +1652,7 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
-	kaka.innerHTML = "kakaka"+jason;
+	kaka.innerHTML = "kakaka";
 	//}
 }
 
