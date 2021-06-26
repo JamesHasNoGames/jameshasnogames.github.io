@@ -1680,20 +1680,38 @@ function addCharS(x, y, z, n){
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
 	if(z > 0){
-	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
     }else{
-	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';
 	}
 	parent.appendChild(newcontent);
 }
 function editChar(x){
-	var id = document.getElementById("container"+x);
+	var parent = document.getElementById("container"+x);
+	var newcontent = document.createElement('div');
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
-	var children = id.getElementsByClassName("entry2hide");
-	var b1 = id.getElementsByClassName("bempty1");
-	var b2 = id.getElementsByClassName("bempty2");		
 	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
+	parent.innerHTML = "";
+	if(x==5){
+	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	for (var k = 0; k< jason.length; k++) {   
+			if(freeChars[k][3]==freeChars[k][2]){
+			var name = freeChars[k][1];
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';		
+			}else if(freeChars[k][2]==0){
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';		
+			}else{
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';		
+			}
+            //freeChars[k] = jason[k];
+			//addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
+        }
+	
+	}
+	
+	
+	
 	var i = 0; 
 	while(i < children.length){
 			children[i].className = "entry2";			
@@ -1768,8 +1786,7 @@ function accept(x){
 function abort(x){
 	var container = document.getElementById("container"+x);
 	var y = x + 10;
-	var buttons = document.getElementById("buttonArea"+y);
-	
+	var buttons = document.getElementById("buttonArea"+y);	
 	if(x==5){
 	container.innerHTML = "";
 	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
