@@ -1622,7 +1622,7 @@ function parseFreeChar(){
 	var kaka = document.getElementById("kaka");
 	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	kaka.innerHTML = "dddddddddddddd" + jason;
+	kaka.innerHTML = "dddddddddddddd" + jason[0];
     /*if(jason.length!=null){ 
 		/*for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
