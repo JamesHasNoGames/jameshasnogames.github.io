@@ -1682,10 +1682,17 @@ function editChar(x, y){
 	}
 }
 function max(x,y,z,n){
-	var id = document.getElementById("container"+x);
-	
+	var container = document.getElementById("container"+x);
+	var buttonAr = document.getElementById("buttonArea"+x+10);
 	var demo = document.getElementById("demo");
-	demo.innerHTML = "here" + id.firstChild.innerHTML + "dsf";
+	if(buttonAr.className == "ok"){
+		demo.innerHTML = "ok";
+	}else{
+		demo.innerHTML = "notok";
+	}
+	
+	
+	
 }
 function min(x,y,z,n){
 	
