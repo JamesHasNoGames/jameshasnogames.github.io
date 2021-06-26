@@ -1624,6 +1624,7 @@ function parseFreeChar(){
     if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
+				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
         }	
 	}else{
 		//Amber
@@ -1656,6 +1657,22 @@ function parseFreeChar(){
 function addChar(x, y, z, n){
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
+	if(x==5){
+	freeChars.push([x, y, z, n]);
+	localStorage.removeItem("freeChars");
+    localStorage.setItem("freeChars", freeChars);
+	}else if (x==7){
+	}
+	if(z > 0){
+	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+    }else{
+	newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+	}
+	parent.appendChild(newcontent);
+}
+function addCharS(x, y, z, n){
+	var parent = document.getElementById("container"+x);
+	var newcontent = document.createElement('div');
 	if(z > 0){
 	newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
     }else{
@@ -1669,7 +1686,7 @@ function editChar(x, y){
 	var children = id.getElementsByClassName("entry2hide");
 	var b1 = id.getElementsByClassName("bempty1");
 	var b2 = id.getElementsByClassName("bempty2");		
-	buttons.innerHTML = '<button onclick="" id="freeChar" class="ok"></button><button onclick="" id="freeChar" class="notok"></button> ';
+	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
 	var i = 0; 
 	while(i < children.length){
 			children[i].className = "entry2";			
@@ -1703,7 +1720,6 @@ function max(x,y,z,n){
 					arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
 
 				}				
-				//arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
 				break;
 			}
 		}
@@ -1733,11 +1749,18 @@ function min(x,y,z,n){
 					arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
 
 				}				
-				//arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
 				break;
 			}
 		}
 	}else{
 		demo.innerHTML = "notok";
 	}		
+}
+function accept(x){
+	
+	
+}
+function abort(x){
+	
+	
 }
