@@ -1695,7 +1695,8 @@ function editChar(x){
 	parent.innerHTML = "";
 	if(x==5){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	for (var k = 0; k< jason.length; k++) {   
+	for (var k = 0; k< jason.length; k++) {  
+			freeChars[k] = jason[k];	
 			if(freeChars[k][3]==freeChars[k][2]){
 			var name = freeChars[k][1];
 			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';		
@@ -1710,19 +1711,6 @@ function editChar(x){
        }
 	
 	}
-	
-	
-	
-	/*var i = 0; 
-	while(i < children.length){
-			children[i].className = "entry2";			
-	}
-	while(i < b1.length){
-			b1[i].className = "b1";			
-	}
-	while(i < b2.length){
-			b2[i].className = "b2";			
-	}*/
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
