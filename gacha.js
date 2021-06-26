@@ -1619,7 +1619,7 @@ function parseStorage(x){
 }
 function parseFreeChar(){
 	//var jason = JSON.parse(localStorage.getItem("freeChars"));
-	demo = document.getElementById("container5");
+	demo = document.getElementById("demo");
 	demo.innerHTML = "dsadasd";
     /*if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
