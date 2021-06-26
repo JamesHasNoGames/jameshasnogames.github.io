@@ -1667,7 +1667,8 @@ function editChar(x, y){
 	var id = document.getElementById("container"+x);
 	var buttons = document.getElementById("buttonArea"+y);
 	var children = id.getElementsByClassName("entry2hide");
-	var b1 = id.getElementsByClassName("bempty1");	
+	var b1 = id.getElementsByClassName("bempty1");
+	var b2 = id.getElementsByClassName("bempty1");		
 	buttons.innerHTML = '<button onclick="" id="freeChar" class="ok"></button><button onclick="" id="freeChar" class="notok"></button> ';
 	var i = 0; 
 	while(i < children.length){
@@ -1675,5 +1676,8 @@ function editChar(x, y){
 	}
 	while(i < b1.length){
 			b1[i].className = "b1";			
+	}
+	while(i < b2.length){
+			b2[i].className = "b2";			
 	}
 }
