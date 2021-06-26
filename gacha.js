@@ -1653,7 +1653,7 @@ function parseFreeChar(){
 		//Diona
 		addChar(5,109,0,1);
 	//kaka.innerHTML = "kakaka"+jason;
-	}
+	//}
 }
 
 function addChar(x, y, z, n){
