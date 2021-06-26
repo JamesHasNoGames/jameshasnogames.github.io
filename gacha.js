@@ -1653,7 +1653,7 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
-	//}
+	}
 }
 
 function addChar(x, y, z, n){
