@@ -1657,10 +1657,12 @@ function parseFreeChar(){
 function addChar(x, y, z, n){
 	var parent = document.getElementById("container"+x);
 	var newcontent = document.createElement('div');
+	var demo = document.getElementById("demo");
 	if(x==5){
 	freeChars.push([x, y, z, n]);
 	localStorage.removeItem("freeChars");
     localStorage.setItem("freeChars", freeChars);
+	demo.innerHTML = freeChars;
 	}else if (x==7){
 	}
 	if(z > 0){
@@ -1709,7 +1711,7 @@ function max(x,y,z,n){
 		for (var i = 0; i<arr.length; i++){
 			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
 			if (name[0] == chars[y][1]){
-				demo.innerHTML = "ok" + name[0];
+
 				x = x-10;
 				if(z == n-1){
 				z++;	
@@ -1724,7 +1726,7 @@ function max(x,y,z,n){
 			}
 		}
 	}else{
-		demo.innerHTML = "notok";
+		
 	}	
 }
 function min(x,y,z,n){
@@ -1738,7 +1740,7 @@ function min(x,y,z,n){
 		for (var i = 0; i<arr.length; i++){
 			name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
 			if (name[0] == chars[y][1]){
-				demo.innerHTML = "ok" + name[0];
+
 				x = x-10;
 				if(z==1){
 					z--;
@@ -1753,7 +1755,7 @@ function min(x,y,z,n){
 			}
 		}
 	}else{
-		demo.innerHTML = "notok";
+		
 	}		
 }
 function accept(x){
