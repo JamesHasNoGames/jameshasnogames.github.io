@@ -1618,10 +1618,10 @@ function parseStorage(x){
     }else{}
 }
 function parseFreeChar(){
-	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	//var jason = JSON.parse(localStorage.getItem("freeChars"));
 	var demo = document.getElementById("demo1");
 	demo.innerHTML = "dsadasd";
-    if(jason!=null){ 
+    /*if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
@@ -1652,7 +1652,7 @@ function parseFreeChar(){
 		//Diona
 		addChar(5,109,0,1);
 
-	}
+	}*/
 }
 
 function addChar(x, y, z, n){
