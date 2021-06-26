@@ -1619,11 +1619,11 @@ function parseStorage(x){
 }
 
 function parseFreeChar(){
-	var kaka = document.getElementById("kaka");	
+	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	kaka.innerHTML = "dddddddddddddd";
+
     if(jason!=null){ 
-		kaka.innerHTML = "dddddddddddddd" + jason[0];
+		
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
 				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
@@ -1688,6 +1688,7 @@ function addCharS(x, y, z, n){
 }
 function editChar(x){
 	var parent = document.getElementById("container"+x);
+	var kaka = document.getElementById("kaka");	
 	var newcontent = document.createElement('div');
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
@@ -1695,7 +1696,9 @@ function editChar(x){
 	parent.innerHTML = "";
 	if(x==5){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	kaka.innerHTML = "dddddddddddddd" + jason[0];
 	for (var k = 0; k< jason.length; k++) {  
+			
 			freeChars[k] = jason[k];	
 			if(freeChars[k][3]==freeChars[k][2]){
 			var name = freeChars[k][1];
