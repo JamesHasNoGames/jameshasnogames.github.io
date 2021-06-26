@@ -1765,6 +1765,8 @@ function accept(x){
 	
 }
 function abort(x){
-	
+	if(x==5){
+	parseFreeChar(x);	
+	}
 	
 }
