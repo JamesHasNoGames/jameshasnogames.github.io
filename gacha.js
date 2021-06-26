@@ -1618,9 +1618,10 @@ function parseStorage(x){
     }else{}
 }
 function parseFreeChar(){
-	//var jason = JSON.parse(localStorage.getItem("freeChars"));
+	
 	var kaka = document.getElementById("kaka");
 	kaka.innerHTML = "dsadasd";
+	//var jason = JSON.parse(localStorage.getItem("freeChars"));
     /*if(jason!=null){ 
 		for (var k = 0; k< jason.length; k++) {    
                 freeChars[k] = jason[k];
