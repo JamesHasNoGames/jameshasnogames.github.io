@@ -1689,11 +1689,12 @@ function addCharS(x, y, z, n){
 function editChar(x){
 	var parent = document.getElementById("container"+x);
 	var kaka = document.getElementById("kaka");	
-	//var newcontent = document.createElement('div');
+	var newcontent = document.createElement('div');
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
 	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
-	var children = parent.childNodes;
+	parent.innerHTML = "";
+	//var children = parent.childNodes;
 	if(x==5){
 		//var name;
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
@@ -1702,16 +1703,16 @@ function editChar(x){
 			kaka.innerHTML = jason[0] + " " + jason[1] + " " + jason[2] + " ";
 			if(freeChars[k][3]==freeChars[k][2]){
 				//name = freeChars[k][1];
-				children[k].innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
 			//kaka.innerHTML = kaka.innerHTML +" one" + freeChars[k][1] + " " + k + children.length + "      ";
 			}else if(freeChars[k][2]==0){
-				children[k].innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
 			//kaka.innerHTML = kaka.innerHTML +" two" + freeChars[k][1] + " " + k;
 			}else{
-				children[k].innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
 			//kaka.innerHTML = kaka.innerHTML +" three" + k;
 			}
-
+		parent.appendChild(newcontent);
        }	
 	}
 }
