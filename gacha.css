@@ -298,14 +298,6 @@
 .container1, .container2, .container3, .container4 {
     margin-top:-5px;
 } 
-.container7,.container6, .container8{
-	 margin-top:-5px;
-	
-}
-.container5 {
-	 margin-top:15px;
-	
-}
 .ueberschriftName{
     font-size: 20px;
     text-align: center;
@@ -387,7 +379,7 @@
     background: none;
     width: 9px;
 }
-.buttonArea15{
+.buttonArea15, .buttonArea16, .buttonArea17, .buttonArea18{
     font-size: 0;
     line-height: 0px;	
 }
