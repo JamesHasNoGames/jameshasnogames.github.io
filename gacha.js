@@ -15,6 +15,7 @@ var newbieBannerLast = 0;
 var counterN4;
 var counterN5;
 var freeChars = [];
+var shopChars = [];
 
 //Buttons onclick auf +
 function addStuff(y) {
@@ -1618,10 +1619,8 @@ function parseStorage(x){
     }else{}
 }
 
-function parseFreeChar(){
-	
+function parseFreeChar(){	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-
     if(jason!=null){ 
 		
 		for (var k = 0; k< jason.length; k++) {    
@@ -1655,7 +1654,41 @@ function parseFreeChar(){
 		addChar(5,109,0,1);
 	}
 }
-
+function parseShopChar(){	
+	var jason = JSON.parse(localStorage.getItem("shopChars"));
+    if(jason!=null){ 
+		
+		for (var k = 0; k< jason.length; k++) {    
+                shopChars[k] = jason[k];
+				addCharS(shopChars[k][0],shopChars[k][1],shopChars[k][2],shopChars[k][3]);
+        }
+	}else{
+		//Amber
+		addChar(7,105,0,2);
+		//Barbara
+		addChar(7,93,0,2);
+		//Beidou
+		addChar(7,41,0,1);	
+		//Bennett
+		addChar(7,9,0,1);	
+		//Fischl
+		addChar(7,113,0,1);		
+		//Kaeya
+		addChar(7,13,0,2);
+		//Lisa
+		addChar(7,89,0,2);		
+		//Ningguang
+		addChar(7,73,0,1);	
+		//Noelle
+		addChar(7,25,0,1);	
+		//Razor
+		addChar(7,42,0,1);
+		//Xiangling
+		addChar(7,57,0,1);		
+		//Xingqiu
+		addChar(7,21,0,1);	
+	}
+}
 function addChar(x, y, z, n){
 	var par;
 	var newcontent;	
