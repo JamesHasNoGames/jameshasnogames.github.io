@@ -1771,7 +1771,7 @@ function accept(x){
 	var buttons = document.getElementById("buttonArea"+y);
 	if(x==5){
 		freeChars.length = 0;
-		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		/*buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 		var nr = container.getElementsByClassName("nr5");
 		var jason = JSON.parse(localStorage.getItem("freeChars"))
 		for (var k = 0; k< jason.length; k++) {
@@ -1780,7 +1780,7 @@ function accept(x){
 		localStorage.removeItem("freeChars");
         localStorage.setItem("freeChars", JSON.stringify(freeChars));
 		container.innerHTML = "";
-		parseFreeChar();
+		parseFreeChar();*/
 	}
 }
 function abort(x){
