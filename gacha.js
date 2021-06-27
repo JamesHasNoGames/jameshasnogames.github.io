@@ -1687,13 +1687,13 @@ function addCharS(x, y, z, n){
 	parent.appendChild(newcontent);
 }
 function editChar(x){
-	var parent = document.getElementById("container"+x);
+	var container = document.getElementById("container"+x);
 	var kaka = document.getElementById("kaka");	
 	var newcontent = document.createElement('div');
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
 	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
-	parent.innerHTML = "";
+	container.innerHTML = "";
 	//var children = parent.childNodes;
 	if(x==5){
 		//var name;
@@ -1712,7 +1712,7 @@ function editChar(x){
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
 			//kaka.innerHTML = kaka.innerHTML +" three" + k;
 			}
-		parent.appendChild(newcontent);
+		container.appendChild(newcontent);
        }	
 	}
 }
