@@ -295,11 +295,11 @@
     height:30px;
 
 }
-.container1, .container2, .container3, .container4, .container5, .container6, .container8{
-    margin-top:5px;
+.container1, .container2, .container3, .container4 {
+    margin-top:-5px;
 } 
-.container7{
-	 margin-top:-5px;
+.container7,.container5, .container6, .container8{
+	 margin-top:35px;
 	
 }
 .ueberschriftName{
