@@ -1698,7 +1698,7 @@ function editChar(x){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
 	for (var k = 0; k< jason.length; k++) {  		
 			freeChars[k] = jason[k];
-
+			kaka.innerHTML = "dddddddddddddd" + jason[i];
 			if(freeChars[k][3]==freeChars[k][2]){
 				var name = freeChars[k][1];
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div></div>';		
@@ -1710,7 +1710,7 @@ function editChar(x){
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';		
 				parent.appendChild(newcontent);
 			}
-        kaka.innerHTML = "dddddddddddddd" + jason[0];
+        
 		
        }	
 	}
