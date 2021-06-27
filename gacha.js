@@ -1777,8 +1777,8 @@ function accept(x){
 		var jason = JSON.parse(localStorage.getItem("freeChars"))
 		for (var k = 0; k< jason.length; k++) {
 			var a = nr[k].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-			kaka.innerHTML = kaka.innerHTML + " "+ a[1];
-			//freeChars.push([jason[k][0],jason[k][1],a[1],jason[k][3]);	
+			kaka.innerHTML = kaka.innerHTML + " d";
+			freeChars.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
 		}
 		localStorage.removeItem("freeChars");
         localStorage.setItem("freeChars", JSON.stringify(freeChars));
