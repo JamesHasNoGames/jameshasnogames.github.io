@@ -1703,7 +1703,7 @@ function editChar(x){
 			if(freeChars[k][3]==freeChars[k][2]){
 				name = freeChars[k][1];
 				children[k].innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
-			kaka.innerHTML = kaka.innerHTML +" one" + freeChars[k][1] + " " + k;
+			kaka.innerHTML = kaka.innerHTML +" one" + freeChars[k][1] + " " + k + children.length + "      ";
 			}else if(freeChars[k][2]==0){
 				children[k].innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
 			kaka.innerHTML = kaka.innerHTML +" two" + freeChars[k][1] + " " + k;
