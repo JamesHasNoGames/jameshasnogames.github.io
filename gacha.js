@@ -37,7 +37,7 @@ function addStuff(y) {
         }
     }else if(y==3){
         if(counterS4 >= 10){
-            x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="button11" id="button11" onclick="dropList(11)"></button><button class="button12" id="button12" onclick="dropList(12)"></button><button class="button13" id="sinactive" onclick="add3(3)"></button><button class="button14" id="button14" onclick="dropList(14)"></button><button class="button15" id="button15 " onclick="dropList(15)"></button></div>';
+            x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="button11" id="button11" onclick="dropList(11)"></button><button class="button12" id="button12" onclick="dropList(12)"></button><button class="sinactive" id="button13" onclick="add3(3)"></button><button class="button14" id="button14" onclick="dropList(14)"></button><button class="button15" id="button15 " onclick="dropList(15)"></button></div>';
         }else if(counterS5 >= 90){
             x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="chpinactive" id="button11" onclick="dropList(11)"></button><button class="wpinactive" id="button12"  onclick="dropList(12)"></button><button class="sinactive" id="button13" onclick="add3(3)"></button><button class="button14" id="button14" onclick="dropList(14)"></button><button class="button15" id="button15" onclick="dropList(15)"></button></div>';
         }else{
