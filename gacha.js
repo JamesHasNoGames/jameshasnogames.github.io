@@ -1827,7 +1827,6 @@ function min(x,y,z,n){
 }
 function accept(x){
 	var container = document.getElementById("container"+x);
-	var kaka = document.getElementById("kaka");
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
 	if(x==5){
@@ -1837,7 +1836,6 @@ function accept(x){
 		var jason = JSON.parse(localStorage.getItem("freeChars"))
 		for (var k = 0; k< jason.length; k++) {
 			var a = nr[k].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-			kaka.innerHTML = kaka.innerHTML + " d";
 			freeChars.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
 		}
 		localStorage.removeItem("freeChars");
@@ -1851,13 +1849,12 @@ function accept(x){
 		var jason = JSON.parse(localStorage.getItem("shopChars"))
 		for (var k = 0; k< jason.length; k++) {
 			var a = nr[k].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-			kaka.innerHTML = kaka.innerHTML + " d";
 			shopChars.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
 		}
 		localStorage.removeItem("shopChars");
         localStorage.setItem("shopChars", JSON.stringify(shopChars));
 		container.innerHTML = "";
-		parseFreeChar();
+		parseShopChar();
 	}
 }
 function abort(x){
