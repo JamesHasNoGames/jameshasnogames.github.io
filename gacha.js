@@ -1773,7 +1773,7 @@ function accept(x){
 	if(x==5){
 		freeChars.length = 0;
 		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
-		var nr = container.getElementsByClassName("nr5");
+		var nr = container.getElementsByClassName("entry2");
 		var jason = JSON.parse(localStorage.getItem("freeChars"))
 		for (var k = 0; k< jason.length; k++) {
 			kaka.innerHTML = kaka.innerHTML + " "+ nr.textContent + " " + nr.length;
