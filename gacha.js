@@ -1702,15 +1702,13 @@ function editChar(x){
 			if(freeChars[k][3]==freeChars[k][2]){
 				var name = freeChars[k][1];
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
-				parent.appendChild(newcontent);
 			}else if(freeChars[k][2]==0){
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
-				parent.appendChild(newcontent);
 			}else{
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
-				parent.appendChild(newcontent);
+				
 			}
-        
+        parent.appendChild(newcontent);
 		
        }	
 	}
