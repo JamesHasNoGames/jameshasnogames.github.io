@@ -1697,7 +1697,7 @@ function editChar(x){
 	if(x==5){
 		var name;
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	for (var k = 0; k< 2; k++) {  		
+	for (var k = 0; k< 5; k++) {  		
 			freeChars[k] = jason[k];
 			
 			if(freeChars[k][3]==freeChars[k][2]){
