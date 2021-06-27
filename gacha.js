@@ -1698,7 +1698,7 @@ function editChar(x){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
 	for (var k = 0; k< jason.length; k++) {  		
 			freeChars[k] = jason[k];
-			kaka.innerHTML = "dddddddddddddd" + jason[k];
+			kaka.innerHTML = kaka.innerHTML +" d" + k;
 			if(freeChars[k][3]==freeChars[k][2]){
 				var name = freeChars[k][1];
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[name][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
