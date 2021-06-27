@@ -1844,6 +1844,20 @@ function accept(x){
         localStorage.setItem("freeChars", JSON.stringify(freeChars));
 		container.innerHTML = "";
 		parseFreeChar();
+	}else if(x==7){
+		shopChars.length = 0;
+		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		var nr = container.getElementsByClassName("entry2");
+		var jason = JSON.parse(localStorage.getItem("shopChars"))
+		for (var k = 0; k< jason.length; k++) {
+			var a = nr[k].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+			kaka.innerHTML = kaka.innerHTML + " d";
+			shopChars.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
+		}
+		localStorage.removeItem("shopChars");
+        localStorage.setItem("shopChars", JSON.stringify(shopChars));
+		container.innerHTML = "";
+		parseFreeChar();
 	}
 }
 function abort(x){
@@ -1854,6 +1868,10 @@ function abort(x){
 	container.innerHTML = "";
 	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseFreeChar();	
+	}else 	if(x==7){
+	container.innerHTML = "";
+	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+	parseShopChar();	
 	}
 	
 }
