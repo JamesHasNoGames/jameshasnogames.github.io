@@ -1766,8 +1766,22 @@ function min(x,y,z,n){
 	}		
 }
 function accept(x){
-	
-	
+	var container = document.getElementById("container"+x);
+	var y = x+10;
+	var buttons = document.getElementById("buttonArea"+y);
+	if(x==5){
+		freeChars.length = 0;
+		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		var nr = container.getElementsByClassName("nr5");
+		var jason = JSON.parse(localStorage.getItem("freeChars"))
+		for (var k = 0; k< jason.length; k++) {
+			freeChars.push([jason[k][0],jason[k][1],nr[k],jason[k][3]);	
+		}
+		localStorage.removeItem("freeChars");
+        localStorage.setItem("freeChars", JSON.stringify(freeChars));
+		container.innerHTML = "";
+		parseFreeChar();
+	}
 }
 function abort(x){
 	var container = document.getElementById("container"+x);
