@@ -1698,7 +1698,7 @@ function editChar(x){
 	if(x==5){
 		//var name;
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	for (var k = 0; k< 0; k++) {  		
+	for (var k = 0; k< jason.length; k++) {  		
 			freeChars[k] = jason[k];
 			kaka.innerHTML = jason[0] + " " + jason[1] + " " + jason[2] + " ";
 			if(freeChars[k][3]==freeChars[k][2]){
