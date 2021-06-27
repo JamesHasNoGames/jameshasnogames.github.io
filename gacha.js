@@ -1779,7 +1779,7 @@ function accept(x){
 		}
 		localStorage.removeItem("freeChars");
         localStorage.setItem("freeChars", JSON.stringify(freeChars));*/
-		container.innerHTML = "hhh";
+		container.innerHTML = "";
 		parseFreeChar();
 	}
 }
