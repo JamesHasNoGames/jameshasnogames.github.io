@@ -1776,8 +1776,8 @@ function accept(x){
 		var nr = container.getElementsByClassName("nr5");
 		var jason = JSON.parse(localStorage.getItem("freeChars"))
 		for (var k = 0; k< jason.length; k++) {
-			//kaka.innerHTML = kaka.innerHTML + " " + jason[k];
-			freeChars.push([jason[k][0],jason[k][1],nr[k].textContent,jason[k][3]);	
+			kaka.innerHTML = kaka.innerHTML + " "+ nr.textContent;
+			//freeChars.push([jason[k][0],jason[k][1],nr[k].textContent,jason[k][3]);	
 		}
 		localStorage.removeItem("freeChars");
         localStorage.setItem("freeChars", JSON.stringify(freeChars));
