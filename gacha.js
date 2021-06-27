@@ -1689,7 +1689,7 @@ function addCharS(x, y, z, n){
 function editChar(x){
 	var container = document.getElementById("container"+x);
 	var kaka = document.getElementById("kaka");	
-	var newcontent = document.createElement('div');
+	var newcontent;
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
 	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
@@ -1698,7 +1698,8 @@ function editChar(x){
 	if(x==5){
 		//var name;
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
-	for (var k = 0; k< jason.length; k++) {  		
+	for (var k = 0; k< jason.length; k++) {
+			newcontent = document.createElement('div');  		
 			freeChars[k] = jason[k];
 			kaka.innerHTML = jason[0] + " " + jason[1] + " " + jason[2] + " ";
 			if(freeChars[k][3]==freeChars[k][2]){
