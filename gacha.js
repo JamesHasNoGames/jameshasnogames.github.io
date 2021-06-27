@@ -45,7 +45,7 @@ function addStuff(y) {
         }
     }else if(y==4){
         if(counterN4 >= 10){
-            x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="button16" id="button16" onclick="dropList(16)"></button><button class="wpinactive" id="button17" ></button><button class="button18" id="button18" onclick="add3(4)"></button><button class="button19" id="button19" onclick="dropList(19)"></button><button class="wginactive" id="button20 "></button></div>';
+            x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="button16" id="button16" onclick="dropList(16)"></button><button class="wpinactive" id="button17" ></button><button class="sinactive" id="button18" onclick="add3(4)"></button><button class="button19" id="button19" onclick="dropList(19)"></button><button class="wginactive" id="button20 "></button></div>';
         }else{
             x.innerHTML = '<div id ="buttons5" class ="buttons5"><button class="button16" id="button16" onclick="dropList(16)"></button><button class="wpinactive" id="button17" ></button><button class="button18" id="button18" onclick="add3(4)"></button><button class="button19" id="button19" onclick="dropList(19)"></button><button class="wginactive" id="button20"></button></div>';
         }
@@ -1560,8 +1560,8 @@ function parseStorage(x){
             for (var k = 0; k< jason3.length; k++) {
                 standardBanner[k] = jason3[k];
             }
-            var i;
-            for (i = 0; i < standardBanner.length; i++) {
+            
+            for (var i = 0; i < standardBanner.length; i++) {
                 if(counterS4==null || counterS5==null){
                     counterS4 = 1;
                     counterS5 = 1;
