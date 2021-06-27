@@ -1629,11 +1629,11 @@ function parseFreeChar(){
         }
 	}else{
 		//Amber
-		addChar(5,105,1,1);
+		addChar(5,105,0,1);
 		//Kaeya
-		addChar(5,13,1,1);
+		addChar(5,13,0,1);
 		//Lisa
-		addChar(5,89,1,1);
+		addChar(5,89,0,1);
 		//Barbara
 		addChar(5,93,0,2);
 		//Xiangling
