@@ -1706,7 +1706,20 @@ function addChar(x, y, z, n){
 			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
 		}
 		par.appendChild(newcontent);
-	}else{//container7
+	}else if(x==7){
+		shopChars.push([x, y, z, n]);
+		localStorage.removeItem("shopChars");
+		localStorage.setItem("shopChars", JSON.stringify(shopChars));
+		if(z > 0){
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}else{
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}
+		par.appendChild(newcontent);	
 	}	
 }
 function addCharS(x, y, z, n){
@@ -1737,6 +1750,20 @@ function editChar(x){
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
 			}else{
 				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
+			}
+		container.appendChild(newcontent);
+       }	
+	}else if(x==7){
+	var jason = JSON.parse(localStorage.getItem("shopChars"));
+	for (var k = 0; k< jason.length; k++) {
+			newcontent = document.createElement('div');  		
+			shopChars[k] = jason[k];
+			if(shopChars[k][3]==shopChars[k][2]){
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
+			}else if(shopChars[k][2]==0){
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';		
+			}else{
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';			
 			}
 		container.appendChild(newcontent);
        }	
