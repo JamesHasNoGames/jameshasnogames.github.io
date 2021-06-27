@@ -1778,9 +1778,9 @@ function accept(x){
 			freeChars.push([jason[k][0],jason[k][1],nr[k],jason[k][3]);	
 		}
 		localStorage.removeItem("freeChars");
-        localStorage.setItem("freeChars", JSON.stringify(freeChars));
+        localStorage.setItem("freeChars", JSON.stringify(freeChars));*/
 		container.innerHTML = "";
-		parseFreeChar();*/
+		parseFreeChar();
 	}
 }
 function abort(x){
