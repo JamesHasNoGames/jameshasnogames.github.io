@@ -1682,11 +1682,40 @@ function parseFreeWeapons(){
 		addWeapon(6,123,0,99);
 		addWeapon(6,124,0,99);	
 		//event
-		addWeapon(6,126,0,99);
-		addWeapon(6,129,0,99);
-		addWeapon(6,130,0,99);	
+		addWeapon(6,126,0,5);
+		addWeapon(6,129,0,5);
+		addWeapon(6,130,0,5);	
 		//ps4
-		addWeapon(6,176,0,99);
+		addWeapon(6,176,0,1);
+	}
+}
+function parseShopWeapons(){	
+	var jason = JSON.parse(localStorage.getItem("shopWeapons"));
+    if(jason!=null){ 
+		
+		for (var k = 0; k< jason.length; k++) {    
+                shopWeapons[k] = jason[k];
+				addWeaponS(shopWeapons[k][0],shopWeapons[k][1],shopWeapons[k][2],shopWeapons[k][3]);
+        }
+	}else{
+		//shop blackcliff
+		addWeapon(6,116,0,99);
+		addWeapon(6,117,0,99);
+		addWeapon(6,118,0,99);
+		addWeapon(6,119,0,99);
+		addWeapon(6,120,0,99);
+		//shop royal
+		addWeapon(6,151,0,99);
+		addWeapon(6,152,0,99);
+		addWeapon(6,153,0,99);
+		addWeapon(6,154,0,99);
+		addWeapon(6,155,0,99);	
+		//shop bp
+		addWeapon(6,111,0,99);
+		addWeapon(6,112,0,99);
+		addWeapon(6,113,0,99);
+		addWeapon(6,114,0,99);
+		addWeapon(6,115,0,99);	
 	}
 }
 function parseShopChar(){	
