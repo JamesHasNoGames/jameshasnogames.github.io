@@ -1785,7 +1785,7 @@ function addChar(x, y, z, n){
 		}
 		par.appendChild(newcontent);	
 	}	
-}
+}//blah
 function addWeapon(x, y, z, n){
 	var par;
 	var newcontent;	
