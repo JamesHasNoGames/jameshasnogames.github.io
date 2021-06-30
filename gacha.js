@@ -1665,7 +1665,7 @@ function parseFreeWeapons(){
 				addCharS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
         }
 	}else{
-		addWeapon(6,1000,0,99);
+		addWeapon(6,0,0,99);
 	}
 }
 function parseShopChar(){	
@@ -1732,6 +1732,39 @@ function addChar(x, y, z, n){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
 			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+chars[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}
+		par.appendChild(newcontent);	
+	}	
+}
+function addWeapon(x, y, z, n){
+	var par;
+	var newcontent;	
+	if(x==6){
+		freeWeapons.push([x, y, z, n]);
+		localStorage.removeItem("freeWeapons");
+		localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));
+		if(z > 0){
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}else{
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}
+		par.appendChild(newcontent);
+	}else if(x==8){
+		shopWeapons.push([x, y, z, n]);
+		localStorage.removeItem("shopWeapons");
+		localStorage.setItem("shopWeapons", JSON.stringify(shopWeapons));
+		if(z > 0){
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
+		}else{
+			par = document.getElementById("container"+x);
+			newcontent = document.createElement('div');
+			newcontent.innerHTML = '<div class="entry2hide"><div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="bempty1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div></div>';
 		}
 		par.appendChild(newcontent);	
 	}	
