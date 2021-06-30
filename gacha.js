@@ -1699,23 +1699,23 @@ function parseShopWeapons(){
         }
 	}else{
 		//shop blackcliff
-		addWeapon(6,116,0,99);
-		addWeapon(6,117,0,99);
-		addWeapon(6,118,0,99);
-		addWeapon(6,119,0,99);
-		addWeapon(6,120,0,99);
+		addWeapon(8,116,0,99);
+		addWeapon(8,117,0,99);
+		addWeapon(8,118,0,99);
+		addWeapon(8,119,0,99);
+		addWeapon(8,120,0,99);
 		//shop royal
-		addWeapon(6,151,0,99);
-		addWeapon(6,152,0,99);
-		addWeapon(6,153,0,99);
-		addWeapon(6,154,0,99);
-		addWeapon(6,155,0,99);	
+		addWeapon(8,151,0,99);
+		addWeapon(8,152,0,99);
+		addWeapon(8,153,0,99);
+		addWeapon(8,154,0,99);
+		addWeapon(8,155,0,99);	
 		//shop bp
-		addWeapon(6,111,0,99);
-		addWeapon(6,112,0,99);
-		addWeapon(6,113,0,99);
-		addWeapon(6,114,0,99);
-		addWeapon(6,115,0,99);	
+		addWeapon(8,111,0,99);
+		addWeapon(8,112,0,99);
+		addWeapon(8,113,0,99);
+		addWeapon(8,114,0,99);
+		addWeapon(8,115,0,99);	
 	}
 }
 function parseShopChar(){	
