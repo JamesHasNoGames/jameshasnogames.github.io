@@ -1662,7 +1662,7 @@ function parseFreeWeapons(){
 		
 		for (var k = 0; k< jason.length; k++) {    
                 freeWeapons[k] = jason[k];
-				addCharS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
+				addWeaponS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
         }
 	}else{
 		//craft cercent/compound
