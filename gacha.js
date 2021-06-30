@@ -1665,7 +1665,28 @@ function parseFreeWeapons(){
 				addCharS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
         }
 	}else{
-		addWeapon(6,0,0,99);
+		//craft cercent/compound
+		addWeapon(6,36,0,99);
+		addWeapon(6,37,0,99);
+		addWeapon(6,38,0,99);
+		addWeapon(6,39,0,99);
+		addWeapon(6,40,0,99);
+		//craft prototype
+		addWeapon(6,46,0,99);
+		addWeapon(6,47,0,99);
+		addWeapon(6,48,0,99);
+		addWeapon(6,49,0,99);
+		addWeapon(6,50,0,99);	
+		//craft berg
+		addWeapon(6,22,0,99);
+		addWeapon(6,23,0,99);
+		addWeapon(6,24,0,99);	
+		//event
+		addWeapon(6,26,0,99);
+		addWeapon(6,29,0,99);
+		addWeapon(6,30,0,99);	
+		//ps4
+		addWeapon(6,76,0,99);
 	}
 }
 function parseShopChar(){	
