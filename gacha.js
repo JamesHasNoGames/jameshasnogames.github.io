@@ -1666,27 +1666,27 @@ function parseFreeWeapons(){
         }
 	}else{
 		//craft cercent/compound
-		addWeapon(6,36,0,99);
-		addWeapon(6,37,0,99);
-		addWeapon(6,38,0,99);
-		addWeapon(6,39,0,99);
-		addWeapon(6,40,0,99);
+		addWeapon(6,136,0,99);
+		addWeapon(6,137,0,99);
+		addWeapon(6,138,0,99);
+		addWeapon(6,139,0,99);
+		addWeapon(6,140,0,99);
 		//craft prototype
-		addWeapon(6,46,0,99);
-		addWeapon(6,47,0,99);
-		addWeapon(6,48,0,99);
-		addWeapon(6,49,0,99);
-		addWeapon(6,50,0,99);	
+		addWeapon(6,146,0,99);
+		addWeapon(6,147,0,99);
+		addWeapon(6,148,0,99);
+		addWeapon(6,149,0,99);
+		addWeapon(6,150,0,99);	
 		//craft berg
-		addWeapon(6,22,0,99);
-		addWeapon(6,23,0,99);
-		addWeapon(6,24,0,99);	
+		addWeapon(6,122,0,99);
+		addWeapon(6,123,0,99);
+		addWeapon(6,124,0,99);	
 		//event
-		addWeapon(6,26,0,99);
-		addWeapon(6,29,0,99);
-		addWeapon(6,30,0,99);	
+		addWeapon(6,126,0,99);
+		addWeapon(6,129,0,99);
+		addWeapon(6,130,0,99);	
 		//ps4
-		addWeapon(6,76,0,99);
+		addWeapon(6,176,0,99);
 	}
 }
 function parseShopChar(){	
