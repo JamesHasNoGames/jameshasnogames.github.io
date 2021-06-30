@@ -16,6 +16,8 @@ var counterN4;
 var counterN5;
 var freeChars = [];
 var shopChars = [];
+var freeWeapons = [];
+var shopWeapons = [];
 
 //Buttons onclick auf +
 function addStuff(y) {
@@ -1652,6 +1654,18 @@ function parseFreeChar(){
 		addChar(5,37,0,1);
 		//Diona
 		addChar(5,109,0,1);
+	}
+}
+function parseFreeWeapons(){	
+	var jason = JSON.parse(localStorage.getItem("freeWeapons"));
+    if(jason!=null){ 
+		
+		for (var k = 0; k< jason.length; k++) {    
+                freeWeapons[k] = jason[k];
+				addCharS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
+        }
+	}else{
+		addWeapon(6,1000,0,99);
 	}
 }
 function parseShopChar(){	
