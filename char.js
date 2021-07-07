@@ -168,7 +168,7 @@ function tableContent(x){
 	}
 	for(var ii=0; ii<fC.length; ii++){
 		if (x == fC[ii][1]){
-			anzahl = anzahl + fC[ii][1];
+			anzahl = anzahl + parseInt(fC[ii][1]);
 		}
 	}
 	
