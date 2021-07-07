@@ -2040,7 +2040,7 @@ function accept(x){
         localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));
 		container.innerHTML = "";
 		parseFreeWeapons();
-	}else if(x==7){
+	}else if(x==8){
 		shopWeapons.length = 0;
 		buttons.innerHTML = '<button onclick="editWeapons(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 		var nr = container.getElementsByClassName("entry2");
