@@ -1493,10 +1493,8 @@ function drop(x){
 }
 function parseStorage(x){
     var drop = document.getElementById("buttonArea2"+x);
-    if(x == 1){  
-        //demo.innerHTML =  "here";     
-        var jason = JSON.parse(localStorage.getItem("eventBanner"));
-        //demo.innerHTML =  "here";         
+    if(x == 1){    
+        var jason = JSON.parse(localStorage.getItem("eventBanner"));      
         eventBanner.length = 0;
         if(jason!=null){      
             for (var k = 0; k< jason.length; k++) {    
@@ -1917,7 +1915,6 @@ function editWeapons(x){
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
-	var demo = document.getElementById("demo");
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
@@ -1940,7 +1937,6 @@ function max(x,y,z,n){
 			}
 		}else if (y>=1000){
 			y = y-1000;
-			demo.innerHTML = y + " " + x;
 			for (var i = 0; i<arr.length; i++){
 				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
 				if (name[0] == weapons[y][1]){
@@ -2065,10 +2061,18 @@ function abort(x){
 	container.innerHTML = "";
 	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseFreeChar();	
-	}else 	if(x==7){
+	}else if(x==7){
 	container.innerHTML = "";
 	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseShopChar();	
+	}else if(x==6){
+	container.innerHTML = "";
+	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+	parseFreeWeapons();	
+	}else if(x==8){
+	container.innerHTML = "";
+	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+	parseShopWeapons();	
 	}
 	
 }
