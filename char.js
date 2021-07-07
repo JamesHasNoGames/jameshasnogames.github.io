@@ -166,7 +166,11 @@ function tableContent(x){
 			anzahl++;
 		}
 	}
-	
+	for(var ii=0; ii<fC.length; ii++){
+		if (x == nB[ii][1]){
+			anzahl = anzahl + nB[ii][1];
+		}
+	}
 	
 	
 	
