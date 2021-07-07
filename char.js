@@ -168,12 +168,12 @@ function tableContent(x){
 	}
 	for(var ii=0; ii<fC.length; ii++){
 		if (x == fC[ii][1]){
-			anzahl = (anzahl + fC[ii][2]);
+			anzahl = (anzahl + parseInt(fC[ii][2]));
 		}
 	}
 	for(var ii=0; ii<sC.length; ii++){
 		if (x == sC[ii][1]){
-			anzahl = (anzahl + sC[ii][2]);
+			anzahl = (anzahl + parseInt(sC[ii][2]));
 		}
 	}
 	
