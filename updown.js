@@ -63,6 +63,10 @@ function readFile(input) {
 		localStorage.removeItem("standardBannerLast"); 
 		localStorage.removeItem("newbieBanner");
 		localStorage.removeItem("newbieBannerLast"); 
+		localStorage.removeItem("freeChars"); 
+		localStorage.removeItem("shopChars"); 
+		localStorage.removeItem("freeWeapons"); 
+		localStorage.removeItem("shopWeapons"); 
 		localStorage.setItem("eventBanner", a[0][0]);
 		localStorage.setItem("eventBannerLast",a[0][1]); 
 		localStorage.setItem("weaponBanner",a[1][0]);
@@ -70,11 +74,19 @@ function readFile(input) {
 		localStorage.setItem("standardBanner",a[2][0]);
 		localStorage.setItem("standardBannerLast",a[2][1]); 
 		localStorage.setItem("newbieBanner",a[3][0]);
-		localStorage.setItem("newbieBannerLast",a[3][1]);     
+		localStorage.setItem("newbieBannerLast",a[3][1]);
+		localStorage.setItem("freeChars",a[4]);
+		localStorage.setItem("shopChars",a[5]);
+		localStorage.setItem("freeWeapons",a[6]);
+		localStorage.setItem("shopWeapons",a[7]);		
 		parseStorage(1);
 		parseStorage(2);
 		parseStorage(3);
 		parseStorage(4);
+		parseFreeChar();
+		parseShopChar();
+		parseFreeWeapons();
+		parseShopWeapons();
 		location.reload();
 	};
 }
