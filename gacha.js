@@ -1958,7 +1958,6 @@ function max(x,y,z,n){
 }
 function min(x,y,z,n){
 	var container = document.getElementById("container"+x);
-	var demo = document.getElementById("demo");
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
@@ -1981,7 +1980,6 @@ function min(x,y,z,n){
 			}
 		}else if (y>=1000){
 			y = y-1000;
-			demo.innerHTML = y;
 			for (var i = 0; i<arr.length; i++){
 				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
 				if (name[0] == weapons[y][1]){
@@ -2029,6 +2027,32 @@ function accept(x){
         localStorage.setItem("shopChars", JSON.stringify(shopChars));
 		container.innerHTML = "";
 		parseShopChar();
+	}else if(x==6){
+		freeWeapons.length = 0;
+		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		var nr = container.getElementsByClassName("entry2");
+		var jason = JSON.parse(localStorage.getItem("freeWeapons"))
+		for (var k = 0; k< jason.length; k++) {
+			var a = nr[k].textContent.match(/[a-z A-Z]+|[0-9]+/g);
+			freeWeapons.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
+		}
+		localStorage.removeItem("freeWeapons");
+        localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));
+		container.innerHTML = "";
+		parseFreeWeapons();
+	}else if(x==7){
+		shopWeapons.length = 0;
+		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		var nr = container.getElementsByClassName("entry2");
+		var jason = JSON.parse(localStorage.getItem("shopWeapons"))
+		for (var k = 0; k< jason.length; k++) {
+			var a = nr[k].textContent.match(/[a-z A-Z]+|[0-9]+/g);
+			shopWeapons.push([jason[k][0],jason[k][1],a[1],jason[k][3]]);	
+		}
+		localStorage.removeItem("shopWeapons");
+        localStorage.setItem("shopWeapons", JSON.stringify(shopWeapons));
+		container.innerHTML = "";
+		parseShopWeapons();
 	}
 }
 function abort(x){
