@@ -1915,8 +1915,10 @@ function editWeapons(x){
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
+	var demo = document.getElementById("demo");
 	x = x + 10;
 	var name;
+	demo.innerHTML = x + " " +y + " " +z + " " +n;
 	var buttonAr = document.getElementById("buttonArea"+x);
 	if(buttonAr.getElementsByClassName("ok").length != 0){
 		var arr = container.getElementsByClassName("entry2");
