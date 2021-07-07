@@ -1901,7 +1901,7 @@ function editWeapons(x){
 	}else if(x==8){
 	var jason = JSON.parse(localStorage.getItem("shopWeapons"));
 	for (var k = 0; k< jason.length; k++) {
-			var id =  freeWeapons[k][1] + 1000;
+			var id =  shopWeapons[k][1] + 1000;
 			newcontent = document.createElement('div');  		
 			shopWeapons[k] = jason[k];
 			if(shopWeapons[k][3]==shopWeapons[k][2]){
