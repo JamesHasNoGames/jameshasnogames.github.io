@@ -145,10 +145,27 @@ function tableContent(x){
     var nB = JSON.parse(localStorage.getItem("newbieBanner"));
 	var fC = JSON.parse(localStorage.getItem("freeChars"));
 	var sC = JSON.parse(localStorage.getItem("shopChars"));
-	/*for(var i=0; i<eB.length; i++){
-		if (x == 
-	
-	}*/
+	var anzahl = 0;
+	for(var i=0; i<eB.length; i++){
+		if (x == eB[1]){
+			anzahl++;
+		}
+	}
+	for(var i=0; i<wB.length; i++){
+		if (x == wB[1]){
+			anzahl++;
+		}
+	}
+	for(var i=0; i<sB.length; i++){
+		if (x == sB[1]){
+			anzahl++;
+		}
+	}
+	for(var i=0; i<nB.length; i++){
+		if (x == nB[1]){
+			anzahl++;
+		}
+	}
 	
 	
 	
@@ -158,7 +175,7 @@ function tableContent(x){
     //c.innerHTML = chars[x][7];
     //d.innerHTML = chars[x][6];
     e.innerHTML = '<img src="Pictures/Icon_'+chars[x][5]+'_Stars.png" width = "73px">'; 
-    f.innerHTML = eB[0];
+    f.innerHTML = anzahl;
     g.innerHTML = "90";
     h.innerHTML = numberWithSpaces(chars[x][21]);
     i.innerHTML = numberWithSpaces(chars[x][35]);
