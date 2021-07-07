@@ -2067,11 +2067,11 @@ function abort(x){
 	parseShopChar();	
 	}else if(x==6){
 	container.innerHTML = "";
-	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+	buttons.innerHTML = '<button onclick="editWeapons(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseFreeWeapons();	
 	}else if(x==8){
 	container.innerHTML = "";
-	buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+	buttons.innerHTML = '<button onclick="editWeapons(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 	parseShopWeapons();	
 	}
 	
