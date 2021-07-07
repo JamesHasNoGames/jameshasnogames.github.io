@@ -1852,11 +1852,11 @@ function editChar(x){
 			newcontent = document.createElement('div');  		
 			freeChars[k] = jason[k];
 			if(freeChars[k][3]==freeChars[k][2]){
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+1000+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
 			}else if(freeChars[k][2]==0){
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+1000+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';		
 			}else{
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[freeChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+freeChars[k][0]+','+freeChars[k][1]+1000+','+freeChars[k][2]+','+freeChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+freeChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+freeChars[k][0]+','+freeChars[k][1]+1000+','+freeChars[k][2]+','+freeChars[k][3]+')"></div></div>';			
 			}
 		container.appendChild(newcontent);
        }	
@@ -1866,11 +1866,11 @@ function editChar(x){
 			newcontent = document.createElement('div');  		
 			shopChars[k] = jason[k];
 			if(shopChars[k][3]==shopChars[k][2]){
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+1000+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="bempty2" id="b2"></div></div>';		
 			}else if(shopChars[k][2]==0){
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';		
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="bempty1" id="b1"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+1000+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';		
 			}else{
-				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';			
+				newcontent.innerHTML = '<div class="entry2"><div class="name" style=" color: #ddd;">'+chars[shopChars[k][1]][1]+'</div><div class="b1" id="b1" onclick="min('+shopChars[k][0]+','+shopChars[k][1]+1000+','+shopChars[k][2]+','+shopChars[k][3]+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+shopChars[k][2]+'</div><div class="b2" id="b2" onclick="max('+shopChars[k][0]+','+shopChars[k][1]+1000+','+shopChars[k][2]+','+shopChars[k][3]+')"></div></div>';			
 			}
 		container.appendChild(newcontent);
        }	
