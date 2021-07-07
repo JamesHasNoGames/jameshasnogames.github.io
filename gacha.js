@@ -1917,6 +1917,7 @@ function editWeapons(x){
 }
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
+	var demo = document.getElementById("demo");
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
@@ -1939,6 +1940,7 @@ function max(x,y,z,n){
 			}
 		}else if (y>=1000){
 			y = y-1000;
+			demo.innerHTML = y;
 			for (var i = 0; i<arr.length; i++){
 				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
 				if (name[0] == weapons[y][1]){
