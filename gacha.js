@@ -1940,7 +1940,7 @@ function max(x,y,z,n){
 			}
 		}else if (y>=1000){
 			y = y-1000;
-			demo.innerHTML = y;
+			demo.innerHTML = y + " " + x;
 			for (var i = 0; i<arr.length; i++){
 				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
 				if (name[0] == weapons[y][1]){
