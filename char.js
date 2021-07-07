@@ -146,23 +146,23 @@ function tableContent(x){
 	var fC = JSON.parse(localStorage.getItem("freeChars"));
 	var sC = JSON.parse(localStorage.getItem("shopChars"));
 	var anzahl = 0;
-	for(var i=0; i<eB.length; i++){
-		if (x == eB[1]){
+	for(var ii=0; ii<eB.length; ii++){
+		if (x == eB[ii][1]){
 			anzahl++;
 		}
 	}
-	for(var i=0; i<wB.length; i++){
-		if (x == wB[1]){
+	for(var ii=0; ii<wB.length; ii++){
+		if (x == wB[ii][1]){
 			anzahl++;
 		}
 	}
-	for(var i=0; i<sB.length; i++){
-		if (x == sB[1]){
+	for(var ii=0; ii<sB.length; ii++){
+		if (x == sB[ii][1]){
 			anzahl++;
 		}
 	}
-	for(var i=0; i<nB.length; i++){
-		if (x == nB[1]){
+	for(var ii=0; ii<nB.length; ii++){
+		if (x == nB[ii][1]){
 			anzahl++;
 		}
 	}
