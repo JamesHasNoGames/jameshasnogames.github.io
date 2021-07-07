@@ -78,8 +78,9 @@ function readFile(input) {
 		localStorage.setItem("freeChars",a[4]);
 		localStorage.setItem("shopChars",a[5]);
 		localStorage.setItem("freeWeapons",a[6]);
-		localStorage.setItem("shopWeapons",a[7]);		
-		parseStorage(1);
+		localStorage.setItem("shopWeapons",a[7]);
+		location.reload();		
+		/*parseStorage(1);
 		parseStorage(2);
 		parseStorage(3);
 		parseStorage(4);
@@ -87,6 +88,6 @@ function readFile(input) {
 		parseShopChar();
 		parseFreeWeapons();
 		parseShopWeapons();
-		location.reload();
+		location.reload();*/
 	};
 }
