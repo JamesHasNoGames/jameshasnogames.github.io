@@ -167,8 +167,8 @@ function tableContent(x){
 		}
 	}
 	for(var ii=0; ii<fC.length; ii++){
-		if (x == nB[ii][1]){
-			anzahl = anzahl + nB[ii][1];
+		if (x == fC[ii][1]){
+			anzahl = anzahl + fC[ii][1];
 		}
 	}
 	
