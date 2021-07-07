@@ -171,6 +171,11 @@ function tableContent(x){
 			anzahl = (anzahl + fC[ii][2]);
 		}
 	}
+	for(var ii=0; ii<sC.length; ii++){
+		if (x == sC[ii][1]){
+			anzahl = (anzahl + sC[ii][2]);
+		}
+	}
 	
 	
 	
