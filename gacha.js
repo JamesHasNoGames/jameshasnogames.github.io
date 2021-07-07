@@ -2029,7 +2029,7 @@ function accept(x){
 		parseShopChar();
 	}else if(x==6){
 		freeWeapons.length = 0;
-		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		buttons.innerHTML = '<button onclick="editWeapons(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 		var nr = container.getElementsByClassName("entry2");
 		var jason = JSON.parse(localStorage.getItem("freeWeapons"))
 		for (var k = 0; k< jason.length; k++) {
@@ -2042,7 +2042,7 @@ function accept(x){
 		parseFreeWeapons();
 	}else if(x==7){
 		shopWeapons.length = 0;
-		buttons.innerHTML = '<button onclick="editChar(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
+		buttons.innerHTML = '<button onclick="editWeapons(' +x+ ')" id="freeChar" class="freeChar"></button>'; 
 		var nr = container.getElementsByClassName("entry2");
 		var jason = JSON.parse(localStorage.getItem("shopWeapons"))
 		for (var k = 0; k< jason.length; k++) {
