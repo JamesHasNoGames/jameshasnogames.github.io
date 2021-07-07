@@ -1948,10 +1948,10 @@ function max(x,y,z,n){
 					x = x-10;
 						if(z == n-1){
 							z++;	
-							arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div>';			
+							arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+(y+1000)+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="bempty2" id="b2"></div>';			
 						}else{
 						z++;
-						arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+y+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+y+','+z+','+n+')"></div>';			
+						arr[i].innerHTML = '<div class="name" style=" color: #ddd;">'+weapons[y][1]+'</div><div class="b1" id="b1" onclick="min('+x+','+(y+1000)+','+z+','+n+')"></div><div class="nr5" id="nr5" style=" color: #ddd;">'+z+'</div><div class="b2" id="b2" onclick="max('+x+','+(y+1000)+','+z+','+n+')"></div>';			
 						}				
 					break;
 				}
