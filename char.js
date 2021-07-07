@@ -145,9 +145,10 @@ function tableContent(x){
     var nB = localStorage.getItem("newbieBanner");
 	var fC = localStorage.getItem("freeChars");
 	var sC = localStorage.getItem("shopChars");
+	/*for(var i=0; i<eB.length; i++){
+		if (x == 
 	
-
-	
+	}*/
 	
 	
 	
@@ -157,7 +158,7 @@ function tableContent(x){
     //c.innerHTML = chars[x][7];
     //d.innerHTML = chars[x][6];
     e.innerHTML = '<img src="Pictures/Icon_'+chars[x][5]+'_Stars.png" width = "73px">'; 
-    f.innerHTML = eB;
+    f.innerHTML = eB[0];
     g.innerHTML = "90";
     h.innerHTML = numberWithSpaces(chars[x][21]);
     i.innerHTML = numberWithSpaces(chars[x][35]);
