@@ -139,12 +139,12 @@ function tableContent(x){
     var j = document.getElementById("def"+x);
     var k = document.getElementById("attrname"+x);
     var l = document.getElementById("attr"+x);
-    var eB = localStorage.getItem("eventBanner");
-    var wB = localStorage.getItem("weaponBanner");
-    var sB = localStorage.getItem("standardBanner");
-    var nB = localStorage.getItem("newbieBanner");
-	var fC = localStorage.getItem("freeChars");
-	var sC = localStorage.getItem("shopChars");
+    var eB = JSON.parse(localStorage.getItem("eventBanner"));
+    var wB = JSON.parse(localStorage.getItem("weaponBanner"));
+    var sB = JSON.parse(localStorage.getItem("standardBanner"));
+    var nB = JSON.parse(localStorage.getItem("newbieBanner"));
+	var fC = JSON.parse(localStorage.getItem("freeChars"));
+	var sC = JSON.parse(localStorage.getItem("shopChars"));
 	/*for(var i=0; i<eB.length; i++){
 		if (x == 
 	
