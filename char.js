@@ -176,7 +176,13 @@ function tableContent(x){
 			anzahl = (anzahl + parseInt(sC[ii][2]));
 		}
 	}
-	
+	if(anzahl < 8){
+		f.innerHTML = "C" + anzahl-1;	
+	}else if(anzahl == 0){
+		f.innerHTML = "-";
+	}else{
+		f.innerHTML = "C6 + " anzahl-7;
+	}
 	
 	
     a.innerHTML = '<img src="Pictures/Characters/'+chars[x][4]+'" width="110px">';
@@ -184,7 +190,7 @@ function tableContent(x){
     //c.innerHTML = chars[x][7];
     //d.innerHTML = chars[x][6];
     e.innerHTML = '<img src="Pictures/Icon_'+chars[x][5]+'_Stars.png" width = "73px">'; 
-    f.innerHTML = anzahl;
+    
     g.innerHTML = "90";
     h.innerHTML = numberWithSpaces(chars[x][21]);
     i.innerHTML = numberWithSpaces(chars[x][35]);
