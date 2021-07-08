@@ -177,13 +177,13 @@ function tableContent(x){
 		}
 	}
 	f.innerHTML = anzahl;
-	if(anzahl != 0 & anzahl < 8){
+	/*if(anzahl != 0 & anzahl < 8){
 		f.innerHTML = f.innerHTML + "C" + anzahl-1;	
 	}else if(anzahl == 0){
 		f.innerHTML = f.innerHTML +"-";
 	}else{
 		f.innerHTML = f.innerHTML +"C6 + " + anzahl-7;
-	}
+	}*/
 	
 	
     a.innerHTML = '<img src="Pictures/Characters/'+chars[x][4]+'" width="110px">';
