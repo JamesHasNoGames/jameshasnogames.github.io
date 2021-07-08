@@ -178,7 +178,7 @@ function tableContent(x){
 	}
 	f.innerHTML = anzahl;
 	if(anzahl != 0 & anzahl < 8){
-		f.innerHTML = f.innerHTML + "C" + anzahl-1;	
+		f.innerHTML = f.innerHTML + "C" + anzahl;	
 	}/*else if(anzahl == 0){
 		f.innerHTML = f.innerHTML +"-";
 	}else{
