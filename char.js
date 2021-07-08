@@ -176,7 +176,7 @@ function tableContent(x){
 			anzahl = (anzahl + parseInt(sC[ii][2]));
 		}
 	}
-	if(anzahl < 8){
+	if(anzahl != 0 & anzahl < 8){
 		f.innerHTML = "C" + anzahl-1;	
 	}else if(anzahl == 0){
 		f.innerHTML = "-";
