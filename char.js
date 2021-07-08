@@ -176,12 +176,13 @@ function tableContent(x){
 			anzahl = (anzahl + parseInt(sC[ii][2]));
 		}
 	}
+	f.innerHTML = anzahl;
 	if(anzahl != 0 & anzahl < 8){
-		f.innerHTML = "C" + anzahl-1;	
+		f.innerHTML = f.innerHTML + "C" + anzahl-1;	
 	}else if(anzahl == 0){
-		f.innerHTML = "-";
+		f.innerHTML = f.innerHTML +"-";
 	}else{
-		f.innerHTML = "C6 + " + anzahl-7;
+		f.innerHTML = f.innerHTML +"C6 + " + anzahl-7;
 	}
 	
 	
