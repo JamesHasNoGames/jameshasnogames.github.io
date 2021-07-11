@@ -96,6 +96,17 @@
 	border-right: 5px solid #111111;
 	border-bottom: none;
 }*/
+.charTable{
+	/*background-color: #333333;*/
+	width:115px;
+	float:left;
+    /*margin: 0 auto;*/
+	border-left: 5px solid #111111;
+	border-top: 5px solid #111111;
+	border-right: none;
+	border-bottom: none;
+    padding: 0px 0px 0px 0px;
+}
 .charTableOne {
 	/*background-color: #333333;*/
 	width:115px;
