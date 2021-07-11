@@ -251,7 +251,7 @@
     border-left: 1px solid #222222;
     border-right: 1px solid #222222;
     border-top: none;
-    border-bottom: none;
+    border-bottom: 1px solid #222222;
 }
 .nr5{
     text-align: center;
@@ -277,6 +277,7 @@
     border: 1px solid #111111;
     background-color: #111111;
 	border-top: none;
+	border-bottom: 1px solid #222222;
     color: #999999;
     font-style: italic;
     font-weight: 100;
@@ -286,6 +287,7 @@
 }
 .remove:hover {
     border: 1px solid #111111;
+	border-bottom: 1px solid #222222;
     background-color: #222222;
 	border-top: none;
 }
