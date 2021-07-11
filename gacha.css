@@ -386,14 +386,10 @@
     display:flex;
     color: #ddd;
     background-color: #111111;
-    border-left: 1px solid #222222;
-    border-right: 1px solid #222222;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
     border-top: none;
     border-bottom: 1px solid #222222;
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
 }
 .entry2hide{
 	display:none;
