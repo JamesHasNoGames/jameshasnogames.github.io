@@ -426,3 +426,9 @@
     width: 9px;
     cursor: pointer;
 }  
+.nr{
+    text-align: center;
+    width:20px;
+	border: none;
+	font-size: 13px;
+}
