@@ -261,7 +261,6 @@
 }
 .bannerName{
     font-size: 20px;
-	line-height: 30px;
     text-align: center;
     width:250px;
     height:30px;
@@ -270,8 +269,6 @@
     border-bottom: 1px solid #111111;
     background-color: #222222;
 }
-
-
 .entry{
     text-align: center;
     width:250px;
