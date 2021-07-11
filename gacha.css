@@ -345,7 +345,7 @@
     background-color: #222222;
 	
 }
-.freeWeapon, .freeChar{
+.freeChar{
 	display:block;
     width:252px;
     height:30px;
@@ -358,6 +358,9 @@
     line-height: 0;  
     background-color: #222222;
     cursor:pointer;
+}
+.freeChar:hover, .ok:over, .notok:hover{
+	background-color: #333333;	
 }
 .ok{    
 	width:126px;
