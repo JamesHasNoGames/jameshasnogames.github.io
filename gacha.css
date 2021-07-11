@@ -359,7 +359,7 @@
     background-color: #222222;
     cursor:pointer;
 }
-.freeChar:hover, .ok:over, .notok:hover{
+.freeChar:hover, .ok:hover, .notok:hover{
 	background-color: #333333;	
 }
 .ok{    
