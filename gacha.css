@@ -88,6 +88,8 @@
 }
 .info{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
+	border:none;
+	background-color: #222222;
 }
 .addOne:hover, .addOne:focus {
     background-color: #333333;
