@@ -74,10 +74,8 @@
 }
 .addOne{
     width:252px;
-    height:30px;
+    height:20px;
     border: 1px solid #111111;
-	border-top:none;
-	border-bottom: none;
     display:block;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
@@ -90,8 +88,10 @@
 }
 .info{
     width:252px;
-    height:15px;
+    height:20px;
     border: 1px solid #111111;
+	border-top:none;
+	border-bottom: none;
     display:block;
     background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
     background-position: center;
