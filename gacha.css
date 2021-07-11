@@ -244,24 +244,25 @@
     text-align: center;
     width:250px;
     height:22px;
-    
     line-height: 26px;
     display:flex;
     color: #ddd;
     background-color: #111111;
-    border-left: 1px solid #222222;
-    border-right: 1px solid #222222;
+    border-left: 1px solid #111111;
+    border-right: 1px solid #111111;
     border-top: none;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #111111;
 }
 .nr5{
     text-align: center;
     width:20px;
     border: none;
 	font-size: 13px;
+	background-color: #222222;
 }
 .nr4{
     text-align: center;
+	background-color: #222222;
     width:20px;
     border: none;
 	font-size: 13px;
