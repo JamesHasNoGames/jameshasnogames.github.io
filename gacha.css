@@ -52,6 +52,12 @@
 .event, .standard, .newbie, .weapon{
         font-size: 0;
 }
+.newbie{
+	border-right: 4px solid #111111;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
 [class*="buttonarea1"]{
     width:250px;
     height:30px;
