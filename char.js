@@ -186,7 +186,7 @@ function tableContent(x){
 	}
 	
 	
-    a.innerHTML = '<img src="Pictures/Characters/'+chars[x][4]+'" width="96px">';
+    a.innerHTML = '<img src="Pictures/Characters/'+chars[x][4]+'" width="94px">';
     b.innerHTML = '<b>'+chars[x][1]+'</b>';
     //c.innerHTML = chars[x][7];
     //d.innerHTML = chars[x][6];
