@@ -215,12 +215,14 @@
 .image{
 	background-color: #222222;	
 	line-height: 0px;
+	width:100px;
 }
 .text1 {
     background-color: #222222;
 	border-bottom: 2px solid #111111;
 	line-height: 0px;
 	padding: 6px 0px 0px 5px;
+	width:100px;
 }
 /*.img1 {
     background-color: #222222;
