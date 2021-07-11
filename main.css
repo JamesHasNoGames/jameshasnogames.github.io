@@ -112,7 +112,7 @@ p {
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background-color: #333333;
-	outline: 3px solid #222222;
+	
 }
 
 .download{
