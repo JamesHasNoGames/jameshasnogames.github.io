@@ -272,8 +272,8 @@
 .nr5{
     text-align: center;
     width:20px;
-    border-left: 1px solid #222222;
-	border-right: none;
+    border-right: 1px solid #222222;
+	border-left: none;
 	border-top: none;
 	border-bottom: none;
 	font-size: 13px;
@@ -281,7 +281,10 @@
 .nr4{
     text-align: center;
     width:20px;
-    border: none;
+    border-left: 1px solid #222222;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
 	font-size: 13px;
 }
 .name{
