@@ -169,7 +169,7 @@
     border-bottom: 3px solid #887bad;
     border-left:1px solid #111111;
     border-right:none;
-    border-top:none;
+    border-top:1px solid #111111;
 }
 .wpinactive{
     width:30px;
@@ -183,7 +183,7 @@
     background-size: 25px;
     border-bottom: 3px solid #887bad;
     border-right:none;
-    border-top:none;
+    border-top:1px solid #111111;
     border-left:none;
 }
 .sinactive{
@@ -192,7 +192,7 @@
     background-repeat: no-repeat;
     background-size: 60px;
     border-bottom: 3px solid #333333;
-    border-top:none;
+    border-top:1px solid #111111;
     border-left:none;
     border-right:none;
     opacity: 1;
@@ -215,7 +215,7 @@
     background-repeat: no-repeat;
     background-size: 20px;
     border-bottom: 3px solid #b6a16d;
-    border-top:none;
+    border-top:1px solid #111111;
     border-left:none;
     border-right:none;
 }
@@ -231,7 +231,7 @@
     background-size: 25px;
     border-bottom: 3px solid #b6a16d;
     border-right:1px solid #111111;
-    border-top:none;
+    border-top:1px solid #111111;
     border-left:none;
 }
 .bannerName{
