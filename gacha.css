@@ -115,7 +115,7 @@
     background-repeat: no-repeat;
     background-size: 20px;
     border-bottom: 3px solid #887bad;
-    border-left:1px solid #222222;
+    border-left:1px solid #111111;
 }
 .button2, .button7, .button12, .button17{
     background-image: url("/Pictures/UI_BagTabIcon_Weapon.png");
@@ -129,7 +129,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60px;
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid #333333;
 }
 .button4, .button9, .button14, .button19 {
     background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
@@ -144,7 +144,7 @@
     background-repeat: no-repeat;
     background-size: 25px;
     border-bottom: 3px solid #b6a16d;
-    border-right:1px solid #222222;
+    border-right:1px solid #111111;
 }
 .buttons5 {
     font-size: 0;
@@ -161,7 +161,7 @@
     background-repeat: no-repeat;
     background-size: 20px;
     border-bottom: 3px solid #887bad;
-    border-left:1px solid #222222;
+    border-left:1px solid #111111;
     border-right:none;
     border-top:none;
 }
@@ -185,14 +185,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60px;
-    border-bottom: 3px solid #222222;
+    border-bottom: 3px solid #333333;
     border-top:none;
     border-left:none;
     border-right:none;
     opacity: 1;
     width:132px;
     height:30px;
-    background-color: #111111;
+    background-color: #222222;
     padding: 0px 0px 0px 0px;
     line-height: 0px;   
     transition-property: none;
@@ -201,7 +201,7 @@
 .chginactive{
     width:30px;
     height:30px;
-    background-color: #111111;
+    background-color: #222222;
     padding: 0px 0px 0px 0px;
     line-height: 0px;
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
@@ -216,7 +216,7 @@
 .wginactive{
     width:30px;
     height:30px;
-    background-color: #111111;
+    background-color: #222222;
     padding: 0px 0px 0px 0px;
     line-height: 0px;
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
