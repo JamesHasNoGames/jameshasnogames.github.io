@@ -213,11 +213,13 @@
 	border-bottom: none;
 }*/
 .image{
-	background-color: #222222;
+	background-color: #222222;	
+	line-height: 0px;
 }
 .text1 {
     background-color: #222222;
 	border-bottom: 2px solid #111111;
+		line-height: 0px;
 }
 /*.img1 {
     background-color: #222222;
