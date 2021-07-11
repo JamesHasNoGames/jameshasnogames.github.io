@@ -256,6 +256,7 @@
 	padding: 6px 0px 0px 5px;
 	border-spacing: 0px;
     text-align: left;
+	font-size:13px;
 }
 .text2{
     background-color: #222222;
@@ -266,6 +267,7 @@
 	margin: 0px 0px 0px 0px;
 	padding: 7px 0px 0px 1px;
 	border-spacing: 0px;
+	font-size:13px;
 }
 .textf2{
     background-color: #222222;
@@ -274,6 +276,7 @@
 	margin: 0px 0px 0px 0px;
 	padding: 7px 0px 0px 1px;
 	border-spacing: 0px;
+	font-size:13px;
 }
 .buttons1{
     background-color: #222222;
