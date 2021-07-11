@@ -96,6 +96,10 @@
 	border-right: 5px solid #111111;
 	border-bottom: none;
 }*/
+.cell{
+	border-left: 1px solid #111111;
+	border-right:1px solid #111111;
+}
 .charTable{
 	/*background-color: #333333;*/
 	width:96px;
