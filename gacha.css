@@ -87,18 +87,7 @@
     cursor:pointer;
 }
 .info{
-    width:10px;
-    height:20px;
-    border: 1px solid #111111;
-	border-top:none;
-	border-bottom: none;
-    display:block;
     background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    background-color: #222222;
-    cursor:pointer;
 }
 .addOne:hover, .addOne:focus {
     background-color: #333333;
