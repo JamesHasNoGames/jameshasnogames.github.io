@@ -81,7 +81,20 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
-	/*margin-left:2px;*/
+    font-size: 0;
+    line-height: 0;  
+    background-color: #222222;
+    cursor:pointer;
+}
+.info{
+    width:252px;
+    height:5px;
+    border: 1px solid #111111;
+    display:block;
+    background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5px;
     font-size: 0;
     line-height: 0;  
     background-color: #222222;
