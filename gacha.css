@@ -66,8 +66,6 @@
     width:252px;
     height:30px;
     border: 1px solid #111111;
-	border-top: 1px solid #222222;
-	border-bottom: 1px solid #222222;
     display:block;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
@@ -86,6 +84,7 @@
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
     width:30px;
     height:30px;
+	border-top: 1px solid #111111;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
     border:none;
