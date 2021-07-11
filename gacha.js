@@ -1916,10 +1916,11 @@ function editWeapons(x){
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
 	var demo = document.getElementById("demo");
-	demo.innerHTML= "blah1";
+	
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
+	demo.innerHTML= "blah2";
 	if(buttonAr.getElementsByClassname("ok").length != 0){
 		
 		var arr = container.getElementsByClassname("entry2");
