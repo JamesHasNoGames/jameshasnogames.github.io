@@ -87,7 +87,7 @@
     cursor:pointer;
 }
 .info{
-    width:252px;
+    width:10px;
     height:20px;
     border: 1px solid #111111;
 	border-top:none;
@@ -343,7 +343,6 @@
     height:30px;
     color: #ddd;
     border: 1px solid #111111;
-    border-bottom:none;
     background-color: #222222;
 }
 .ueberschriftName2{
@@ -353,16 +352,15 @@
     height:30px;
     color: #ddd;
     border: 1px solid #111111;
-    border-bottom:none;
 	border-top:none;
-    background-color: #222222;
-	
+    background-color: #222222;	
 }
 .freeChar{
 	display:block;
     width:252px;
     height:30px;
     border: 1px solid #111111;
+	border-bottom:none;
     background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -379,7 +377,7 @@
 	width:126px;
     height:30px;
     border: 1px solid #111111;
-	
+	border-bottom:none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
@@ -395,6 +393,7 @@
     height:30px;
     border: 1px solid #111111;
 	border-left: none;
+	border-bottom:none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
