@@ -111,7 +111,7 @@ p {
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 5px;
-	border-left: 2px solid #000000; 
+	border: 2px solid #000000; 
 
 	background-color: #dddddd;
 }
