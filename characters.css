@@ -52,6 +52,10 @@
     border-bottom:5px solid #111111;
 	
 }
+.emptyCell{
+	color:#999999;
+	width:100px;
+}
 .sword,.claymore,.polearm, .catalyst, .bow{
     background-color: #111111;
 	width: 1452px;
