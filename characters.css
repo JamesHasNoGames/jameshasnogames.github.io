@@ -1,20 +1,11 @@
 .middle {
 	width: 1514px;
 	margin: 0 auto;
-
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 
-}
-.sword,.claymore,.polearm, .catalyst, .bow{
-    background-color: #111111;
-	width: 1452px;
-    text-align:center;
-    vertical-align:middle;  
-	display:flex;
-    margin: 0 auto;
 }
 .title {
     background-color: #111111;
@@ -32,8 +23,8 @@
 	background-color: #222222;	
 	float:left;
 	width:300px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
+	border-left: 1px solid #111111;
+	border-top: 1px solid #111111;
 	border-right: none;
 	border-bottom: none;
     padding: 0px 0px 0px 0px;
@@ -46,8 +37,8 @@
 	background-color: #222222;	
 	float:left;
 	width:300px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
+	border-left: 1px solid #111111;
+	border-top: 1px solid #111111;
 	border-right: 5px solid #111111;
 	border-bottom: none;
 }
@@ -61,7 +52,14 @@
     border-bottom:5px solid #111111;
 	
 }
-
+.sword,.claymore,.polearm, .catalyst, .bow{
+    background-color: #111111;
+	width: 1452px;
+    text-align:center;
+    vertical-align:middle;  
+	display:flex;
+    margin: 0 auto;
+}
 .geo, .anemo, .pyro, .electro, .cryo {
     color:#111111;
 	font-weight: bold;
