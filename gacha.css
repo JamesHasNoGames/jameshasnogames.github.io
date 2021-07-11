@@ -97,8 +97,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15px;
-    font-size: 0;
-    line-height: 0;  
     background-color: #222222;
     cursor:pointer;
 }
@@ -392,7 +390,6 @@
 	width:126px;
     height:30px;
     border: 1px solid #111111;
-	border-left: none;
 	border-bottom:none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
