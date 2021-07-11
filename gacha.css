@@ -351,6 +351,7 @@
 	width:126px;
     height:30px;
     border: 1px solid #111111;
+	border-right: none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
@@ -365,6 +366,7 @@
 	width:126px;
     height:30px;
     border: 1px solid #111111;
+	border-left: none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
