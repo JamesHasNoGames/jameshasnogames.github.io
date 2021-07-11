@@ -76,6 +76,8 @@
     width:252px;
     height:30px;
     border: 1px solid #111111;
+	border-top:none;
+	border-bottom: none;
     display:block;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
