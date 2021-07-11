@@ -215,7 +215,7 @@
 .image{
 	height:105px;
 }
-.img1 {
+/*.img1 {
     background-color: #222222;
 	color:#ddd;
 	width:115px;
@@ -272,12 +272,11 @@
 .textf2{
     background-color: #222222;
     color:#ddd;
-	/*width:50px;*/
 	line-height: 0px;
 	margin: 0px 0px 0px 0px;
 	padding: 7px 0px 0px 1px;
 	border-spacing: 0px;
-}
+}*/
 .buttons1{
     background-color: #222222;
     height:21px;
