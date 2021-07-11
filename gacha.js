@@ -1920,7 +1920,7 @@ function max(x,y,z,n){
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	demo.innerHTML= "blah3"+buttonAr.getElementsByClassname("ok").innerHTML;
+	demo.innerHTML= "blah3"+buttonAr.getElementsByClassname("ok")[0];
 	if(buttonAr.getElementsByClassname("ok").length != 0){
 		
 		var arr = container.getElementsByClassname("entry2");
