@@ -99,9 +99,9 @@
 .charTable{
 	/*background-color: #333333;*/
 	width:288px;
-	height:150px;
+	height:168px;
 	float:left;
-    /*margin: 0 auto;*/
+   line-height: 0px;
 	border-left: 2px solid #111111;
 	border-top: none;
 	border-right:2px solid #111111;
@@ -219,7 +219,7 @@
 .text1 {
     background-color: #222222;
 	border-bottom: 2px solid #111111;
-		line-height: 0px;
+	line-height: 0px;
 }
 /*.img1 {
     background-color: #222222;
