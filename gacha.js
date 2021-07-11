@@ -1920,9 +1920,10 @@ function max(x,y,z,n){
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	demo.innerHTML= "blah3";
+	
 		
 		var arr = container.getElementsByClassname("entry2");
+		demo.innerHTML= "blah3";
 		if (y<1000){
 			for (var i = 0; i<arr.length; i++){
 				name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
