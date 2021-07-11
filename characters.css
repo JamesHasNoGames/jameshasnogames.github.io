@@ -63,7 +63,7 @@
 }
 .geo, .anemo, .pyro, .electro, .cryo, .hydro  {
     background-color: #111111;
-	width: 1452px;
+	width: 1514px;
     text-align:center;
     vertical-align:middle;  
 	display:flex;
@@ -140,7 +140,7 @@
 	border-bottom: none;
     padding: 0px 0px 0px 0px;
 }
-.weaponC1 {
+.weapon {
 	background-color: #222222;	
 	text-align:center;
 	float:left;
