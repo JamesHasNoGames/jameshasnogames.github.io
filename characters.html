@@ -109,21 +109,89 @@ function highLightMenu() {
 </div>
 		
 <div class="geo">
-			<table class="weaponC1" cellspacing="0" cellpadding="0">
+			<table class="weapon" cellspacing="0" cellpadding="0">
 				<tbody>
 					<tr>
                     <td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; 
                         background-repeat: no-repeat; height:33px;
-                        background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o</td></h>
+                        background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h>
                     </tr>
 				</tbody>
 			</table>
-			<table class="weaponC1" cellspacing="0" cellpadding="0">
+			
+			
+			<table class="charTable" cellspacing="0" cellpadding="0">
+                <tbody class="charTBody" cellspacing="0" cellpadding="0">
+                <!--Picture-->
+                <tr> 
+                    <td class="img1" rowspan="5" cellspacing="0" cellpadding="0" id="picture1">   
+                    </td>
+										<td class="text1" cellpadding="0"cellspacing="0"><b>Lvl:</b></td> 
+                    <td class="buttons1" cellpadding="0"cellspacing="0">                    
+                        <button onclick="leVelDown(1)" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button>
+                        <div id="counter1" class="counter1"></div>
+                        <button onclick="leVelUp(1)" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button>
+                    </td>
+                </tr>
+				<!--Lvl-->  
+
+                <!--HP-->
+				<tr style="height: 21px;">
+					<td class="text1" cellpadding="0"><b>HP:</b></td>
+                    <td class="text2" cellpadding="0" id="hp1" align = "center">
+                    </td>
+                </tr>
+                <!--ATK-->
+				<tr style="height: 21px;">   
+					<td class="text1" cellpadding="0"><b>ATK:</b></td>
+                    <td class="text2" cellpadding="0"id="atk1" align = "center">
+                    </td>
+                </tr>
+                <!--Def-->
+				<tr style="height: 21px;">      
+					<td class="text1" cellpadding="0"><b>DEF:</b></td>
+                    <td class="text2" cellpadding="0"  id="def1" align = "center">
+                    </td>
+                </tr>
+                <!--Attribut-->
+				<tr style="height: 19px;">    
+					<td class="textf1" cellpadding="0" id="attrname1">
+                    </td>
+                    <td class="textf2" cellpadding="0" align = "center" id="attr1">
+                    </td>
+                    <script>
+                        tableContent(1); 
+                    </script> 
+                </tr>
+                <!--Name-->  
+                <tr style="height: 21px;">                                                   
+					<td class="pic1" colspan="2" cellpadding="0" cellspacing="0" id="name1">                      
+                    </td>
+                </tr>
+                <!--Stars--> 
+				<tr style="height: 21px;">
+					<td class="img1" colspan="2" cellpadding="0" cellspacing="0" id="stars1">
+                    </td>
+                </tr>
+                <!--c-->  
+				<tr style="height: 21px;">
+
+                </tr>
+                
+                </tbody>
+            </table>
+			
+			
+			
+			
+			
+			
+			<table class="weapon" cellspacing="0" cellpadding="0">
 				<tbody>
 					<tr>
                     <td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; 
                         background-repeat: no-repeat; height:33px;
-                        background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o</td></h>
+                        background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h>
                     </tr>
 				</tbody>
 			</table>
