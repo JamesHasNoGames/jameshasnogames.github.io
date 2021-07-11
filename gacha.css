@@ -88,6 +88,7 @@
 }
 .info{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
+	background-position: center;
 	border:none;
 	background-color: #222222;
 	width:10px;
