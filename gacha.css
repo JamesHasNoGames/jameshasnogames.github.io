@@ -47,13 +47,17 @@
 	width: 1514px;
 	margin: 0 auto;
     display:flex;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
 
 }
 .event, .standard, .newbie, .weapon{
         font-size: 0;
 }
 .newbie{
-	border-right: 4px solid #111111;
+	border-right: 4px solid #000000;
 	border-left: none;
 	border-top: none;
 	border-bottom: none;
@@ -373,11 +377,11 @@
     line-height: 26px;
     display:flex;
     color: #ddd;
-    background-color: #111111;
-    border-left: 1px solid #222222;
-    border-right: 1px solid #222222;
+    background-color: #222222;
+    border-left: 1px solid #111111;
+    border-right: 1px solid #111111;
     border-top: none;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #111111;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
