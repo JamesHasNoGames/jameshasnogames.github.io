@@ -215,6 +215,10 @@
 .image{
 	height:105px;
 }
+.text1 {
+    background-color: #222222;
+	height:21px;
+}
 /*.img1 {
     background-color: #222222;
 	color:#ddd;
