@@ -323,28 +323,28 @@
     width:250px;
     height:30px;
     color: #ddd;
-    border: 1px solid #222222;
+    border: 1px solid #111111;
     border-bottom:none;
-    background-color: #111111;
+    background-color: #222222;
 }
 .freeWeapon, .freeChar{
 	display:block;
     width:252px;
     height:30px;
-    border: 1px solid#222222;
+    border: 1px solid# 111111;
     background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
     font-size: 0;
     line-height: 0;  
-    background-color: #111111;
+    background-color: #222222;
     cursor:pointer;
 }
 .ok{    
 	width:126px;
     height:30px;
-    border: 1px solid#222222;
+    border: 1px solid #111111;
     display:inline-block;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
@@ -352,13 +352,13 @@
     background-size: 20px;
     font-size: 0;
     line-height: 0;  
-    background-color: #111111;
+    background-color: #222222;
     cursor:pointer;
 }
 .notok{ 
 	width:126px;
     height:30px;
-    border: 1px solid#222222;
+    border: 1px solid #111111;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
@@ -366,7 +366,7 @@
     background-size: 18px;
     font-size: 0;
     line-height: 0;  
-    background-color: #111111;
+    background-color: #222222;
     cursor:pointer;
 }
 .entry2{
@@ -377,11 +377,11 @@
     line-height: 26px;
     display:flex;
     color: #ddd;
-    background-color: #222222;
-    border-left: 1px solid #111111;
-    border-right: 1px solid #111111;
+    background-color: #111111;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
     border-top: none;
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #222222;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
