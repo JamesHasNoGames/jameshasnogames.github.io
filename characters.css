@@ -53,6 +53,7 @@
 	
 }
 .emptyCell{
+	background-color: #222222;	
 	color:#999999;
 	width:100px;
 }
