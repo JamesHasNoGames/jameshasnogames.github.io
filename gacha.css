@@ -109,7 +109,10 @@
     height:30px;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    border:none;
+    border-top: 1px solid #111111;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
     line-height: 0px;
 }
 .button1, .button6, .button11, .button16{
