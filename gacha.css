@@ -29,7 +29,7 @@
 
 /* Change color of dropdown links on hover */
 [class*="dropdown-content"] a:hover {
-    color: #222222;
+    color: #333333;
     font-weight: bold;
     }
 .dropdown-content1 a:hover, .dropdown-content2 a:hover, .dropdown-content6 a:hover, .dropdown-content7 a:hover, .dropdown-content11 a:hover, .dropdown-content12 a:hover, .dropdown-content16 a:hover{
@@ -59,13 +59,13 @@
     font-size: 0;
     background-size: 25px;
     line-height: 0px;
-    background-color: #111111;
+    background-color: #222222;
     
 }
 .addOne{
     width:252px;
     height:30px;
-    border: 1px solid#222222;
+    border: 1px solid #111111;
     display:block;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
@@ -74,7 +74,7 @@
 	/*margin-left:2px;*/
     font-size: 0;
     line-height: 0;  
-    background-color: #111111;
+    background-color: #222222;
     cursor:pointer;
 }
 .addOne:hover, .addOne:focus {
@@ -234,7 +234,7 @@
     width:250px;
     height:30px;
     color: #ddd;
-    border: 1px solid #222222;
+    border: 1px solid #111111;
     border-bottom:none;
     background-color: #222222;
 }
