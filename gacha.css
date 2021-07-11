@@ -88,7 +88,7 @@
 }
 .info{
     width:252px;
-    height:5px;
+    height:15px;
     border: 1px solid #111111;
     display:block;
     background-image: url("/Pictures/UI_Scrollbar_Arrow_bottom.png");
