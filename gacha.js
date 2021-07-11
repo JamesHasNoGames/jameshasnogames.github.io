@@ -1920,8 +1920,7 @@ function max(x,y,z,n){
 	x = x + 10;
 	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	demo.innerHTML= "blah3"+buttonAr.getElementsByClassname("ok");
-	if(buttonAr.getElementsByClassname("ok").length != 0){
+	demo.innerHTML= "blah3";
 		
 		var arr = container.getElementsByClassname("entry2");
 		if (y<1000){
@@ -1956,7 +1955,7 @@ function max(x,y,z,n){
 				}
 			}			
 		}	
-	}
+	
 }
 function min(x,y,z,n){
 	var container = document.getElementById("container"+x);
