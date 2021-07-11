@@ -78,7 +78,7 @@
     cursor:pointer;
 }
 .addOne:hover, .addOne:focus {
-    background-color: #333333;
+    background-color: #ddd;
 
 }
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
@@ -236,7 +236,7 @@
     color: #ddd;
     border: 1px solid #222222;
     border-bottom:none;
-    background-color: #111111;
+    background-color: #222222;
 }
 
 
