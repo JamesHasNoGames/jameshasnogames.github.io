@@ -341,8 +341,9 @@
     color: #ddd;
     border: 1px solid #111111;
     border-bottom:none;
-	border-top: 4px solid #000000;
+	border-top:none;
     background-color: #222222;
+	
 }
 .freeWeapon, .freeChar{
 	display:block;
