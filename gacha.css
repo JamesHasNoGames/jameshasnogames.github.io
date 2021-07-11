@@ -275,7 +275,7 @@
 .remove{
     width:252px;
     height:30px;
-    border: 1px solid #222222;
+    border: 1px solid #1111111;
     background-color: #111111;
 	border-top: none;
     color: #999999;
@@ -286,7 +286,7 @@
 
 }
 .remove:hover {
-    border: 1px solid #222222;
+    border: 1px solid #111111;
     background-color: #222222;
 	border-top: none;
 }
