@@ -53,9 +53,9 @@
 	
 }
 .emptyCell{
-	border-left: 1px solid #111111;
+	border-left: none;
 	border-top: 1px solid #111111;
-	border-right: 1px solid #111111;
+	border-right: none;
 	border-bottom: 1px solid #111111;
 	background-color: #222222;	
 	color:#999999;
