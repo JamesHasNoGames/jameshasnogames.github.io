@@ -1916,14 +1916,14 @@ function editWeapons(x){
 function max(x,y,z,n){
 	var container = document.getElementById("container"+x);
 	x = x + 10;
-	var name2;
+	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	if(buttonAr.getElementsByClassname2("ok").length != 0){
-		var arr = container.getElementsByClassname2("entry2");
+	if(buttonAr.getElementsByClassname("ok").length != 0){
+		var arr = container.getElementsByClassname("entry2");
 		if (y<1000){
 			for (var i = 0; i<arr.length; i++){
-				name2 = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-				if (name2[0] == chars[y][1]){
+				name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+				if (name[0] == chars[y][1]){
 					x = x-10;
 						if(z == n-1){
 							z++;	
@@ -1938,8 +1938,8 @@ function max(x,y,z,n){
 		}else if (y>=1000){
 			y = y-1000;
 			for (var i = 0; i<arr.length; i++){
-				name2 = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
-				if (name2[0] == weapons[y][1]){
+				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
+				if (name[0] == weapons[y][1]){
 					x = x-10;
 						if(z == n-1){
 							z++;	
@@ -1957,14 +1957,14 @@ function max(x,y,z,n){
 function min(x,y,z,n){
 	var container = document.getElementById("container"+x);
 	x = x + 10;
-	var name2;
+	var name;
 	var buttonAr = document.getElementById("buttonArea"+x);
-	if(buttonAr.getElementsByClassname2("ok").length != 0){
-		var arr = container.getElementsByClassname2("entry2");
+	if(buttonAr.getElementsByClassname("ok").length != 0){
+		var arr = container.getElementsByClassname("entry2");
 		if (y<1000){				
 			for (var i = 0; i<arr.length; i++){
-				name2 = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
-				if (name2[0] == chars[y][1]){
+				name = arr[i].textContent.match(/[a-zA-Z]+|[0-9]+/g);
+				if (name[0] == chars[y][1]){
 					x = x-10;
 					if(z==1){
 						z--;
@@ -1979,8 +1979,8 @@ function min(x,y,z,n){
 		}else if (y>=1000){
 			y = y-1000;
 			for (var i = 0; i<arr.length; i++){
-				name2 = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
-				if (name2[0] == weapons[y][1]){
+				name = arr[i].textContent.match(/[a-z A-Z]+|[0-9]+/g);
+				if (name[0] == weapons[y][1]){
 					x = x-10;
 					if(z==1){
 						z--;
