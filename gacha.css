@@ -401,6 +401,10 @@
 .bempty2{
     background: none;
     width: 9px;
+	border-right: 1px solid #222222;
+	border-left: none;
+	border-top: none;
+    border-bottom: none;
 }
 .buttonArea15, .buttonArea16, .buttonArea17, .buttonArea18{
     font-size: 0;
@@ -421,20 +425,21 @@
     background-size: 9px;
     width: 9px;
     cursor: pointer;
+	border-right: 1px solid #222222;
+	border-left: none;
+	border-top: none;
+    border-bottom: none;
 }  
 .nr{
     text-align: center;
     width:20px;
-	border-right: 1px solid #000000;
-	border-left: none;
-	border-top: none;
-    border-bottom: none;
+	border:none;
 	font-size: 13px;
 }
 .name2{
     text-align: center;
     width:210px;
-	border-left: 1px solid #000000;
+	border-left: 1px solid #222222;
 	border-right: none;
 	border-top: none;
     border-bottom: none;
