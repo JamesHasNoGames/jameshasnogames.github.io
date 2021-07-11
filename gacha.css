@@ -86,14 +86,6 @@
     background-color: #222222;
     cursor:pointer;
 }
-.info{
-    background-image: url("/Pictures/UI_BagTabIcon_Quest.png");
-	background-position: center;
-	border:none;
-	background-color: #222222;
-	width:40px;
-	height:41px;
-}
 .addOne:hover, .addOne:focus {
     background-color: #333333;
 
