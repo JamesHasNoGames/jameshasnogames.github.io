@@ -253,7 +253,7 @@
 	color:#ddd;
 	width:48px;
 	line-height: 0px;
-	border-right: 2px solid #111111;
+	border-right: 1px solid #111111;
 	margin: 0px 0px 0px 0px;
 	padding: 6px 0px 0px 5px;
 	border-spacing: 0px;
@@ -284,7 +284,7 @@
 .buttons1{
     background-color: #222222;
     height:21px;
-    border-bottom: 2px solid #111111;
+    border-bottom: 1px solid #111111;
 }
 #button1, #button2 {
     background:none; 
