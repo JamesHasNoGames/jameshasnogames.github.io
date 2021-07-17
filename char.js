@@ -129,6 +129,7 @@ function createElem(elem){
 	var parent = document.getElementById(elem);
 	//parent.innerHTML = elems[0][1];
 	for(var i; i<elems.length; i++){
+		parent.innerHTML = "лфлф";
 		if(elem == elems[i][0]){
 			parent.innerHTML = elems[i][1];
 		}
