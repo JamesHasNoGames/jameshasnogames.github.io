@@ -112,6 +112,18 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
+.charTable{
+	/*background-color: #333333;*/
+	width:95px;
+	/*height:168px;*/
+	float:left;
+	line-height: 0px;
+	border-left: 1px solid #111111;
+	border-top: 2px solid #111111;
+	border-right: none;
+	border-bottom: 1px solid #111111;
+    padding: 0px 0px 0px 0px;
+}
 /*.charTableOne {
 	width:115px;
 	float:left;
