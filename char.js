@@ -127,7 +127,7 @@ var elems = ['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbod
 
 function createElem(elem){
 	var parent = document.getElementById(elem);
-	for(int i; i<elems.length; i++){
+	for(var i; i<elems.length; i++){
 		if(elem == elems[i][0]{
 			parent.innerHTML = parent.innerHTML +  elems[i][1];
 		}
