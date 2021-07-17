@@ -141,14 +141,20 @@ function createTable(elem, weapon, max){
 	var werte = [];
 	var cell = "";
 	var c = 1;
+	var attr;
 	for (var i = 0; i<chars.length; i++){		
 		if(chars[i][7] == elem & chars[i][6] == weapon){
 			werte.push(chars[i]);	
 		}
 	}
 	werte.length = max;
-	for (var j = 0; j<werte.length; j++){		
-		cell = cell + '<table class="charTable" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" width="94px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"><img src="Pictures/Icon_'+werte[j][5]+'_Stars.png" width = "73px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"><button onclick="leVelDown(' + werte[j][0] +')" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button><div id="counter' + werte[j][0] +'" class="counter' + werte[j][0] +'">90</div><button onclick="leVelUp(' + werte[j][0] +')" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>HP:</b></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center">' +numberWithSpaces(werte[j][21])+ '</td></tr></tbody></table>';
+	for (var j = 0; j<werte.length; j++){	
+		if(werte[j][50] =='EM'){
+			attr = werte[j][64];
+		}else{
+			attr = werte[j][64]+'%'; 
+		} 
+		cell = cell + '<table class="charTable" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" width="94px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"><img src="Pictures/Icon_'+werte[j][5]+'_Stars.png" width = "73px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"><button onclick="leVelDown(' + werte[j][0] +')" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button><div id="counter' + werte[j][0] +'" class="counter' + werte[j][0] +'">90</div><button onclick="leVelUp(' + werte[j][0] +')" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>HP:</b></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center">' +numberWithSpaces(werte[j][21])+ '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>ATK:</b></td><td class="text2" cellpadding="0"id="atk' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][35]) + '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>DEF:</b></td><td class="text2" cellpadding="0"  id="def' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][49]) + '</td></tr><tr style="height: 21px;"><td class="textf1" cellpadding="0" id="attrname' + werte[j][0] +'"><b>'+werte[j][50]+':</b></td><td class="textf2" cellpadding="0" align = "center" id="attr' + werte[j][0] +'"> + attr + </td></tr></tbody></table>';
 	}
 	parent.innerHTML = parent.innerHTML + anfang + cell + ende;
 }
@@ -161,31 +167,12 @@ function createTable(elem, weapon, max){
                         
 
                     
-                 /*   
-                <!--ATK-->
-				<tr style="height: 21px;">   
-					<td class="text1" cellpadding="0"><b>ATK:</b></td>
-                    <td class="text2" cellpadding="0"id="atk1" align = "center">
-                    </td>
-                </tr>
-                <!--Def-->
-				<tr style="height: 21px;">      
-					<td class="text1" cellpadding="0"><b>DEF:</b></td>
-                    <td class="text2" cellpadding="0"  id="def1" align = "center">
-                    </td>
-                </tr>
-                <!--Attribut-->
-				<tr style="height: 21px;">    
-					<td class="textf1" cellpadding="0" id="attrname1">
-                    </td>
-                    <td class="textf2" cellpadding="0" align = "center" id="attr1">
-                    </td>
-                    <script>
-                        tableContent(1); 
-                    </script> 
-                </tr>
-                
-*/
+                    
+              
+
+                    
+                    
+
 
 
 
