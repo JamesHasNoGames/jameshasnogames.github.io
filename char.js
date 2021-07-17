@@ -125,19 +125,17 @@ var chars = [
 
 
 function createTable(elem, weapon, max){
-	var kaka = document.getElementById(elem);
-	kaka.innerHTML = "kaka2";
-	/*var newcontent = document.createElement('div');
-	var werte;
+	var parent = document.getElementById(elem);
+	
 	for (var i = 0; i<chars.length; i++){
 		if(chars[i][7] == elem & chars[i][6] == weapon){
 		werte.push(chars[i]);	
 		}
 	}
-	*/
 	
 	/*newcontent.innerHTML = "HERE";
 	parent.appendChild(newcontent);*/
+	parent.innerHTML = parent.innerHTML + "kaka3" + werte[0];
 }
 
 function tableContent(x){
