@@ -63,7 +63,7 @@
 }
 .geo, .anemo, .pyro, .electro, .cryo, .hydro{
     background-color: red;
-	width: 1522px;
+	width: 1520px;
 	height:268px;
     text-align:center;
     vertical-align:middle;  
@@ -103,7 +103,7 @@
 }
 .charTableEmpty{
 	background-color: blue;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -115,7 +115,7 @@
 }
 .charTableNormal{
 	background-color: #222222;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -127,7 +127,7 @@
 }
 .charTableGot{
 	background-color: #333333;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -139,7 +139,7 @@
 }
 .charTableTest{
 	background-color: #222222;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -151,7 +151,7 @@
 }
 .charTableEmptyL{
 	background-color: green;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -163,7 +163,7 @@
 }
 .charTableNormalL{
 	background-color: #222222;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -175,7 +175,7 @@
 }
 .charTableGotL{
 	background-color: #333333;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -187,7 +187,7 @@
 }
 .charTableTestL{
 	background-color: #222222;
-	width:96px;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -276,7 +276,7 @@
 }
 .text1 {
     color:#ddd;
-	width:48px;
+	width:47px;
 	line-height: 0px;
 	border-right: 1px solid #111111;
 	border-bottom: 1px solid #111111;
@@ -288,7 +288,7 @@
 }
 .textf1{
 	color:#ddd;
-	width:48px;
+	width:47px;
 	line-height: 0px;
 	border-right: 1px solid #111111;
 	margin: 0px 0px 0px 0px;
@@ -299,7 +299,7 @@
 }
 .text2{
     color:#ddd;
-	width:48px;
+	width:47px;
 	line-height: 0px;
 	border-bottom: 1px solid #111111;
 	margin: 0px 0px 0px 0px;
@@ -309,7 +309,7 @@
 }
 .textf2{
     color:#ddd;
-	width:48px;
+	width:47px;
 	line-height: 0px;
 	margin: 0px 0px 0px 0px;
 	padding: 7px 0px 0px 1px;
