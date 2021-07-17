@@ -145,7 +145,7 @@ function createTable(elem, weapon, max){
 	}
 	for (var j = 0; i<max; i++){		
 	parent.innerHTML = parent.innerHTML + "kaka4" + werte[0];
-	
+	}
 	
 }
 
