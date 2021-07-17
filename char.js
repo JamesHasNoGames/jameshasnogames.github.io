@@ -127,14 +127,14 @@ var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbo
 
 function createElem(elem){
 	var parent = document.getElementById(elem);
-	//parent.innerHTML = "kaka";
+	parent.innerHTML = elems[0][0];
 	for(var i; i<elems.length; i++){
 		if(elem == elems[i][0]){
 			parent.innerHTML = parent.innerHTML +  elems[i][1];
 		}
 	}	
 }
-
+/*
 function createTable(elem, weapon, max){
 
 	var parent = document.getElementById("geo");
@@ -149,7 +149,7 @@ function createTable(elem, weapon, max){
 	parent.innerHTML = parent.innerHTML + "kaka4" + werte[0];
 	}
 	
-}
+}*/
 
 function tableContent(x){
     var a = document.getElementById("picture"+x);
