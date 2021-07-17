@@ -62,7 +62,7 @@
 	width:38px;
 }
 .geo, .anemo, .pyro, .electro, .cryo, .hydro{
-    background-color: red;
+    background-color: #111111;
 	width: 1511px;
 	height:268px;
     text-align:center;
@@ -102,7 +102,7 @@
 	border-right:1px solid #111111;
 }
 .charTableEmpty{
-	background-color: blue;
+	background-color: #111111;
 	width:95px;
 	/*height:168px;*/
 	float:left;
@@ -150,7 +150,7 @@
     padding: 0px 0px 0px 0px;
 }
 .charTableEmptyL{
-	background-color: green;
+	background-color: #111111;
 	width:95px;
 	/*height:168px;*/
 	float:left;
