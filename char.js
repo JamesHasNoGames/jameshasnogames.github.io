@@ -126,6 +126,7 @@ var chars = [
 
 function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
+	parent.innerHtml = "kaka";
 	var newcontent = document.createElement('div');
 	var werte;
 	/*for (var i = 0; i<chars.length; i++){
