@@ -122,7 +122,17 @@ var chars = [
 [120, '', '', '', '', '', 'bow', 'hydro', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '']
 ];
 
-var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>']];
+var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>'],
+['anemo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Wind.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#79ada2;"><h style="text-shadow: -2px 0 #79ada2, 0 2px #79ada2, 2px 0 #79ada2, 0 -2px #79ada2;" >g<br>e<br>o<br></td></h></tr></tbody></table>'],
+['pyro', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Fire.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b3886f;"><h style="text-shadow: -2px 0 #b3886f, 0 2px #b3886f, 2px 0 #b3886f, 0 -2px #b3886f;" >g<br>e<br>o<br></td></h></tr></tbody></table>'],
+['cryo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Frost.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#7a89ae;"><h style="text-shadow: -2px 0 #7a89ae, 0 2px #7a89ae, 2px 0 #7a89ae, 0 -2px #7a89ae;" >g<br>e<br>o<br></td></h></tr></tbody></table>'],
+['electro', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Elect.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#887bad;"><h style="text-shadow: -2px 0 #887bad, 0 2px #887bad, 2px 0 #887bad, 0 -2px #887bad;" >g<br>e<br>o<br></td></h></tr></tbody></table>'],
+['hydro', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Water.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#5790a3;"><h style="text-shadow: -2px 0 #5790a3, 0 2px #5790a3, 2px 0 #5790a3, 0 -2px #5790a3;" >g<br>e<br>o<br></td></h></tr></tbody></table>']
+
+
+
+
+];
 
 
 function createElem(elem){
