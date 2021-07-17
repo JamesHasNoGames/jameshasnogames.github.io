@@ -268,9 +268,9 @@
 .emptyTable {
 	color:#ddd;
 	text-align:center;
-	height: 268px;
+	height: 267px;
 	line-height: 0px;
-	border-bottom: 1px solid #111111;
+	border-bottom: 2px solid #111111;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
 }
