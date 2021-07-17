@@ -133,7 +133,7 @@ function createElem(elem){
 		}
 	}	
 }
-/*
+
 function createTable(elem, weapon, max){
 
 	var parent = document.getElementById("geo");
@@ -148,7 +148,7 @@ function createTable(elem, weapon, max){
 	parent.innerHTML = parent.innerHTML + "kaka4" + werte[0];
 	}
 	
-}*/
+}
 
 function tableContent(x){
     var a = document.getElementById("picture"+x);
