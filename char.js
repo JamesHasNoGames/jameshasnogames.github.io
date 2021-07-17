@@ -130,7 +130,7 @@ function createElem(elem){
 	//parent.innerHTML = elems[0][1];
 	for(var i; i<elems.length; i++){
 		if(elem == elems[i][0]){
-			parent.innerHTML = parent.innerHTML +  elems[i][1];
+			parent.innerHTML = elems[i][1];
 		}
 	}	
 }
