@@ -122,7 +122,7 @@ var chars = [
 [120, '', '', '', '', '', 'bow', 'hydro', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '']
 ];
 
-var elems = ['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>'];
+var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>']];
 
 
 function createElem(elem){
