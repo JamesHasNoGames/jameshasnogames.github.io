@@ -129,7 +129,7 @@ function createTable(elem, weapon, max){
 	var werte;
 	//parent.innerHTML = parent.innerHTML + "kaka3";
 	for (var i = 0; i<chars.length; i++){
-		parent.innerHTML = parent.innerHTML + "kaka3";
+		parent.innerHTML = parent.innerHTML + "kaka3" + chars[i];
 		if(chars[i][7] == elem & chars[i][6] == weapon){
 		werte.push(chars[i]);	
 		}
