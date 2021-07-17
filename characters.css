@@ -61,10 +61,10 @@
 	color:#999999;
 	width:38px;
 }
-.geo, .anemo, .pyro, .electro, .cryo, .hydro  {
-    background-color: #111111;
+.geo, .anemo, .pyro, .electro, .cryo, .hydro{
+    background-color: red;
 	width: 1514px;
-	height:268px;
+	height:auto;
     text-align:center;
     vertical-align:middle;  
 	display:flex;
