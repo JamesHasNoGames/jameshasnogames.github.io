@@ -124,7 +124,7 @@ var chars = [
 
 
 
-function createTable(elem, weapon, max){
+/*function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
 	var newcontent = document.createElement('div');
 	var werte;
@@ -137,7 +137,7 @@ function createTable(elem, weapon, max){
 	
 	newcontent.innerHTML = werte[0];
 	parent.appendChild(newcontent);
-}
+}*/
 
 function tableContent(x){
     var a = document.getElementById("picture"+x);
