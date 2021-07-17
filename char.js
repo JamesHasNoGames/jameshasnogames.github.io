@@ -222,7 +222,7 @@ function createTable(elem, weapon, max){
 			}
 		}else if (werte[j][1] == "" & werte.length-j !=1){
 			c = "";
-			cell = cell + '<table class="charTableEmpty" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b></b></td><td class="text2" cellpadding="0"id="atk' + werte[j][0] +'" align = "center"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b></b></td><td class="text2" cellpadding="0"  id="def' + werte[j][0] +'" align = "center"></td></tr><tr style="height: 21px;"><td class="textf1" cellpadding="0" id="attrname' + werte[j][0] +'"><b>'+werte[j][50]+'</b></td><td class="textf2" cellpadding="0" align = "center" id="attr"></td></tr></tbody></table>';
+				cell = cell + '<table class="charTableEmpty" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="emptyTable" colspan="2" cellspacing="0" cellpadding="0"></td></tr></tbody></table>';
 		}else if(werte[j][1] != "" & werte.length-j == 1){
 			for(var ii=0; ii<eB.length; ii++){
 				if (x == eB[ii][1]){
@@ -273,7 +273,7 @@ function createTable(elem, weapon, max){
 			}
 		}else if (werte[j][1] == "" & werte.length-j == 1){
 			c = "";
-			cell = cell + '<table class="charTableEmptyL" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b></b></td><td class="text2" cellpadding="0"id="atk' + werte[j][0] +'" align = "center"></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b></b></td><td class="text2" cellpadding="0"  id="def' + werte[j][0] +'" align = "center"></td></tr><tr style="height: 21px;"><td class="textf1" cellpadding="0" id="attrname' + werte[j][0] +'"><b>'+werte[j][50]+'</b></td><td class="textf2" cellpadding="0" align = "center" id="attr"></td></tr></tbody></table>';
+				cell = cell + '<table class="charTableEmpty" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="emptyTable" colspan="2" cellspacing="0" cellpadding="0"></td></tr></tbody></table>';
 		}}
 	parent.innerHTML = parent.innerHTML + anfang + cell + ende;
 }
