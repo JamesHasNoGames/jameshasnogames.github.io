@@ -112,17 +112,11 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableEmpty{
+#charTableEmpty{
 	background-color: #111111;
-	width:90px;
-	/*height:168px;*/
-	float:left;
-	line-height: 0px;
-	border-left: 1px solid #111111;
-	border-top: 2px solid #111111;
-	border-right:1px solid #111111;
-	border-bottom: 1px solid #111111;
-    padding: 0px 0px 0px 0px;
+}
+#charTableNormal{
+	background-color: #111111;
 }
 .charTableL{
 	/*background-color: #333333;*/
