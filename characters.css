@@ -112,9 +112,8 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableEmppty{
+.charTableEmpty{
 	background-color: #111111;
-	display: inline-block;
 	width:95px;
 	/*height:168px;*/
 	float:left;
