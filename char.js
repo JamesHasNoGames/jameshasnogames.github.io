@@ -124,7 +124,7 @@ var chars = [
 
 
 
-function createTable(elem, weapon, max){
+function createTable(){
 	var kaka = document.getElementById("geo");
 	kaka.innerHTML = "kaka";
 	/*var newcontent = document.createElement('div');
