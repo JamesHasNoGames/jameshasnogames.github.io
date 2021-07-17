@@ -122,17 +122,29 @@ var chars = [
 [120, '', '', '', '', '', 'bow', 'hydro', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '']
 ];
 
+var elems = ['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>'];
 
+
+function createElem(elem){
+	var parent = document.getElementById(elem);
+	for(int i; i<elems.length; i++){
+		if(elem == elems[i][0]{
+			parent.innerHTML = parent.innerHTML +  elems[i][1];
+		}
+	}	 
+}
 
 function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
 	var werte = [];
-	for (var i = 0; i<chars.length; i++){
-		
+	var around1 = "";
+	var around2 = "";
+	for (var i = 0; i<chars.length; i++){		
 		if(chars[i][7] == elem & chars[i][6] == weapon){
 			werte.push(chars[i]);	
 		}
 	}
+	for (var j = 0; i<max; i++){		
 	parent.innerHTML = parent.innerHTML + "kaka4" + werte[0];
 	
 	
