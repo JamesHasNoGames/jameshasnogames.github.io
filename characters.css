@@ -148,8 +148,8 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableL{
-	/*background-color: #333333;*/
+.charTableEmptyL{
+	background-color: #111111;
 	width:95px;
 	/*height:168px;*/
 	float:left;
@@ -160,48 +160,42 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-/*.charTableOne {
-	width:115px;
+.charTableNormalL{
+	background-color: #222222;
+	width:95px;
+	/*height:168px;*/
 	float:left;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
+	line-height: 0px;
+	border-left: 1px solid #111111;
+	border-top: 2px solid #111111;
 	border-right: none;
-	border-bottom: none;
+	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableTwo {
-
-	width:115px;
-
+.charTableGotL{
+	background-color: #333333;
+	width:95px;
+	/*height:168px;*/
 	float:left;
-    border-left: 2px solid #111111;
-	border-top: 5px solid #111111;
+	line-height: 0px;
+	border-left: 1px solid #111111;
+	border-top: 2px solid #111111;
 	border-right: none;
-	border-bottom: none;
+	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableLastOne {
-
-	width:115px;
-
+.charTableTestL{
+	background-color: #222222;
+	width:95px;
+	/*height:168px;*/
 	float:left;
-    border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
+	line-height: 0px;
+	border-left: 1px solid #111111;
+	border-top: 2px solid #111111;
 	border-right: none;
-	border-bottom: none;
+	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.charTableLastTwo {
-
-	width:115px;
- 
-	float:left;
-    border-left: 2px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: 5px solid #111111;
-	border-bottom: none;
-    padding: 0px 0px 0px 0px;
-}*/
 .weapon {
 	background-color: #222222;	
 	text-align:center;
