@@ -140,21 +140,66 @@ function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
 	var werte = [];
 	var cell = "";
-	var c = 1;
+	var c;
 	var attr;
+	var eB = JSON.parse(localStorage.getItem("eventBanner"));
+    var wB = JSON.parse(localStorage.getItem("weaponBanner"));
+    var sB = JSON.parse(localStorage.getItem("standardBanner"));
+    var nB = JSON.parse(localStorage.getItem("newbieBanner"));
+	var fC = JSON.parse(localStorage.getItem("freeChars"));
+	var sC = JSON.parse(localStorage.getItem("shopChars"));
+	var anzahl = 0;
 	for (var i = 0; i<chars.length; i++){		
 		if(chars[i][7] == elem & chars[i][6] == weapon){
 			werte.push(chars[i]);	
 		}
 	}
 	werte.length = max;
-	for (var j = 0; j<werte.length; j++){	
+	for (var j = 0; j<werte.length; j++){
+		var x = werte[j][0]
 		if(werte[j][50] =='EM'){
 			attr = werte[j][64];
 		}else{
 			attr = werte[j][64]+'%'; 
 		}
 		if(werte[j][1] != "" & werte.length-j !=1){
+			for(var ii=0; ii<eB.length; ii++){
+				if (x == eB[ii][1]){
+					anzahl++;
+				}
+			}
+			for(var ii=0; ii<wB.length; ii++){
+				if (x == wB[ii][1]){
+					anzahl++;
+				}
+			}
+			for(var ii=0; ii<sB.length; ii++){
+				if (x == sB[ii][1]){
+					anzahl++;
+				}
+			}
+			for(var ii=0; ii<nB.length; ii++){
+				if (x == nB[ii][1]){
+					anzahl++;
+				}
+			}
+			for(var ii=0; ii<fC.length; ii++){
+				if (x == fC[ii][1]){
+					anzahl = (anzahl + parseInt(fC[ii][2]));
+				}
+			}
+			for(var ii=0; ii<sC.length; ii++){
+				if (x == sC[ii][1]){
+					anzahl = (anzahl + parseInt(sC[ii][2]));
+				}
+			}
+			if(anzahl != 0 & anzahl < 8){
+				c = "C" + (anzahl-1);	
+			}else if(anzahl == 0){
+				c = "-";
+			}else{
+				c = "C6 + " + (anzahl-7);
+			}
 			cell = cell + '<table class="charTableNormal" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" width="94px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"><img src="Pictures/Icon_'+werte[j][5]+'_Stars.png" width = "73px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"><button onclick="leVelDown(' + werte[j][0] +')" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button><div id="counter' + werte[j][0] +'" class="counter' + werte[j][0] +'">90</div><button onclick="leVelUp(' + werte[j][0] +')" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>HP:</b></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center">' +numberWithSpaces(werte[j][21])+ '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>ATK:</b></td><td class="text2" cellpadding="0"id="atk' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][35]) + '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>DEF:</b></td><td class="text2" cellpadding="0"  id="def' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][49]) + '</td></tr><tr style="height: 21px;"><td class="textf1" cellpadding="0" id="attrname' + werte[j][0] +'"><b>'+werte[j][50]+':</b></td><td class="textf2" cellpadding="0" align = "center" id="attr' + werte[j][0] +'">' + attr + '</td></tr></tbody></table>';
 		}else if (werte[j][1] == "" & werte.length-j !=1){
 			cell = cell + '<table class="charTableEmpty" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" width="94px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"><img src="Pictures/Icon_'+werte[j][5]+'_Stars.png" width = "73px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"><button onclick="leVelDown(' + werte[j][0] +')" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button><div id="counter' + werte[j][0] +'" class="counter' + werte[j][0] +'">90</div><button onclick="leVelUp(' + werte[j][0] +')" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>HP:</b></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center">' +numberWithSpaces(werte[j][21])+ '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>ATK:</b></td><td class="text2" cellpadding="0"id="atk' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][35]) + '</td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>DEF:</b></td><td class="text2" cellpadding="0"  id="def' + werte[j][0] +'" align = "center">' + numberWithSpaces(werte[j][49]) + '</td></tr><tr style="height: 21px;"><td class="textf1" cellpadding="0" id="attrname' + werte[j][0] +'"><b>'+werte[j][50]+':</b></td><td class="textf2" cellpadding="0" align = "center" id="attr' + werte[j][0] +'">' + attr + '</td></tr></tbody></table>';
