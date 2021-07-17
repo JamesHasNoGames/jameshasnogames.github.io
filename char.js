@@ -136,8 +136,8 @@ function createTable(elem, weapon, max){
 	}
 	*/
 	
-	newcontent.innerHTML = "HERE";
-	parent.appendChild(newcontent);
+	/*newcontent.innerHTML = "HERE";
+	parent.appendChild(newcontent);*/
 }
 
 function tableContent(x){
