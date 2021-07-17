@@ -146,10 +146,11 @@ function createTable(elem, weapon, max){
 			werte.push(chars[i]);	
 		}
 	}
-	for (var j = 0; j<max; j++){		
+	werte.length = max;
+	for (var j = 0; j<werte.length; j++){		
 		cell = cell + '<table class="charTable" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="img1" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" width="94px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0"><b>'+werte[j][1]+'</b></td></tr><tr style="height: 21px;"><td class="img1" colspan="2" cellpadding="0" cellspacing="0"><img src="Pictures/Icon_'+werte[j][5]+'_Stars.png" width = "73px"></td></tr><tr style="height: 21px;"><td class="pic1" colspan="2" cellpadding="0" cellspacing="0">' + c + '</td></tr><tr style="height: 21px;"><td colspan="2" class="buttons1" cellpadding="0"cellspacing="0"><button onclick="leVelDown(' + werte[j][0] +')" id="button1"><img src="Pictures/UI_Scrollbar_Arrow_Left.png" width="8px"height="13px"></button><div id="counter' + werte[j][0] +'" class="counter' + werte[j][0] +'">90</div><button onclick="leVelUp(' + werte[j][0] +')" id="button2"><img src="Pictures/UI_Scrollbar_Arrow_Right.png" width="8px" height="13px"></button></td></tr><tr style="height: 21px;"><td class="text1" cellpadding="0"><b>HP:</b></td><td class="text2" cellpadding="0" id="hp' + werte[j][0] + '" align = "center">' +numberWithSpaces(werte[j][21])+ '</td></tr></tbody></table>';
 	}
-	parent.innerHTML = parent.innerHTML + anfang + cell + ende + werte.length;
+	parent.innerHTML = parent.innerHTML + anfang + cell + ende;
 }
 
 
