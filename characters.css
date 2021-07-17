@@ -114,7 +114,8 @@
 }
 .charTableEmppty{
 	background-color: #111111;
-	width:94px;
+	display: inline-block;
+	width:95px;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
