@@ -127,9 +127,9 @@ var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbo
 
 function createElem(elem){
 	var parent = document.getElementById(elem);
-	//parent.innerHTML = elems[0][1];
-	for(var i; i<elems.length; i++){
-		parent.innerHTML = "лфлф";
+	
+	for(var i = 0; i<elems.length; i++){
+		parent.innerHTML = "kaka";
 		if(elem == elems[i][0]){
 			parent.innerHTML = elems[i][1];
 		}
