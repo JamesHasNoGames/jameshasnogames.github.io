@@ -125,7 +125,7 @@ var chars = [
 //var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Roach.png); background-position: center; background-repeat: no-repeat; height:33px;background-size: 35px; background-color:#b6a16d;"><h style="text-shadow: -2px 0 #b6a16d, 0 2px #b6a16d, 2px 0 #b6a16d, 0 -2px #b6a16d;" >g<br>e<br>o<br></td></h></tr></tbody></table>']];
 
 
-function createElem(elem){
+/*function createElem(elem){
 	var parent = document.getElementById(elem);
 	parent.innerHTML = "kaka";
 	/*for(var i; i<elems.length; i++){
@@ -133,7 +133,7 @@ function createElem(elem){
 			parent.innerHTML = parent.innerHTML +  elems[i][1];
 		}
 	}	*/ 
-}
+}*/
 
 function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
