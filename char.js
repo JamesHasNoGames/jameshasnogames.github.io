@@ -135,7 +135,7 @@ function createTable(elem, weapon, max){
 	}
 	
 	
-	newcontent.innerHTML = werte;
+	newcontent.innerHTML = werte[0];
 	parent.appendChild(newcontent);
 }
 
