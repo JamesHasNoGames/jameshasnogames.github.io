@@ -137,7 +137,7 @@ var chars = [
 
 function createTable(elem, weapon, max){
 
-	var parent = document.getElementById(elem);
+	var parent = document.getElementById("geo");
 		parent.innerHTML = "kaka1";
 	var werte = [];
 	for (var i = 0; i<chars.length; i++){		
