@@ -130,10 +130,10 @@ function createTable(elem, weapon, max){
 	for (var i = 0; i<chars.length; i++){
 		
 		if(chars[i][7] == elem & chars[i][6] == weapon){
-			parent.innerHTML = parent.innerHTML + "kaka4" + chars[i];
 			werte.push(chars[i]);	
 		}
 	}
+	parent.innerHTML = parent.innerHTML + "kaka4" + werte[0];
 	
 	
 }
