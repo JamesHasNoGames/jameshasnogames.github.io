@@ -135,9 +135,9 @@ function createElem(elem){
 }
 
 function createTable(elem, weapon, max){
-
-	var parent = document.getElementById("geo");
-		//parent.innerHTML = "kaka1";
+	var anfang = '<div class="cell">';
+	var ende = '</div>';
+	var parent = document.getElementById(elem);
 	var werte = [];
 	for (var i = 0; i<chars.length; i++){		
 		if(chars[i][7] == elem & chars[i][6] == weapon){
