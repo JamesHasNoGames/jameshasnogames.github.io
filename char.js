@@ -140,7 +140,7 @@ function createTable(elem, weapon, max){
 	var parent = document.getElementById(elem);
 	var werte = [];
 	var cell = "";
-	var c;
+	var c = "";
 	var attr;
 	var eB = JSON.parse(localStorage.getItem("eventBanner"));
     var wB = JSON.parse(localStorage.getItem("weaponBanner"));
