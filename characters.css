@@ -70,33 +70,6 @@
 	display:flex;
     margin: 0 auto;
 }
-/*.geo, .anemo, .pyro, .electro, .cryo {
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	text-align: center;
-	background-color: #222222;	
-	float:left;
-	width:230px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: none;
-	border-bottom: none;
-    padding: 0px 0px 0px 0px;
-}
-.hydro {
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	text-align: center;
-	background-color: #222222;	
-	float:left;
-	width:230px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: 5px solid #111111;
-	border-bottom: none;
-}*/
 .cell{
 	border-left: 1px solid #111111;
 	border-right:1px solid #111111;
@@ -115,6 +88,7 @@
 }
 .charTableNormal{
 	background-color: #222222;
+	color: #ddd;
 	width:95px;
 	/*height:168px;*/
 	float:left;
@@ -128,6 +102,7 @@
 .charTableGot{
 	background-color: #333333;
 	width:95px;
+	color: #ddd;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -138,7 +113,7 @@
     padding: 0px 0px 0px 0px;
 }
 .charTableTest{
-	color: #333333;
+	color: #444444;
 	background-color: #222222;
 	width:95px;
 	/*height:168px;*/
@@ -165,6 +140,7 @@
 .charTableNormalL{
 	background-color: #222222;
 	width:95px;
+	color: #ddd;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -175,6 +151,7 @@
     padding: 0px 0px 0px 0px;
 }
 .charTableGotL{
+	color: #ddd;
 	background-color: #333333;
 	width:95px;
 	/*height:168px;*/
@@ -189,7 +166,7 @@
 .charTableTestL{
 	background-color: #222222;
 	width:95px;
-	color: #333333;
+	color: #444444;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
@@ -199,7 +176,7 @@
 	border-bottom: 1px solid #111111;
     padding: 0px 0px 0px 0px;
 }
-.weapon {
+.weapon{
 	background-color: #222222;	
 	text-align:center;
 	float:left;
