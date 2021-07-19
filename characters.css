@@ -260,7 +260,6 @@
 	border-bottom: none;
 }*/
 .img1 {
-	color:#ddd;
 	text-align:center;
 	max-height: 93px;
 	line-height: 0px;
@@ -269,7 +268,6 @@
 	padding: 0px 0px 0px 0px;
 }
 .emptyTable {
-	color:#ddd;
 	text-align:center;
 	height: 263px;
 	line-height: 0px;
@@ -278,7 +276,6 @@
 	padding: 0px 0px 0px 0px;
 }
 .pic1 {
-	color:#ddd;
 	text-align:center;
 	line-height: 0px;
 	border-bottom: 1px solid #111111;
@@ -287,7 +284,6 @@
 	border-spacing: 0px;
 }
 .text1 {
-    color:#ddd;
 	width:47px;
 	line-height: 0px;
 	border-right: 1px solid #111111;
@@ -299,7 +295,6 @@
 	font-size:13px;
 }
 .textf1{
-	color:#ddd;
 	width:47px;
 	line-height: 0px;
 	border-right: 1px solid #111111;
@@ -310,7 +305,6 @@
 	font-size:13px;
 }
 .text2{
-    color:#ddd;
 	width:47px;
 	line-height: 0px;
 	border-bottom: 1px solid #111111;
@@ -320,7 +314,6 @@
 	font-size:13px;
 }
 .textf2{
-    color:#ddd;
 	width:47px;
 	line-height: 0px;
 	margin: 0px 0px 0px 0px;
@@ -356,7 +349,6 @@
     float: left;
     width: 52%;
     text-align: center;
-    color:#ddd;
 	line-height: 1px;
     margin-top:5px;
 	font-size:15px;
