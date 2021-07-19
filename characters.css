@@ -138,6 +138,7 @@
     padding: 0px 0px 0px 0px;
 }
 .charTableTest{
+	color: #333333;
 	background-color: #222222;
 	width:95px;
 	/*height:168px;*/
@@ -188,6 +189,7 @@
 .charTableTestL{
 	background-color: #222222;
 	width:95px;
+	color: #333333;
 	/*height:168px;*/
 	float:left;
 	line-height: 0px;
