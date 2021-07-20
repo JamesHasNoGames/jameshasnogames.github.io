@@ -8,7 +8,7 @@
 /* Dropdown Content (Hidden by Default) */
 [class*="dropdown-content"]{
     margin-left:252px;
-    margin-top:-30px;
+    margin-top:0px;
     display: none;
     position: absolute;
     background-color: #222222;
