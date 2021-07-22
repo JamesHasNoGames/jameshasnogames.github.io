@@ -165,6 +165,14 @@ function createTable(elem, weapon, max){
 		}
 	}
 	werte.length = max;
+	if(eB == null || wB == null || sB == null || nB == null || fC == null || sC == null){
+		eB = [];
+		wB = [];
+		sB = [];
+		nB = [];
+		fC = [];
+		sC = [];
+	}
 	for (var j = 0; j<werte.length; j++){
 		var x = werte[j][0]
 		if(werte[j][50] =='EM'){
