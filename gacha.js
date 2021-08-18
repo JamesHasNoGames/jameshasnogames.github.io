@@ -1650,10 +1650,11 @@ function parseFreeChar(){
 		var i = 0;
 		for (var k = 0; k< jason.length; k++) {
 			if (i < arr.length){
-				freeChars[i] = arr [i];		
+				freeChars[i] = arr[i];		
                 if (jason[k][1] == arr[i][1]){
 								
 					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
+					freeChars[i][3] = arr[i][3];
 					i++;
 				}else{
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
@@ -1661,6 +1662,8 @@ function parseFreeChar(){
 				}
 			}
         }
+	localStorage.removeItem("freeChars");
+	localStorage.setItem("freeChars", JSON.stringify(freeChars));	
 	}else{
 		//Amber
 		addChar(5,105,1,1);
@@ -1793,9 +1796,6 @@ function addChar(x, y, z, n){
 	var par;
 	var newcontent;	
 	if(x==5){
-		freeChars.push([x, y, z, n]);
-		localStorage.removeItem("freeChars");
-		localStorage.setItem("freeChars", JSON.stringify(freeChars));
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
