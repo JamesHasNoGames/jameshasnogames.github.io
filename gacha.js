@@ -1652,17 +1652,17 @@ function parseFreeChar(){
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
 			if (i < jason.length){
-				freeChars[i] = arr[k];		
-                if (jason[k][1] == arr[i][1]){						
-					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
-					freeChars[i][2] = jason[i][2];
+				freeChars[k] = arr[k];		
+                if (jason[i][1] == arr[k][1]){						
+					addChar(jason[i][0],jason[i][1],jason[i][2],arr[k][3]);
+					freeChars[k][2] = jason[i][2];
 					i++;
 				}else{
-					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
+					addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
 				}
 			}else{
 				freeChars.push(arr[k]);
-				addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
+				addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
 			}
         }
 	localStorage.removeItem("freeChars");
