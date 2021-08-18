@@ -66,11 +66,9 @@
  function funktion2(){
     var a = document.getElementById("name2").value;
     var b = document.getElementById("response2");
-    //a = a.replaceAll(',', '');
     a = a.replaceAll('%', '');
 	a = a.replaceAll('(', '');
 	a = a.replaceAll(')', '');
-	//a = a.replaceAll('\n', ' ');
 	a = a.split('\n');
 
     a0 = a[3].split('\t');
