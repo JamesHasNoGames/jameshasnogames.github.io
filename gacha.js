@@ -1675,6 +1675,7 @@ function parseFreeWeapons(){
 		addWeapon(6,148,0,99);
 		addWeapon(6,149,0,99);
 		addWeapon(6,150,0,99);	
+		addWeapon(6,175,0,99);//sada
 		//craft berg
 		addWeapon(6,122,0,99);
 		addWeapon(6,123,0,99);
