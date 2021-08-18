@@ -1669,12 +1669,6 @@ function parseFreeWeapons(){
 		addWeapon(6,138,0,99);
 		addWeapon(6,139,0,99);
 		addWeapon(6,140,0,99);
-		//craft inasuma
-		addWeapon(6,181,0,99);
-		addWeapon(6,182,0,99);
-		addWeapon(6,183,0,99);
-		addWeapon(6,184,0,99);
-		addWeapon(6,185,0,99);
 		//craft prot
 		addWeapon(6,146,0,99);
 		addWeapon(6,147,0,99);
@@ -1691,6 +1685,12 @@ function parseFreeWeapons(){
 		addWeapon(6,130,0,5);	
 		//ps4
 		addWeapon(6,176,0,1);
+		//craft inasuma
+		addWeapon(6,181,0,99);
+		addWeapon(6,182,0,99);
+		addWeapon(6,183,0,99);
+		addWeapon(6,184,0,99);
+		addWeapon(6,185,0,99);
 	}
 }
 function parseShopWeapons(){	
