@@ -1634,6 +1634,7 @@ function parseFreeChar(){
 	arr.push([5,57,0,1]);
 	//Fischl
 	arr.push([5,113,0,1]);
+	arr.push([5,95,0,1]);
 	//Xinyan
 	arr.push([5,34,0,1]);
 	//Beidou
