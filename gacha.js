@@ -1665,30 +1665,11 @@ function parseFreeChar(){
 	localStorage.removeItem("freeChars");
 	localStorage.setItem("freeChars", JSON.stringify(freeChars));	
 	}else{
-		//Amber
-		addChar(5,105,1,1);
-		//Kaeya
-		addChar(5,13,1,1);
-		//Lisa
-		addChar(5,89,1,1);
-		//Barbara
-		addChar(5,93,0,2);
-		//Xiangling
-		addChar(5,57,0,1);
-		//Fischl
-		addChar(5,113,0,1);
-		//Xinyan
-		addChar(5,34,0,1);
-		//Beidou
-		addChar(5,41,0,2);
-		//Ningguang
-		addChar(5,73,0,1);
-		//Xingqiu
-		addChar(5,21,0,1);
-		//Chongyun
-		addChar(5,37,0,1);
-		//Diona
-		addChar(5,109,0,1);
+		for (var k = 0; k< arr.length; k++) {
+			addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+		}
+		localStorage.removeItem("freeChars");
+		localStorage.setItem("freeChars", JSON.stringify(freeChars));	
 	}
 }
 function parseFreeWeapons(){	
