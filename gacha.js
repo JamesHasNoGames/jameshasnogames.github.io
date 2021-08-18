@@ -1649,7 +1649,7 @@ function parseFreeChar(){
     if(jason!=null){ 
 		var i = 0;
 		for (var k = 0; k< jason.length; k++) {
-			if (arr.length < i){
+			if (i < arr.length){
                 if (jason[k][1] == arr[i][1]){					
 					addCharS(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
 					i++;
