@@ -1646,6 +1646,7 @@ function parseFreeChar(){
 	arr.push([5,37,0,1]);
 	//Diona
 	arr.push([5,109,0,1]);
+	arr.push([5,106,0,1]);
     if(jason!=null){ 
 		var i = 0;
 		for (var k = 0; k< jason.length; k++) {
