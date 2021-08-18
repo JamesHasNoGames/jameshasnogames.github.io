@@ -1653,7 +1653,7 @@ function parseFreeChar(){
 				freeChars[i] = arr[i];		
                 if (jason[k][1] == arr[i][1]){						
 					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
-					freeChars[i][2] = arr[i][2];
+					freeChars[i][2] = jason[i][2];
 					i++;
 				}else{
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
