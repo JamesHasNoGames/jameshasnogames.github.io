@@ -1709,11 +1709,11 @@ function parseShopWeapons(){
 		addWeapon(8,119,0,99);
 		addWeapon(8,120,0,99);
 		//shop royal
-		addWeapon(8,151,0,99);
-		addWeapon(8,152,0,99);
-		addWeapon(8,153,0,99);
-		addWeapon(8,154,0,99);
-		addWeapon(8,155,0,99);	
+		addWeapon(8,251,0,99);
+		addWeapon(8,252,0,99);
+		addWeapon(8,253,0,99);
+		addWeapon(8,254,0,99);
+		addWeapon(8,255,0,99);	
 		//shop bp
 		addWeapon(8,111,0,99);
 		addWeapon(8,112,0,99);
