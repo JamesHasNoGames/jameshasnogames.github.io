@@ -1643,7 +1643,7 @@ function parseFreeChar(){
 		//Xinyan
 		addChar(5,34,0,1);
 		//Beidou
-		addChar(5,41,0,1);
+		addChar(5,41,0,2);
 		//Ningguang
 		addChar(5,73,0,1);
 		//Xingqiu
@@ -1726,15 +1726,15 @@ function parseShopChar(){
         }
 	}else{
 		//Amber
-		addChar(7,105,0,2);
+		addChar(7,105,0,3);
 		//Barbara
 		addChar(7,93,0,2);
 		//Beidou
-		addChar(7,41,0,1);	
+		addChar(7,41,0,2);	
 		//Bennett
-		addChar(7,9,0,1);	
+		addChar(7,9,0,2);	
 		//Fischl
-		addChar(7,113,0,1);		
+		addChar(7,113,0,2);		
 		//Kaeya
 		addChar(7,13,0,2);
 		//Lisa
@@ -1742,11 +1742,11 @@ function parseShopChar(){
 		//Ningguang
 		addChar(7,73,0,1);	
 		//Noelle
-		addChar(7,25,0,1);	
+		addChar(7,25,0,2);	
 		//Razor
-		addChar(7,42,0,1);
+		addChar(7,42,0,3);
 		//Xiangling
-		addChar(7,57,0,1);		
+		addChar(7,57,0,2);		
 		//Xingqiu
 		addChar(7,21,0,1);	
 	}
