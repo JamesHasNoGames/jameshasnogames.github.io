@@ -67,10 +67,12 @@
     var a = document.getElementById("name2").value;
     var b = document.getElementById("response2");
     //a = a.replaceAll(',', '');
-    //a = a.replaceAll('%', '');
+    a = a.replaceAll('%', '');
 	//a = a.replaceAll('\n', ' ');
 	a = a.split('\n');
-    a0 = a[0].split('\t');
+	a[3] = a[3].replaceAll('(', '');
+	a[3] = a[3].replaceAll(')', '');
+    a0 = a[3].split('\t');
     a1 = a[1].split('\t');
     a2 = a[2].split('\t');
     a3 = a[3].split('\t');
