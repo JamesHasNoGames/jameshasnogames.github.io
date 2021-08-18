@@ -1661,6 +1661,7 @@ function parseFreeChar(){
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
 				}
 			}else{
+				freeChars[i] = arr[i];
 				addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
 			}
         }
