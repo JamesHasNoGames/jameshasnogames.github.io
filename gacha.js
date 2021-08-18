@@ -1666,6 +1666,7 @@ function parseFreeChar(){
 	localStorage.setItem("freeChars", JSON.stringify(freeChars));	
 	}else{
 		for (var k = 0; k< arr.length; k++) {
+			freeChars[i] = arr[i];	
 			addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
 		}
 		localStorage.removeItem("freeChars");
