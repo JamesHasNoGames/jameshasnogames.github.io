@@ -1652,7 +1652,7 @@ function parseFreeChar(){
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
 			if (i < jason.length){
-				freeChars[i] = arr[i];		
+				freeChars[i] = arr[k];		
                 if (jason[k][1] == arr[i][1]){						
 					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
 					freeChars[i][2] = jason[i][2];
@@ -1661,7 +1661,7 @@ function parseFreeChar(){
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
 				}
 			}else{
-				freeChars[i] = arr[i];
+				freeChars[i] = arr[k];
 				addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
 			}
         }
