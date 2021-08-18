@@ -1689,6 +1689,12 @@ function parseFreeWeapons(){
 	arr.push([6,148,0,99]);
 	arr.push([6,149,0,99]);
 	arr.push([6,150,0,99]);	
+	//craft inasuma
+	arr.push([6,181,0,99]);
+	arr.push([6,182,0,99]);
+	arr.push([6,183,0,99]);
+	arr.push([6,184,0,99]);
+	arr.push([6,185,0,99]);
 	//craft berg
 	arr.push([6,122,0,99]);
 	arr.push([6,123,0,99]);
@@ -1699,12 +1705,6 @@ function parseFreeWeapons(){
 	arr.push([6,130,0,5]);	
 	//ps4
 	arr.push([6,176,0,1]);
-	//craft inasuma
-	arr.push([6,181,0,99]);
-	arr.push([6,182,0,99]);
-	arr.push([6,183,0,99]);
-	arr.push([6,184,0,99]);
-	arr.push([6,185,0,99]);
     if(jason!=null){
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
