@@ -116,7 +116,7 @@
 }
 .button3, .button8, .button13, .button18{
     cursor:pointer;
-    width:132px;
+    width:50%;
     height:30px;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
