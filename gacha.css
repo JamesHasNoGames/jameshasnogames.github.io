@@ -56,7 +56,7 @@
 }
 .event, .standard, .newbie, .weapon{
     font-size: 0;
-	width:16,6%;
+	width:16.6%;
 }
 .newbie{
 	border-right: 4px solid #000000;
@@ -93,7 +93,7 @@
 
 }
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
-    width:50%;
+    width:30%;
     height:30px;
 	border-top: 1px solid #111111;
     background-color: #222222;
