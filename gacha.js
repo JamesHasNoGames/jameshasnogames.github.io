@@ -1634,7 +1634,6 @@ function parseFreeChar(){
 	arr.push([5,57,0,1]);
 	//Fischl
 	arr.push([5,113,0,1]);
-	arr.push([5,95,0,1]);
 	//Xinyan
 	arr.push([5,34,0,1]);
 	//Beidou
@@ -1647,8 +1646,6 @@ function parseFreeChar(){
 	arr.push([5,37,0,1]);
 	//Diona
 	arr.push([5,109,0,1]);
-	arr.push([5,106,0,1]);
-	arr.push([5,110,0,1]);
     if(jason!=null){ 
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
@@ -1710,18 +1707,19 @@ function parseFreeWeapons(){
 	arr.push([6,185,0,99]);
     if(jason!=null){
 		var i = 0;
-		for (var k = 0; k< jason.length; k++) {
-			if (i < arr.length){
-				freeWeapons[i] = arr[i];		
-                if (jason[k][1] == arr[i][1]){						
-					addWeapon(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
-					freeWeapons[i][2] = jason[i][2];
+		for (var k = 0; k< arr.length; k++) {
+			if (i < jason.length){
+				freeWeapons[k] = arr[k];		
+                if (jason[i][1] == arr[k][1]){						
+					addWeapon(jason[i][0],jason[i][1],jason[i][2],arr[k][3]);
+					freeWeapons[k][2] = jason[i][2];
 					i++;
 				}else{
-					addWeapon(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
-					k--;
-					i++;
+					addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
 				}
+			}else{
+				freeWeapons.push(arr[k]);
+				addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
 			}
         }
 	localStorage.removeItem("freeWeapons");
