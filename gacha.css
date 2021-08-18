@@ -337,7 +337,7 @@
     height:30px;
     color: #ddd;
     border: 1px solid #111111;
-	
+	border-top: 2px solid #111111;
     background-color: #222222;	
 }
 .freeChar{
