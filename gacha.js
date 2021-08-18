@@ -1675,40 +1675,60 @@ function parseFreeChar(){
 }
 function parseFreeWeapons(){	
 	var jason = JSON.parse(localStorage.getItem("freeWeapons"));
-    if(jason!=null){ 		
-		for (var k = 0; k< jason.length; k++) {    
-                freeWeapons[k] = jason[k];
-				addWeaponS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
+	var arr = [];
+	//craft cercent/compound
+	arr.push([6,136,0,99]);
+	arr.push([6,137,0,99]);
+	arr.push([6,138,0,99]);
+	arr.push([6,139,0,99]);
+	arr.push([6,140,0,99]);
+	//craft prot
+	arr.push([6,146,0,99]);
+	arr.push([6,147,0,99]);
+	arr.push([6,148,0,99]);
+	arr.push([6,149,0,99]);
+	arr.push([6,150,0,99]);	
+	//craft berg
+	arr.push([6,122,0,99]);
+	arr.push([6,123,0,99]);
+	arr.push([6,124,0,99]);	
+	//event
+	arr.push([6,126,0,5]);
+	arr.push([6,129,0,5]);
+	arr.push([6,130,0,5]);	
+	//ps4
+	arr.push([6,176,0,1]);
+	//craft inasuma
+	arr.push([6,181,0,99]);
+	arr.push([6,182,0,99]);
+	arr.push([6,183,0,99]);
+	arr.push([6,184,0,99]);
+	arr.push([6,185,0,99]);
+    if(jason!=null){
+		var i = 0;
+		for (var k = 0; k< jason.length; k++) {
+			if (i < arr.length){
+				freeWeapons[i] = arr[i];		
+                if (jason[k][1] == arr[i][1]){						
+					addWeapon(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
+					freeWeapons[i][2] = jason[i][2];
+					i++;
+				}else{
+					addWeapon(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
+					k--;
+					i++;
+				}
+			}
         }
+	localStorage.removeItem("freeWeapons");
+	localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));
 	}else{
-		//craft cercent/compound
-		addWeapon(6,136,0,99);
-		addWeapon(6,137,0,99);
-		addWeapon(6,138,0,99);
-		addWeapon(6,139,0,99);
-		addWeapon(6,140,0,99);
-		//craft prot
-		addWeapon(6,146,0,99);
-		addWeapon(6,147,0,99);
-		addWeapon(6,148,0,99);
-		addWeapon(6,149,0,99);
-		addWeapon(6,150,0,99);	
-		//craft berg
-		addWeapon(6,122,0,99);
-		addWeapon(6,123,0,99);
-		addWeapon(6,124,0,99);	
-		//event
-		addWeapon(6,126,0,5);
-		addWeapon(6,129,0,5);
-		addWeapon(6,130,0,5);	
-		//ps4
-		addWeapon(6,176,0,1);
-		//craft inasuma
-		addWeapon(6,181,0,99);
-		addWeapon(6,182,0,99);
-		addWeapon(6,183,0,99);
-		addWeapon(6,184,0,99);
-		addWeapon(6,185,0,99);
+		for (var k = 0; k< arr.length; k++) {
+			freeWeapons[k] = arr[k];	
+			addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+		}
+		localStorage.removeItem("freeWeapons");
+		localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));	
 	}
 }
 function parseShopWeapons(){	
@@ -1808,9 +1828,7 @@ function addWeapon(x, y, z, n){
 	var par;
 	var newcontent;	
 	if(x==6){
-		freeWeapons.push([x, y, z, n]);
-		localStorage.removeItem("freeWeapons");
-		localStorage.setItem("freeWeapons", JSON.stringify(freeWeapons));
+
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
