@@ -1650,13 +1650,12 @@ function parseFreeChar(){
 		var i = 0;
 		for (var k = 0; k< jason.length; k++) {
 			if (i < arr.length){
+				freeChars[i] = arr [i];		
                 if (jason[k][1] == arr[i][1]){
-					freeChars[i] = arr [i];					
-					addCharS(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
-					freeChars[i][2] = jason[k][2];
+								
+					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
 					i++;
 				}else{
-					freeChars[i] = arr [i];		
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
 					k--;
 				}
