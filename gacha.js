@@ -1621,11 +1621,43 @@ function parseStorage(x){
 
 function parseFreeChar(){	
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
+	var arr = [];
+	//Amber
+	arr.push([5,105,1,1]);
+	//Kaeya
+	arr.push([5,13,1,1]);
+	//Lisa
+	arr.push([5,89,1,1]);
+	//Barbara
+	arr.push([5,93,0,2]);
+	//Xiangling
+	arr.push([5,57,0,1]);
+	//Fischl
+	arr.push([5,113,0,1]);
+	//Xinyan
+	arr.push([5,34,0,1]);
+	//Beidou
+	arr.push([5,41,0,2]);
+	//Ningguang
+	arr.push([5,73,0,1]);
+	//Xingqiu
+	arr.push([5,21,0,1]);
+	//Chongyun
+	arr.push([5,37,0,1]);
+	//Diona
+	arr.push([5,109,0,1]);
     if(jason!=null){ 
-		
-		for (var k = 0; k< jason.length; k++) {    
-                freeChars[k] = jason[k];
-				addCharS(freeChars[k][0],freeChars[k][1],freeChars[k][2],freeChars[k][3]);
+		var i = 0;
+		for (var k = 0; k< jason.length; k++) {
+			if (arr.length < i){
+                if (jason[k][1] == arr[i][1]){					
+					addCharS(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
+					i++;
+				}else{
+					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
+					k--;
+				}
+			}
         }
 	}else{
 		//Amber
@@ -1656,8 +1688,7 @@ function parseFreeChar(){
 }
 function parseFreeWeapons(){	
 	var jason = JSON.parse(localStorage.getItem("freeWeapons"));
-    if(jason!=null){ 
-		
+    if(jason!=null){ 		
 		for (var k = 0; k< jason.length; k++) {    
                 freeWeapons[k] = jason[k];
 				addWeaponS(freeWeapons[k][0],freeWeapons[k][1],freeWeapons[k][2],freeWeapons[k][3]);
@@ -1675,7 +1706,6 @@ function parseFreeWeapons(){
 		addWeapon(6,148,0,99);
 		addWeapon(6,149,0,99);
 		addWeapon(6,150,0,99);	
-		addWeapon(6,175,0,99);//sada
 		//craft berg
 		addWeapon(6,122,0,99);
 		addWeapon(6,123,0,99);
@@ -1725,8 +1755,7 @@ function parseShopWeapons(){
 }
 function parseShopChar(){	
 	var jason = JSON.parse(localStorage.getItem("shopChars"));
-    if(jason!=null){ 
-		
+    if(jason!=null){ 		
 		for (var k = 0; k< jason.length; k++) {    
                 shopChars[k] = jason[k];
 				addCharS(shopChars[k][0],shopChars[k][1],shopChars[k][2],shopChars[k][3]);
