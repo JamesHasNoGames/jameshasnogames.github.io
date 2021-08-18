@@ -1735,65 +1735,106 @@ function parseFreeWeapons(){
 }
 function parseShopWeapons(){	
 	var jason = JSON.parse(localStorage.getItem("shopWeapons"));
-    if(jason!=null){ 
-		
-		for (var k = 0; k< jason.length; k++) {    
-                shopWeapons[k] = jason[k];
-				addWeaponS(shopWeapons[k][0],shopWeapons[k][1],shopWeapons[k][2],shopWeapons[k][3]);
+	var arr = [];
+	//shop blackcliff
+	arr.push([8,116,0,99]);
+	arr.push([8,117,0,99]);
+	arr.push([8,118,0,99]);
+	arr.push([8,119,0,99]);
+	arr.push([8,120,0,99]);
+	//shop royal
+	arr.push([8,151,0,99]);
+	arr.push([8,152,0,99]);
+	arr.push([8,153,0,99]);
+	arr.push([8,154,0,99]);
+	arr.push([8,155,0,99]);	
+	//shop bp
+	arr.push([8,111,0,99]);
+	arr.push([8,112,0,99]);
+	arr.push([8,113,0,99]);
+	arr.push([8,114,0,99]);
+	arr.push([8,115,0,99]);	
+    if(jason!=null){
+		var i = 0;
+		for (var k = 0; k< arr.length; k++) {
+			if (i < jason.length){
+				shopWeapons[k] = arr[k];		
+                if (jason[i][1] == arr[k][1]){						
+					addWeapon(jason[i][0],jason[i][1],jason[i][2],arr[k][3]);
+					shopWeapons[k][2] = jason[i][2];
+					i++;
+				}else{
+					addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+				}
+			}else{
+				shopWeapons.push(arr[k]);
+				addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+			}
         }
+	localStorage.removeItem("shopWeapons");
+	localStorage.setItem("shopWeapons", JSON.stringify(shopWeapons));
 	}else{
-		//shop blackcliff
-		addWeapon(8,116,0,99);
-		addWeapon(8,117,0,99);
-		addWeapon(8,118,0,99);
-		addWeapon(8,119,0,99);
-		addWeapon(8,120,0,99);
-		//shop royal
-		addWeapon(8,151,0,99);
-		addWeapon(8,152,0,99);
-		addWeapon(8,153,0,99);
-		addWeapon(8,154,0,99);
-		addWeapon(8,155,0,99);	
-		//shop bp
-		addWeapon(8,111,0,99);
-		addWeapon(8,112,0,99);
-		addWeapon(8,113,0,99);
-		addWeapon(8,114,0,99);
-		addWeapon(8,115,0,99);	
+		for (var k = 0; k< arr.length; k++) {
+			shopWeapons[k] = arr[k];	
+			addWeapon(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+		}
+		localStorage.removeItem("shopWeapons");
+		localStorage.setItem("shopWeapons", JSON.stringify(shopWeapons));	
 	}
 }
 function parseShopChar(){	
 	var jason = JSON.parse(localStorage.getItem("shopChars"));
-    if(jason!=null){ 		
-		for (var k = 0; k< jason.length; k++) {    
-                shopChars[k] = jason[k];
-				addCharS(shopChars[k][0],shopChars[k][1],shopChars[k][2],shopChars[k][3]);
+	var arr = [];
+	//Amber
+	arr.push([7,105,0,3]);
+	//Barbara
+	arr.push([7,93,0,2]);
+	//Beidou
+	arr.push([7,41,0,2]);	
+	//Bennett
+	arr.push([7,9,0,2]);	
+	//Fischl
+	arr.push([7,113,0,2]);		
+	//Kaeya
+	arr.push([7,13,0,2]);
+	//Lisa
+	arr.push([7,89,0,2]);		
+	//Ningguang
+	arr.push([7,73,0,1]);	
+	//Noelle
+	arr.push([7,25,0,2]);	
+	//Razor
+	arr.push([7,42,0,3]);
+	//Xiangling
+	arr.push([7,57,0,2]);		
+	//Xingqiu
+	arr.push([7,21,0,1]);	
+    if(jason!=null){ 
+		var i = 0;
+		for (var k = 0; k< arr.length; k++) {
+			if (i < jason.length){
+				shopChars[k] = arr[k];		
+                if (jason[i][1] == arr[k][1]){						
+					addChar(jason[i][0],jason[i][1],jason[i][2],arr[k][3]);
+					shopChars[k][2] = jason[i][2];
+					i++;
+				}else{
+					addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+				}
+			}else{
+				shopChars.push(arr[k]);
+				addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+			}
         }
+	localStorage.removeItem("shopChars");
+	localStorage.setItem("shopChars", JSON.stringify(shopChars));	
 	}else{
-		//Amber
-		addChar(7,105,0,3);
-		//Barbara
-		addChar(7,93,0,2);
-		//Beidou
-		addChar(7,41,0,2);	
-		//Bennett
-		addChar(7,9,0,2);	
-		//Fischl
-		addChar(7,113,0,2);		
-		//Kaeya
-		addChar(7,13,0,2);
-		//Lisa
-		addChar(7,89,0,2);		
-		//Ningguang
-		addChar(7,73,0,1);	
-		//Noelle
-		addChar(7,25,0,2);	
-		//Razor
-		addChar(7,42,0,3);
-		//Xiangling
-		addChar(7,57,0,2);		
-		//Xingqiu
-		addChar(7,21,0,1);	
+		for (var k = 0; k< arr.length; k++) {
+			shopChars[k] = arr[k];	
+			addChar(arr[k][0],arr[k][1],arr[k][2],arr[k][3]);
+		}
+		localStorage.removeItem("shopChars");
+		localStorage.setItem("shopChars", JSON.stringify(shopChars));	
 	}
 }
 function addChar(x, y, z, n){
@@ -1811,9 +1852,6 @@ function addChar(x, y, z, n){
 		}
 		par.appendChild(newcontent);
 	}else if(x==7){
-		shopChars.push([x, y, z, n]);
-		localStorage.removeItem("shopChars");
-		localStorage.setItem("shopChars", JSON.stringify(shopChars));
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
@@ -1841,9 +1879,6 @@ function addWeapon(x, y, z, n){
 		}
 		par.appendChild(newcontent);
 	}else if(x==8){
-		shopWeapons.push([x, y, z, n]);
-		localStorage.removeItem("shopWeapons");
-		localStorage.setItem("shopWeapons", JSON.stringify(shopWeapons));
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
