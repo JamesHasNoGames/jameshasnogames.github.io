@@ -1828,7 +1828,6 @@ function addWeapon(x, y, z, n){
 	var par;
 	var newcontent;	
 	if(x==6){
-
 		if(z > 0){
 			par = document.getElementById("container"+x);
 			newcontent = document.createElement('div');
