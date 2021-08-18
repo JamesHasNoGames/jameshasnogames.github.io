@@ -1650,8 +1650,8 @@ function parseFreeChar(){
 	arr.push([5,110,0,1]);
     if(jason!=null){ 
 		var i = 0;
-		for (var k = 0; k< jason.length; k++) {
-			if (i < arr.length){
+		for (var k = 0; k< arr.length; k++) {
+			if (i < jason.length){
 				freeChars[i] = arr[i];		
                 if (jason[k][1] == arr[i][1]){						
 					addChar(jason[k][0],jason[k][1],jason[k][2],arr[i][3]);
@@ -1659,12 +1659,7 @@ function parseFreeChar(){
 					i++;
 				}else{
 					addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
-					k--;
-					i++;
 				}
-			}else{
-				addChar(arr[i][0],arr[i][1],arr[i][2],arr[i][3]);
-				i++;	
 			}
         }
 	localStorage.removeItem("freeChars");
