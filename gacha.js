@@ -1670,17 +1670,17 @@ function parseFreeWeapons(){
 		addWeapon(6,139,0,99);
 		addWeapon(6,140,0,99);
 		//craft inasuma
-		addWeapon(6,141,0,99);
-		addWeapon(6,142,0,99);
-		addWeapon(6,143,0,99);
-		addWeapon(6,144,0,99);
-		addWeapon(6,145,0,99);
+		addWeapon(6,181,0,99);
+		addWeapon(6,182,0,99);
+		addWeapon(6,183,0,99);
+		addWeapon(6,184,0,99);
+		addWeapon(6,185,0,99);
 		//craft prot
-		addWeapon(6,246,0,99);
-		addWeapon(6,247,0,99);
-		addWeapon(6,248,0,99);
-		addWeapon(6,249,0,99);
-		addWeapon(6,250,0,99);	
+		addWeapon(6,146,0,99);
+		addWeapon(6,147,0,99);
+		addWeapon(6,148,0,99);
+		addWeapon(6,149,0,99);
+		addWeapon(6,150,0,99);	
 		//craft berg
 		addWeapon(6,122,0,99);
 		addWeapon(6,123,0,99);
@@ -1690,7 +1690,7 @@ function parseFreeWeapons(){
 		addWeapon(6,129,0,5);
 		addWeapon(6,130,0,5);	
 		//ps4
-		addWeapon(6,276,0,1);
+		addWeapon(6,176,0,1);
 	}
 }
 function parseShopWeapons(){	
@@ -1709,11 +1709,11 @@ function parseShopWeapons(){
 		addWeapon(8,119,0,99);
 		addWeapon(8,120,0,99);
 		//shop royal
-		addWeapon(8,251,0,99);
-		addWeapon(8,252,0,99);
-		addWeapon(8,253,0,99);
-		addWeapon(8,254,0,99);
-		addWeapon(8,255,0,99);	
+		addWeapon(8,151,0,99);
+		addWeapon(8,152,0,99);
+		addWeapon(8,153,0,99);
+		addWeapon(8,154,0,99);
+		addWeapon(8,155,0,99);	
 		//shop bp
 		addWeapon(8,111,0,99);
 		addWeapon(8,112,0,99);
