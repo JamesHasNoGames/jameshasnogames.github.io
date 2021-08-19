@@ -46,8 +46,6 @@
 
 .middle {
 	width: 98%;
-	font-size: 50%;
-	line-height: normal;
 	height: 90%;
 	margin: 0 auto;
     display:flex;
@@ -250,7 +248,8 @@
     border-left:none;
 }
 .bannerName{
-    font-size: 2em;
+    font-size: 100vh;
+	line-height: 1;
     text-align: center;
     width:100%;
     height:100px;
