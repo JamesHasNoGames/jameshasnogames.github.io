@@ -273,27 +273,27 @@
 }
 .nr5{
     text-align: center;
-    width:20px;
+    width: 10%;
     border-right: 1px solid #222222;
 	border-left: none;
 	border-top: none;
 	border-bottom: none;
-	font-size: 13px;
+	font-size: 2vh;
 }
 .nr4{
     text-align: center;
-    width:20px;
+    width: 10%;
     border-left: 1px solid #222222;
 	border-right: none;
 	border-top: none;
 	border-bottom: none;
-	font-size: 13px;
+	font-size: 2vh;
 }
 .name{
     text-align: center;
-    width:210px;
+    width:80%;
     border: none;
-	font-size: 13px;
+	font-size: 2vh;
 }
 .remove{
     width:252px;
