@@ -21,7 +21,7 @@
     width:100%;
     height:100%;
     color: #ddd;
-    border: 0.1vw solid #111111;
+    border: 0.2vw solid #111111;
     background-color: #222222;
 }
 .buttonArea11, .buttonArea12, .buttonArea13, .buttonArea14 {
@@ -35,7 +35,7 @@
 	margin: 0;
 	padding: 0;
 	border: none;
-    border-left: 0.1vw solid #111111;
+    border-left: 0.2vw solid #111111;
 	/*border-right: 1px solid #111111;*/
 	
 }
