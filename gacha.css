@@ -41,6 +41,7 @@
     width:100%;
 	box-sizing: border-box;
 	margin: 0;
+	color: white;
 	padding: 0;
 	display:block;
 	border:none;
@@ -56,4 +57,25 @@
 }
 .addOne:hover, .addOne:focus {
     background-color: #333333;
+}
+.button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
+    width:12.5%;
+    height:30px;
+	border: none;
+    background-color: #222222;
+    padding: 0px 0px 0px 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+.button3, .button8, .button13, .button18{
+    cursor:pointer;
+    width:50%;
+    height:30px;
+    background-color: #222222;
+    padding: 0px 0px 0px 0px;
+    border-top: 1px solid #111111;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+    line-height: 0px;
 }
