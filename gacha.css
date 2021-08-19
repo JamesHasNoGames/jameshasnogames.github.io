@@ -65,8 +65,7 @@
     height:15%;
     display:block;
     font-size: 0;
-	margin: 0;
-	padding: 0;
+    background-size: 10%;
     line-height: 0px;
     background-color: #222222;
     
@@ -77,8 +76,7 @@
 	border:none;
     border-left: 1px solid #111111;
 	border-right: 1px solid #111111;
-	margin: 0;
-	padding: 0;
+	
     display:block;
 	font-size: 1.2vw;
 	line-height: 1.5;
@@ -170,7 +168,7 @@
     line-height: 0px;
 }
 .chpinactive{
-    width:100%;
+    width:12.5%;
     height:100%;
     background-color: #111111;
     padding: 0px 0px 0px 0px;
@@ -185,7 +183,7 @@
     border-top:1px solid #111111;
 }
 .wpinactive{
-    width:100%;
+    width:12.5%;
     height:100%;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
@@ -218,7 +216,7 @@
     font-size: 0;
 }
 .chginactive{
-    width:30px;
+    width:12.5%;
     height:30px;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
@@ -233,7 +231,7 @@
     border-right:none;
 }
 .wginactive{
-    width:30px;
+   width:12.5%;
     height:30px;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
