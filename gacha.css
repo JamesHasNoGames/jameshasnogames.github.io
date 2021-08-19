@@ -54,3 +54,6 @@
     background-color: #222222;
     cursor:pointer;
 }
+.addOne:hover, .addOne:focus {
+    background-color: #333333;
+}
