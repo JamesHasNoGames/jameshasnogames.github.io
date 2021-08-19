@@ -58,6 +58,11 @@
 .addOne:hover, .addOne:focus {
     background-color: #333333;
 }
+.buttons5{
+		font-size: 1.2vw;
+	line-height: 1.5;
+		border:none;
+}
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
     width:12.5%;
     height:100%;
