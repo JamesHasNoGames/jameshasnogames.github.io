@@ -60,7 +60,7 @@
 }
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
     width:12.5%;
-    height:30px;
+    height:100%;
 	border: none;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
@@ -69,7 +69,7 @@
 }
 .button3, .button8, .button13, .button18{
     cursor:pointer;
-    width:60%;
+    width:50%;
     height:100%;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
