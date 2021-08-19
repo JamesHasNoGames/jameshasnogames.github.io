@@ -95,7 +95,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 60%;
     border-bottom: 0.2vw solid #887bad;
     /*border-left:1px solid #111111;*/
 }
@@ -110,7 +110,7 @@
     background-image: url("/Pictures/Icon_3_Stars_white.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 40%;
     border-bottom: 0.2vw solid #333333;
 }
 .button4, .button9, .button14, .button19 {
