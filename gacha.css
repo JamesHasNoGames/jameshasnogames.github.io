@@ -14,3 +14,32 @@
 	width:16.6%;
 	height: 100%;
 }
+.bannerName{
+    font-size: 1.2vw;
+	line-height: 1.5;
+    text-align: center;
+    width:100%;
+    height:100%;
+    color: #ddd;
+    border: 1px solid #111111;
+    background-color: #222222;
+}
+
+.addOne{
+    width:10%;
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	display:block;
+	border:none;
+	font-size: 1.2vw;
+	line-height: 1.5;
+    background-image: url("/Pictures/UI_Icon_Add.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+ 
+    background-color: #222222;
+    cursor:pointer;
+}
