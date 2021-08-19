@@ -73,9 +73,16 @@
     height:30px;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    border-top: 1px solid #111111;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
+	border: none;
     line-height: 0px;
+}
+.button3:hover, .button8:hover, .button13:hover, .button18:hover{
+    background-color: #333333;
+    border-bottom: 3px solid #333333;
+}
+.button1:hover, .button1:focus, .button2:hover, .button2:focus, .button6:hover, .button6:focus, .button7:hover, .button7:focus, .button11:hover, .button11:focus, .button12:hover, .button12:focus, .button16:hover, .button16:focus, .button17:hover, .button17:focus {
+    background-color: #887bad;
+}
+.button4:hover, .button4:focus, .button5:hover, .button5:focus, .button9:hover, .button9:focus, .button10:hover, .button10:focus, .button14:hover, .button14:focus, .button15:hover, .button15:focus, .button19:hover, .button19:focus, .button20:hover, .button20:focus {
+    background-color: #b6a16d;   
 }
