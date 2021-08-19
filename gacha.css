@@ -278,7 +278,7 @@
 	border-left: none;
 	border-top: none;
 	border-bottom: none;
-	font-size: 1.5vh;
+	font-size: 1.8vh;
 }
 .nr4{
     text-align: center;
@@ -287,13 +287,13 @@
 	border-right: none;
 	border-top: none;
 	border-bottom: none;
-	font-size: 1.7vh;
+	font-size: 1.8vh;
 }
 .name{
     text-align: center;
     width:80%;
     border: none;
-	font-size: 1.7vh;
+	font-size: 1.8vh;
 }
 .remove{
     width:100%;
@@ -305,7 +305,7 @@
     color: #999999;
     font-style: italic;
     font-weight: 100;
-    font-size: 1.7vh;
+    font-size: 1.8vh;
 	line-height: 2;
     cursor:pointer;
 
