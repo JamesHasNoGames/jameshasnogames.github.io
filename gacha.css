@@ -34,16 +34,15 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    /*border-left: 1px solid #111111;*/
-	border-right: 1px solid #111111;
-	border: none;*/
+    /*border-left: 1px solid #111111;
+	border-right: 1px solid #111111;*/
+	border: 1px solid #111111;
 }
 .addOne{
     width:100%;
-	margin-left:0;
-	margin-right:0;
-	padding-left:0;
-	padding-right:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 	display:block;
 	border:none;
 	font-size: 1.2vw;
@@ -52,7 +51,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10%;
-	border: 1px solid #111111;
+	border: none;
     background-color: #222222;
     cursor:pointer;
 }
