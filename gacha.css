@@ -60,7 +60,7 @@
 }
 .buttons5{
 		font-size: 1.2vw;
-	line-height: 1.5;
+		line-height: 1.5;
 		border:none;
 }
 .button1, .button2, .button4, .button5, .button6, .button7, .button9, .button10,.button11, .button12, .button14, .button15, .button16, .button17, .button19, .button20 {
@@ -69,7 +69,6 @@
 	border: none;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;
     cursor:pointer;
 }
 .button3, .button8, .button13, .button18{
@@ -79,7 +78,6 @@
     background-color: #222222;
     padding: 0px 0px 0px 0px;
 	border: none;
-    line-height: 0px;
 }
 .button3:hover, .button8:hover, .button13:hover, .button18:hover{
     background-color: #333333;
