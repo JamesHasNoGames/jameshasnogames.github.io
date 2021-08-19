@@ -68,7 +68,7 @@
     cursor:pointer;
 	font-size: 1.2vw;
 	line-height: 1.5;
-	color:white;
+	color:#222222;
 }
 .button3, .button8, .button13, .button18{
     cursor:pointer;
@@ -83,7 +83,7 @@
 }
 .button3:hover, .button8:hover, .button13:hover, .button18:hover{
     background-color: #333333;
-    /*border-bottom: 3px solid #333333;*/
+    border-bottom: 0.2vw solid #333333;
 }
 .button1:hover, .button1:focus, .button2:hover, .button2:focus, .button6:hover, .button6:focus, .button7:hover, .button7:focus, .button11:hover, .button11:focus, .button12:hover, .button12:focus, .button16:hover, .button16:focus, .button17:hover, .button17:focus {
     background-color: #887bad;
@@ -96,8 +96,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-
-
     border-bottom: 0.2vw solid #887bad;
     /*border-left:1px solid #111111;*/
+}
+.button2, .button7, .button12, .button17{
+    background-image: url("/Pictures/UI_BagTabIcon_Weapon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-bottom: 0.2vw solid #887bad;
+}
+.button3, .button8, .button13, .button18{    
+    background-image: url("/Pictures/Icon_3_Stars_white.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-bottom: 0.2vw solid #333333;
+}
+.button4, .button9, .button14, .button19 {
+    background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-bottom: 0.2vw solid #b6a16d;
+}
+.button5, .button10, .button15, .button20{
+    background-image: url("/Pictures/UI_BagTabIcon_Weapon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-bottom: 0.2vw solid #b6a16d;
+   /* border-right:1px solid #111111;*/
 }
