@@ -310,6 +310,7 @@
     height:100%;
     color: #ddd;
     border: none;
+	border-bottom: 0.2vw solid #111111;
     background-color: #222222;
 }
 .ueberschriftName2{
@@ -320,7 +321,7 @@
     height:100%;
     color: #ddd;
     border: none;
-	border-top: 0.2vw solid #111111;
+	border-bottom: 0.2vw solid #111111;
     background-color: #222222;	
 }
 .buttonArea21, .buttonArea22, .buttonArea23, .buttonArea24 {
