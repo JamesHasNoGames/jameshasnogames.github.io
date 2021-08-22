@@ -366,6 +366,7 @@
 	line-height: 1.5; 
     background-color: #222222;
     cursor:pointer;
+		border-bottom: 0.2vw solid #111111;
 }
 .notok{ 
 	border:none;
@@ -380,4 +381,5 @@
 	line-height: 1.5;
     background-color: #222222;
     cursor:pointer;
+		border-bottom: 0.2vw solid #111111;
 }
