@@ -1916,7 +1916,7 @@ function editChar(x){
 	var newcontent;
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
-	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
+	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok">.</button><button onclick="abort('+x+')" id="freeChar" class="notok">.</button> ';
 	container.innerHTML = "";
 	if(x==5){
 	var jason = JSON.parse(localStorage.getItem("freeChars"));
@@ -1953,7 +1953,7 @@ function editWeapons(x){
 	var newcontent;
 	var y = x+10;
 	var buttons = document.getElementById("buttonArea"+y);
-	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok"></button><button onclick="abort('+x+')" id="freeChar" class="notok"></button> ';
+	buttons.innerHTML = '<button onclick="accept('+x+')" id="freeChar" class="ok">.</button><button onclick="abort('+x+')" id="freeChar" class="notok">.</button> ';
 	container.innerHTML = "";
 	if(x==6){
 	var jason = JSON.parse(localStorage.getItem("freeWeapons"));
