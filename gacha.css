@@ -362,8 +362,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10%;
-    font-size: 0;
-    line-height: 0;  
+    font-size: 1.2vw;
+	line-height: 1.5; 
     background-color: #222222;
     cursor:pointer;
 }
@@ -376,8 +376,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10%;
-    font-size: 0;
-    line-height: 0;  
+	font-size: 1.2vw;
+	line-height: 1.5;
     background-color: #222222;
     cursor:pointer;
 }
