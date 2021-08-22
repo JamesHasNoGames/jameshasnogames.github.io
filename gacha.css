@@ -46,12 +46,12 @@
 	display:block;
 	border:none;
 	font-size: 1.2vw;
-	line-height: 1.8;
+	line-height: 1.7;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10%;
-	border: none;
+	border-bottom: 0.2vw solid #000000;
     background-color: #222222;
     cursor:pointer;
 }
@@ -219,5 +219,5 @@
     border: none;
 	border-bottom: 0.2vw solid #222222;
     background-color: #222222;
-	border-top: 0.2vw solid #000000;
+
 }
