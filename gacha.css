@@ -131,9 +131,10 @@
 .chpinactive{
     width:12.5%;
     height:100%;
+	font-size: 1.2vw;
+	line-height: 1.5;
     background-color: #111111;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -143,9 +144,10 @@
 .wpinactive{
     width:12.5%;
     height:100%;
+	font-size: 1.2vw;
+	line-height: 1.5;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;  
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -159,20 +161,21 @@
     background-size: 40%;
     border-bottom: 0.2vw solid #333333;
     opacity: 1;
-    width:132px;
-    height:30px;
+    font-size: 1.2vw;
+	line-height: 1.5;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;   
     transition-property: none;
-    font-size: 0;
+	width:50%;
+    height:100%;
 }
 .chginactive{
     width:12.5%;
-    height:30px;
+	font-size: 1.2vw;
+	line-height: 1.5;
+    height:100%;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -181,10 +184,11 @@
 }
 .wginactive{
    width:12.5%;
-    height:30px;
+    height:100%;
+	font-size: 1.2vw;
+	line-height: 1.5;
     background-color: #222222;
     padding: 0px 0px 0px 0px;
-    line-height: 0px;
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
     background-position: center;
     background-repeat: no-repeat;
