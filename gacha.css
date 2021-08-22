@@ -183,7 +183,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 55%;
     border-bottom: 0.2vw solid #b6a16d;
 }
 .wginactive{
@@ -197,6 +197,6 @@
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 70%;
     border-bottom: 0.2vw solid #b6a16d;
 }
