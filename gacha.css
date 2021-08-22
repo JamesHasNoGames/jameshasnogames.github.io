@@ -46,7 +46,7 @@
 	display:block;
 	border:none;
 	font-size: 1.2vw;
-	line-height: 1.55;
+	line-height: 1.575;
     background-image: url("/Pictures/UI_Icon_Add.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@
     /*border: 0.2vw solid #000000;*/
     background-color: #111111;
 	border: none;
-	border-bottom: 0.2vw solid #222222;
+	border-bottom: 0.1vw solid #222222;
     color: #999999;
     font-style: italic;
     font-weight: 100;
@@ -230,15 +230,16 @@
     display:flex;
     color: #ddd;
     background-color: #111111;
-    border-left: 0.1vw solid #222222;
-    border-right: 0.1vw solid #222222;
-    border-top: none;
-    border-bottom: 0.1vw solid #222222;
+	border: none;
 }
 .nr5{
     text-align: center;
     width: 10%;
-	border: none;
+
+	border-left: 0.1vw solid #222222;
+    border-right: 0.1vw solid #222222;
+    border-top: none;
+    border-bottom: 0.1vw solid #222222;
 	font-size: 0.8vw;
 }
 .nr4{
@@ -246,10 +247,15 @@
     width: 10%;
 	border: none;
 	font-size: 0.8vw;
+	border-left: 0.1vw solid #222222;
+    border-right: 0.1vw solid #222222;
+    border-top: none;
+    border-bottom: 0.1vw solid #222222;
 }
 .name{
     text-align: center;
     width:80%;
     border: none;
 	font-size: 0.8vw;
+	border-bottom: 0.1vw solid #222222;
 }
