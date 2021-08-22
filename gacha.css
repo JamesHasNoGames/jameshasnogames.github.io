@@ -353,31 +353,29 @@
 .freeChar:hover, .ok:hover, .notok:hover{
 	background-color: #333333;	
 }
-.ok{    
-	width:126px;
-    height:30px;
-    border: 1px solid #111111;
-	border-bottom:none;
+.ok{
+    border:none;
+	width:50%;
+    height:100%;
     display:inline-block;
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 20%;
     font-size: 0;
     line-height: 0;  
     background-color: #222222;
     cursor:pointer;
 }
 .notok{ 
+	border:none;
 	width:126px;
     height:30px;
-    border: 1px solid #111111;
-	border-bottom:none;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 20%;
     font-size: 0;
     line-height: 0;  
     background-color: #222222;
