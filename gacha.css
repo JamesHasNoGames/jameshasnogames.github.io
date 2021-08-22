@@ -211,7 +211,7 @@
     font-style: italic;
     font-weight: 100;
     font-size: 0.8vw;
-	line-height: 1.5;
+	line-height: 1.6;
     cursor:pointer;
 
 }
@@ -234,4 +234,28 @@
     border-right: 0.2vw solid #000000;
     border-top: none;
     border-bottom: 0.2vw solid #222222;
+}
+.nr5{
+    text-align: center;
+    width: 10%;
+    border-right: 1px solid #222222;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+	font-size: 0.8vw;
+}
+.nr4{
+    text-align: center;
+    width: 10%;
+    border-left: 1px solid #222222;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	font-size: 0.8vw;
+}
+.name{
+    text-align: center;
+    width:80%;
+    border: none;
+	font-size: 0.8vw;
 }
