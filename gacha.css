@@ -361,7 +361,7 @@
     background-image: url("/Pictures/UI_IconYesSmall.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 10%;
     font-size: 0;
     line-height: 0;  
     background-color: #222222;
@@ -369,13 +369,13 @@
 }
 .notok{ 
 	border:none;
-	width:126px;
-    height:30px;
+	width:50%;
+    height:100%;
     display:inline-block;
     background-image: url("/Pictures/UI_IconClosedSmall.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 10%;
     font-size: 0;
     line-height: 0;  
     background-color: #222222;
