@@ -267,13 +267,13 @@
 
 /* Dropdown Content (Hidden by Default) */
 [class*="dropdown-content"]{
-    margin-left:16.4%;
+    margin-left:16.3%;
     margin-top:0px;
     display: none;
     position: absolute;
     background-color: #222222;
     font-size: 0.8vw;
-    width: 16%;
+    width: 16.1%;
     line-height: 1.7; 
     z-index: 1;
 	/*border-top: 3px solid yellow;*/
