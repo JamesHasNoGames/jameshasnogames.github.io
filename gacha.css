@@ -95,7 +95,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 60%;
     border-bottom: 0.2vw solid #887bad;
     /*border-left:1px solid #111111;*/
 }
@@ -103,28 +103,28 @@
     background-image: url("/Pictures/UI_BagTabIcon_Weapon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     border-bottom: 0.2vw solid #887bad;
 }
 .button3, .button8, .button13, .button18{    
     background-image: url("/Pictures/Icon_3_Stars_white.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     border-bottom: 0.2vw solid #333333;
 }
 .button4, .button9, .button14, .button19 {
     background-image: url("/Pictures/UI_BagTabIcon_Avatar.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 60%;
     border-bottom: 0.2vw solid #b6a16d;
 }
 .button5, .button10, .button15, .button20{
     background-image: url("/Pictures/UI_BagTabIcon_Weapon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     border-bottom: 0.2vw solid #b6a16d;
    /* border-right:1px solid #111111;*/
 }
@@ -139,7 +139,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 60%;
     border-bottom: 0.2vw solid #887bad;
 }
 .wpinactive{
@@ -153,7 +153,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     border-bottom: 0.2vw solid #887bad;
 }
 .sinactive{
@@ -161,7 +161,7 @@
     background-image: url("/Pictures/Icon_3_Stars_whites.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     border-bottom: 0.2vw solid #333333;
     opacity: 1;
     font-size: 1.2vw;
@@ -183,7 +183,7 @@
     background-image: url("/Pictures/UI_BagTabIcon_Avatars.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 60%;
     border-bottom: 0.2vw solid #b6a16d;
 }
 .wginactive{
@@ -197,6 +197,6 @@
     background-image: url("/Pictures/UI_BagTabIcon_Weapons.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     border-bottom: 0.2vw solid #b6a16d;
 }
