@@ -282,7 +282,7 @@
 /* Links inside the dropdown */
 [class*="dropdown-content"] a {
     color: #ddd;
-    padding: 0vw 3vw;
+    padding: 0vw 1.5vw;
     text-decoration: none;
     /*height:22px;*/
     display: block;
