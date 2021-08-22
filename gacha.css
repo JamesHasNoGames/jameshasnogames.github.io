@@ -282,7 +282,7 @@
 /* Links inside the dropdown */
 [class*="dropdown-content"] a {
     color: #ddd;
-    padding: 0px 16px;
+    padding: 0px 0px;
     text-decoration: none;
     /*height:22px;*/
     display: block;
