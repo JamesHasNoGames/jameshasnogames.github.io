@@ -344,7 +344,7 @@
     background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%; 
+    background-size: 10%; 
     background-color: #222222;
     cursor:pointer;
 	font-size: 1.2vw;
@@ -352,4 +352,34 @@
 }
 .freeChar:hover, .ok:hover, .notok:hover{
 	background-color: #333333;	
+}
+.ok{    
+	width:126px;
+    height:30px;
+    border: 1px solid #111111;
+	border-bottom:none;
+    display:inline-block;
+    background-image: url("/Pictures/UI_IconYesSmall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    font-size: 0;
+    line-height: 0;  
+    background-color: #222222;
+    cursor:pointer;
+}
+.notok{ 
+	width:126px;
+    height:30px;
+    border: 1px solid #111111;
+	border-bottom:none;
+    display:inline-block;
+    background-image: url("/Pictures/UI_IconClosedSmall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    font-size: 0;
+    line-height: 0;  
+    background-color: #222222;
+    cursor:pointer;
 }
