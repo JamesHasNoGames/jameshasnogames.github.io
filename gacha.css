@@ -129,6 +129,7 @@
    /* border-right:1px solid #111111;*/
 }
 .chpinactive{
+	border:none;
     width:12.5%;
     height:100%;
 	font-size: 1.2vw;
@@ -142,6 +143,7 @@
     border-bottom: 0.2vw solid #887bad;
 }
 .wpinactive{
+	border:none;
     width:12.5%;
     height:100%;
 	font-size: 1.2vw;
@@ -155,6 +157,7 @@
     border-bottom: 0.2vw solid #887bad;
 }
 .sinactive{
+	border:none;
     background-image: url("/Pictures/Icon_3_Stars_whites.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -170,6 +173,7 @@
     height:100%;
 }
 .chginactive{
+	border:none;
     width:12.5%;
 	font-size: 1.2vw;
 	line-height: 1.5;
@@ -183,7 +187,8 @@
     border-bottom: 0.2vw solid #b6a16d;
 }
 .wginactive{
-   width:12.5%;
+	border:none;
+	width:12.5%;
     height:100%;
 	font-size: 1.2vw;
 	line-height: 1.5;
