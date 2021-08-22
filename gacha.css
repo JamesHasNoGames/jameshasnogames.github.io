@@ -420,3 +420,20 @@
 .entry2hide{
 	display:none;
 }
+.nr{
+    text-align: center;
+    width:10%;
+	border:none;
+	font-size: 0.8vw;
+	line-height: 1.7;
+}
+.name2{
+    text-align: center;
+    width:90%;
+	border-left: 0.1vw solid #222222;
+	border-right: none;
+	border-top: none;
+    border-bottom: none;
+	font-size: 0.8vw;
+	line-height: 1.7;
+}
