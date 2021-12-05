@@ -449,8 +449,7 @@
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 0.6vw;
-	padding-left: 0.3vw;
+    background-size: 0.5vw;
     width: 5%;
     cursor: pointer;
 	border: none;
