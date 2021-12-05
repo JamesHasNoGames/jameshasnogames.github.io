@@ -180,10 +180,12 @@
 .img1 {
 	text-align:center;
 	max-height: 6.05vw;
-	line-height: 0vw;
 	border-bottom: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
 	padding: 0vw 0vw 0vw 0vw;
+}
+.img1 img{
+	width:100px;
 }
 .emptyTable {
 	text-align:center;
