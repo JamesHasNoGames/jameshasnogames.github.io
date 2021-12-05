@@ -248,6 +248,9 @@
     height:1.36vw;
     border-bottom: 0.065vw solid #111111;
 }
+.buttons1 img{
+	width:1vw;
+}
 #button1, #button2 {
     background:none; 
     text-decoration: none; 
