@@ -18,7 +18,7 @@
 .titleFirst{
     color:#999999;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.1vw;
 	text-align: center;
 	background-color: #222222;	
 	float:left;
@@ -27,12 +27,12 @@
 	border-top: 0.2vw solid #111111;
 	border-right: 0.2vw solid #111111;
 	border-bottom: 0.2vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .titleLast{
     color:#999999;
 	font-weight: bold;
-	font-size: 17px;
+	font-size: 1.1vw;
 	text-align: center;
 	background-color: #222222;	
 	float:left;
@@ -42,16 +42,6 @@
 	border-right: 0.2vw solid #111111;
 	border-bottom: 0.2vw solid #111111;
 }
-/*.title2 {
-    background-color: #111111;
-    display: flex;
-    text-align:center;
-    vertical-align:middle;  
-	width: 1500px;
-    margin: 0 auto;
-    border-bottom:5px solid #111111;
-	
-}*/
 .emptyCell{
 	border-left: 0.2vw solid #111111;
 	border-top: 0.2vw solid #111111;
@@ -78,249 +68,197 @@
 }
 .charTableEmpty{
 	background-color: #222222;
-	width:95px;
-	/*height:168px;*/
+	width:6.18vw;
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right:0.065vw solid #111111;
 	border-bottom: 0.2vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableNormal{
 	background-color: #222222;
 	color: #ddd;
-	width:95px;
-	/*height:168px;*/
+	width:6.18vw;
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right:0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableGot{
 	background-color: #333333;
-	width:95px;
+	width:6.18vw;
 	color: #ddd;
-	/*height:168px;*/
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right:0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableTest{
 	color: #555555;
 	background-color: #222222;
-	width:95px;
-	/*height:168px;*/
+	width:6.18vw;
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right:0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableEmptyL{
 	background-color: #222222;
-	width:95px;
-	/*height:168px;*/
+	width:6.18vw;
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: none;
 	border-bottom: 0.2vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableNormalL{
 	background-color: #222222;
-	width:95px;
+	width:6.18vw;
 	color: #ddd;
-	/*height:168px;*/
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: none;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableGotL{
 	color: #ddd;
 	background-color: #333333;
-	width:95px;
-	/*height:168px;*/
+	width:6.18vw;
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: none;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .charTableTestL{
 	background-color: #222222;
-	width:95px;
+	width:6.18vw;
 	color: #555555;
-	/*height:168px;*/
 	float:left;
-	line-height: 0px;
+	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: none;
 	border-bottom: 0.065vw solid #111111;
-    padding: 0px 0px 0px 0px;
+    padding: 0vw 0vw 0vw 0vw;
 }
 .weapon{
 	background-color: #222222;	
 	text-align:center;
 	float:left;
-    line-height: 16px;
+    line-height: 1.04vw;
     color:#111111;
 	font-weight: bold;
-	font-size: 17px;
-	width:38px;
-    height:267px;
+	font-size: 1.1vw;
+	width:2.47vw;
+    height:17.38vw;
 	border-left: 0.2vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: 0.2vw solid #111111;
 	border-bottom: 0.2vw solid #111111;
 }
-/*.weaponC2 {
-	background-color: #222222;	
-	text-align:center;
-    line-height: 16px;
-    height:285px;
-	float:left;
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	width:36px;
-	border-right: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-left: none;
-	border-bottom: none;
-}
-.weaponE1 {
-	background-color: #000000;	
-	text-align:center;
-	float:left;
-    line-height: 16px;
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	width:36px;
-	border-left: none;
-	border-top: none;
-	border-right:none;
-	border-bottom: none;
-    height:38px;
-}
-.weaponE2 {
-	background-color: #000000;	
-	text-align:center;
-    line-height: 16px;
-    height:38px;
-    float:left;
-    color:#111111;
-	font-weight: bold;
-	font-size: 17px;
-	width:36px;
-	border-right: none;
-	border-top: none;
-	border-left: none;
-	border-bottom: none;
-}*/
+
 .img1 {
 	text-align:center;
-	max-height: 93px;
-	line-height: 0px;
+	max-height: 6.05vw;
+	line-height: 0vw;
 	border-bottom: 0.065vw solid #111111;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 0vw 0vw;
 }
 .emptyTable {
 	text-align:center;
-	height: 263px;
-	line-height: 0px;
+	height: 17.12vw;
+	line-height: 0vw;
 	border: none;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 0vw 0vw;
 }
 .pic1 {
 	text-align:center;
-	line-height: 0px;
+	line-height: 0vw;
 	border-bottom: 0.065vw solid #111111;
-	margin: 0px 0px 0px 0px;
-	padding: 5px 0px 0px 0px;
-	border-spacing: 0px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.33vw 0vw 0vw 0vw;
+	border-spacing: 0vw;
 }
 .text1 {
-	width:47px;
-	line-height: 0px;
+	width:3.06vw;
+	line-height: 0vw;
 	border-right: 0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
-	margin: 0px 0px 0px 0px;
-	padding: 6px 0px 0px 3px;
-	border-spacing: 0px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.39vw 0vw 0vw 0.195vw;
+	border-spacing: 0vw;
     text-align: left;
-	font-size:13px;
+	font-size:0.84vw;
 }
 .textf1{
-	width:47px;
-	line-height: 0px;
+	width:3.06vw;
+	line-height: 0vw;
 	border-right: 0.065vw solid #111111;
-	margin: 0px 0px 0px 0px;
-	padding: 6px 0px 0px 3px;
-	border-spacing: 0px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.39vw 0vw 0vw 0.195vw;
+	border-spacing: 0vw;
     text-align: left;
-	font-size:13px;
+	font-size:0.84vw;
 }
 .text2{
-	width:47px;
-	line-height: 0px;
+	width:3.06vw;
+	line-height: 0vw;
 	border-bottom: 0.065vw solid #111111;
-	margin: 0px 0px 0px 0px;
-	padding: 6px 0px 0px 0.065vw;
-	border-spacing: 0px;
-	font-size:13px;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.39vw 0vw 0vw 0.065vw;
+	border-spacing: 0vw;
+	font-size:0.84vw;
 }
 .textf2{
-	width:47px;
-	line-height: 0px;
-	margin: 0px 0px 0px 0px;
-	padding: 6px 0px 0px 0.065vw;
-	border-spacing: 0px;
-	font-size:13px;
+	width:3.06vw;
+	line-height: 0vw;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.39vw 0vw 0vw 0.065vw;
+	border-spacing: 0vw;
+	font-size:0.84vw;
 }
 .buttons1{
-    height:21px;
+    height:1.36vw;
     border-bottom: 0.065vw solid #111111;
 }
 #button1, #button2 {
     background:none; 
     text-decoration: none; 
     border:none; 
-    height:12px;
+    height: 0.78vw;
     float: left;
     width: 24%;
     cursor: pointer;
 }
 #button1 {
-    padding-left: 4px;
-    margin: -5px auto;
+    padding-left: 0.26vw;
+    margin: -0.33vw auto;
 
 }
 #button2 {
-    padding-left: 0px;
-    margin: -5px auto;
+    padding-left: 0vw;
+    margin: -0.33vw auto;
 
 
 }
@@ -329,8 +267,8 @@
     width: 52%;
     text-align: center;
 	line-height: 0.065vw;
-    margin-top:5px;
-	font-size:15px;
+    margin-top:0.33vw;
+	font-size:0.97vw;
 }
 #empty {
 	background-color: #222222;
