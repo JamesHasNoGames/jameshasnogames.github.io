@@ -53,14 +53,16 @@ h1 {
 p {
 	text-align: center;
 }
+
+
 #logo{
     font-weight: bold;
     font-size: 12px;
     line-height: 80px;
-    height: 60px;
-    width:150px;
+    height: 7.9vh;
+    width:19.9vh;
     background-image: url('Pictures/logo.png');
-    background-size: 60px;
+    background-size: 7.9vh;
     text-align:center;
     background-repeat:no-repeat;
     background-position:center;
