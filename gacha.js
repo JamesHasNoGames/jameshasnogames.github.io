@@ -1789,28 +1789,28 @@ function parseShopChar(){
 	var arr = [];
 	//Amber
 	arr.push([7,105,0,3]);
-	//Barbara
-	arr.push([7,93,0,2]);
-	//Beidou
-	arr.push([7,41,0,2]);	
-	//Bennett
-	arr.push([7,9,0,2]);	
-	//Fischl
-	arr.push([7,113,0,2]);		
-	//Kaeya
-	arr.push([7,13,0,2]);
-	//Lisa
-	arr.push([7,89,0,2]);		
-	//Ningguang
-	arr.push([7,73,0,1]);	
-	//Noelle
-	arr.push([7,25,0,2]);	
 	//Razor
 	arr.push([7,42,0,3]);
+	//Bennett
+	arr.push([7,9,0,3]);	
+	//Lisa
+	arr.push([7,89,0,3]);
+	//Barbara
+	arr.push([7,93,0,3]);
+	//Kaeya
+	arr.push([7,13,0,3]);
+	//Fischl
+	arr.push([7,113,0,2]);
 	//Xiangling
 	arr.push([7,57,0,2]);		
+	//Beidou
+	arr.push([7,41,0,2]);	
+	//Noelle
+	arr.push([7,25,0,2]);			
+	//Ningguang
+	arr.push([7,73,0,2]);	
 	//Xingqiu
-	arr.push([7,21,0,1]);	
+	arr.push([7,21,0,2]);	
     if(jason!=null){ 
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
