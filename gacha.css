@@ -440,8 +440,8 @@
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 0.6vw;
-    width: 0.6vw;
+    background-size: 8px;
+    width: 9px;
     cursor: pointer;
 	border: none;
 }
@@ -449,9 +449,9 @@
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 0.6vw;
+    background-size: 8px;
 	padding-left: 0.3vw;
-    width: 0.6vw;
+    width: 9px;
     cursor: pointer;
 	border: none;
 }
