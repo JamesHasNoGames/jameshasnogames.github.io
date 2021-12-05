@@ -412,10 +412,10 @@
     display:flex;
     color: #ddd;
     background-color: #111111;
-    /*border-left: 0.1vw solid #000000;
+    /*border-left: 0.1vw solid #000000;*/
     border-right: 0.1vw solid #000000;
     border-top: none;
-    border-bottom: 0.1vw solid #222222;*/
+    border-bottom: 0.1vw solid #222222;
 }
 .entry2hide{
 	display:none;
