@@ -184,10 +184,11 @@
 	padding: 0vw 0vw 0vw 0vw;
 }
 .img1 img{
-	width:5.873vw;
+	/*width:5.873vw;*/
+	width:5vw;
 }
 .img2 img{
-	width:4vw;
+	/*width:4vw;*/
 }
 .emptyTable {
 	text-align:center;
