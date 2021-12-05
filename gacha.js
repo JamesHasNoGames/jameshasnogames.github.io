@@ -1631,11 +1631,11 @@ function parseFreeChar(){
 	//Barbara
 	arr.push([5,93,0,2]);
 	//Xiangling
-	arr.push([5,57,0,1]);
+	arr.push([5,57,0,2]);
 	//Fischl
 	arr.push([5,113,0,1]);
 	//Xinyan
-	arr.push([5,34,0,1]);
+	arr.push([5,34,0,2]);
 	//Beidou
 	arr.push([5,41,0,2]);
 	//Ningguang
@@ -1646,6 +1646,8 @@ function parseFreeChar(){
 	arr.push([5,37,0,1]);
 	//Diona
 	arr.push([5,109,0,1]);
+	//Aloy
+	arr.push([5,111,0,1]);
     if(jason!=null){ 
 		var i = 0;
 		for (var k = 0; k< arr.length; k++) {
