@@ -258,22 +258,22 @@
     border:none; 
     height: 0.78vw;
     float: left;
-    width: 24%;
+    width: 2vw;
     cursor: pointer;
 }
 #button1 {
     padding-left: 0.26vw;
-    margin: -0.33vw auto;
+    padding-top: 0.33vw;
 
 }
 #button2 {
     padding-left: 0vw;
-    margin: -0.33vw auto;
+    padding-top: 0.33vw;
 
 
 }
 [class*="counter"]{
-    float: left;
+   /* float: left;*/
     /*width: 52%;*/
     text-align: center;
 	line-height: 0.065vw;
