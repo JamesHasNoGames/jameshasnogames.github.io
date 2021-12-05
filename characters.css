@@ -69,7 +69,7 @@
 }
 .charTableEmpty{
 	background-color: #222222;
-	width:6.08vw;
+	width:6.085vw;
 	float:left;
 	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
@@ -81,7 +81,7 @@
 .charTableNormal{
 	background-color: #222222;
 	color: #ddd;
-	width:6.08vw;
+	width:6.085vw;
 	float:left;
 	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
@@ -92,7 +92,7 @@
 }
 .charTableGot{
 	background-color: #333333;
-	width:6.08vw;
+	width:6.085vw;
 	color: #ddd;
 	float:left;
 	line-height: 0vw;
@@ -105,7 +105,7 @@
 .charTableTest{
 	color: #555555;
 	background-color: #222222;
-	width:6.08vw;
+	width:6.085vw;
 	float:left;
 	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
@@ -116,7 +116,7 @@
 }
 .charTableEmptyL{
 	background-color: #222222;
-	width:6.08vw;
+	width:6.085vw;
 	float:left;
 	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
@@ -127,7 +127,7 @@
 }
 .charTableNormalL{
 	background-color: #222222;
-	width:6.08vw;
+	width:6.085vw;
 	color: #ddd;
 	float:left;
 	line-height: 0vw;
@@ -140,7 +140,7 @@
 .charTableGotL{
 	color: #ddd;
 	background-color: #333333;
-	width:6.08vw;
+	width:6.085vw;
 	float:left;
 	line-height: 0vw;
 	border-left: 0.065vw solid #111111;
@@ -151,7 +151,7 @@
 }
 .charTableTestL{
 	background-color: #222222;
-	width:6.08vw;
+	width:6.085vw;
 	color: #555555;
 	float:left;
 	line-height: 0vw;
