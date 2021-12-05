@@ -166,7 +166,7 @@ p {
 .upload input{
     position:absolute;
     width:1.95vw;
-    height:50px;
+    height:3.26vw;
     left:0;
     top:0;
     margin-top:-0.78vw;
@@ -175,11 +175,11 @@ p {
 }
 .footer {   
     position: relative;
-    padding: 0.65vw 0px 0px 0px;
+    padding: 0.65vw 0vw 0vw 0vw;
     bottom: 0;
     border-top: 0.33vw solid #374c2e;   
-    height: 50px;
-    line-height: 15px;
+    height: 3.26vw;
+    line-height: 0.97vw;
     background: #333333;
     font-size: 0.78vw;
     width: 100%;
@@ -191,19 +191,19 @@ p {
 /*------------------------------------>end of main<----------------------------*/
 .main{
     display: flex;
-    width: 100%;
-    height:400px;
+    width: 70%;
+    height:26vw;
     position: relative;
     margin: 0 auto;
 background-image: url('Pictures/geovishap.png'); 
     background-color: #222222;
     
-    background-size: 350px;
+    background-size: 22.786vw;
     background-repeat: no-repeat;
     background-position: center top;
     border: 0.33vw solid #111111;
     line-height: 1.3vw;
 }
 .main p{
-    margin-top:260px;
+    margin-top:16.9vw;
 }
