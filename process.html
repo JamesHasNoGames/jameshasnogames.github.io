@@ -20,23 +20,8 @@
     a = a.replaceAll(',', '');
     a = a.replaceAll('%', '');
     a = a.split('\n');
-    a0 = a[0].split('\t');
-        a0.splice(0, 2);
-        a0[3]=0;        
-    a1 = a[1].split('\t');
-        a1.splice(0, 1);
-        a1[3]=0;
-    a2 = a[2].split('\t');
-        a2.splice(0, 2);
-        a2[3]=0;
-    a3 = a[3].split('\t');
-        a3.splice(0, 1);
-        a3[3]=0;   
-    a4 = a[4].split('\t');
-        a4.splice(0, 2);   
-    a5 = a[5].split('\t');
-        a5.splice(0, 1);
-        a5[3] = a4[3];     
+		/*a[5] = ATK or else */
+	a[5] = a[5].slice(1,-1);
     a6 = a[6].split('\t');
         a6.splice(0, 2);
     a7 = a[7].split('\t');
