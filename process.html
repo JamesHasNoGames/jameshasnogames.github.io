@@ -20,11 +20,11 @@
     a = a.replaceAll(',', '');
     a = a.replaceAll('%', '');
     a = a.split('\n');		
-	a[5] = a[5].slice(1,-1); 
-	
+	a[5] = a[5].replace("(", "\'"); 
+	a[5] = a[5].replace(")", "\'"); 
     a[6] = a[6].split('\t');
         a[6].splice(0, 2);
-		a[6].replace(0, "—");
+		a[6].replace("0", "—");
     a[7] = a[7].split(',');
         a[7].splice(0, 1);  
         a[7][3] = a[6][3];   
