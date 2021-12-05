@@ -429,7 +429,7 @@
 }
 .name2{
     text-align: center;
-    width:90%;
+    width:85%;
 	border-right: none;
 	border-top: none;
     border-bottom: none;
@@ -441,7 +441,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 0.6vw;
-    width: 0.6vw;
+    width: 5%;
     cursor: pointer;
 	border: none;
 }
@@ -451,7 +451,7 @@
     background-repeat: no-repeat;
     background-size: 0.6vw;
 	padding-left: 0.3vw;
-    width: 0.6vw;
+    width: 5%;
     cursor: pointer;
 	border: none;
 }
