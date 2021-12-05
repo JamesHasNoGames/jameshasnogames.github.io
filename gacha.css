@@ -412,11 +412,15 @@
     display:flex;
     color: #ddd;
     background-color: #111111;
-    /*border-left: 0.1vw solid #000000;*/
-    border-right: 0.1vw solid #000000;
+	border-left: 0.1vw solid #222222;
+    border-right: 0.1vw solid #222222;
     border-top: none;
     border-bottom: 0.1vw solid #222222;
 }
+/*.container7 {
+	border-left: 0.1vw solid #000000;
+    border-right: 0.1vw solid #000000;
+}*/
 .entry2hide{
 	display:none;
 }
@@ -430,7 +434,7 @@
 .name2{
     text-align: center;
     width:90%;
-	border-left: 0.1vw solid #222222;
+	/*border-left: 0.1vw solid #222222;*/
 	border-right: none;
 	border-top: none;
     border-bottom: none;
