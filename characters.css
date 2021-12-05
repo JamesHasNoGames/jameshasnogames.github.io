@@ -203,7 +203,7 @@
 	line-height: 0vw;
 	border-bottom: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
-	padding: 0.33vw 0vw 0vw 0vw;
+	padding: 0.1vw 0vw 0vw 0vw;
 	border-spacing: 0vw;
 }
 .text1 {
@@ -212,7 +212,7 @@
 	border-right: 0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
-	padding: 0.39vw 0vw 0vw 0.195vw;
+	padding: 0.1vw 0vw 0vw 0.195vw;
 	border-spacing: 0vw;
     text-align: left;
 	font-size:0.84vw;
@@ -222,7 +222,7 @@
 	line-height: 0vw;
 	border-right: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
-	padding: 0.39vw 0vw 0vw 0.195vw;
+	padding: 0.1vw 0vw 0vw 0.195vw;
 	border-spacing: 0vw;
     text-align: left;
 	font-size:0.84vw;
@@ -233,7 +233,7 @@
 	/*border-right: 0.065vw solid #111111;*/
 	border-bottom: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
-	padding: 0.39vw 0vw 0vw 0.195vw;
+	padding: 0.1vw 0vw 0vw 0.195vw;
 	border-spacing: 0vw;
 	font-size:0.84vw;
 }
@@ -241,7 +241,7 @@
 	width:3.06vw;
 	line-height: 0vw;
 	margin: 0vw 0vw 0vw 0vw;
-	padding: 0.39vw 0vw 0vw 0.195vw;
+	padding: 0.1vw 0vw 0vw 0.195vw;
 	border-spacing: 0vw;
 	font-size:0.84vw;
 }
