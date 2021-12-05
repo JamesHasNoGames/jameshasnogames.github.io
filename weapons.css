@@ -52,6 +52,19 @@
     border-bottom:5px solid #111111;
 	
 }
+.emptyCell{
+	border-left: 2px solid #111111;
+	border-top: 2px solid #111111;
+	border-right: 2px solid #111111;
+	border-bottom: 2px solid #111111;
+	background-color: #222222;	
+	color:#999999;
+	width:38px;
+}
+
+
+
+
 .main{
     background-color: #111111;
     display: flex;
