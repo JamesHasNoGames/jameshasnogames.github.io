@@ -458,8 +458,10 @@
 .bempty2{
     background: none;
     width: 5%;
-	border-right: 1px solid #222222;
-	border-left: none;
-	border-top: none;
-    border-bottom: none;
+	border: none;
+}
+.bempty1{
+    background: none;
+    width:  5%;
+	border: none;
 }
