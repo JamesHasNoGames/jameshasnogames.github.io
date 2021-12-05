@@ -405,7 +405,7 @@
 }
 .entry2{
     text-align: center;
-    width:99%;
+    width:98%;
     height:100%;
     font-size: 0.8vw;
     line-height: 1.7;
@@ -440,8 +440,8 @@
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 9px;
-    width: 9px;
+    background-size: 0.8vw;
+    width: 0.8vw;
     cursor: pointer;
 	border: none;
 }
@@ -449,8 +449,9 @@
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 9px;
-    width: 9px;
+    background-size: 0.8vw;
+	padding-left: 0.3vw;
+    width: 0.8vw;
     cursor: pointer;
 	border: none;
 }
