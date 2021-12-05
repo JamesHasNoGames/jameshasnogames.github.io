@@ -177,7 +177,7 @@
 	border-bottom: 0.2vw solid #111111;
 }
 
-.img1 {
+.img1, .img2 {
 	text-align:center;
 	max-height: 6.05vw;
 	border-bottom: 0.065vw solid #111111;
@@ -186,6 +186,9 @@
 }
 .img1 img{
 	width:5.87vw;
+}
+.img2 img{
+	width:4vw;
 }
 .emptyTable {
 	text-align:center;
