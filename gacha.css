@@ -341,7 +341,7 @@
 	color: #222222;
 	padding: 0;
     width:100%;
-    height:50px;
+    height: 1.2vw;
     border: none;
 	border-bottom: 0.2vw solid #000000;
     background-image: url("/Pictures/UI_IconSmall_MapmarkerMod.png");
