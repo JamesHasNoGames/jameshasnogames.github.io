@@ -405,7 +405,7 @@
 }
 .entry2{
     text-align: center;
-    width:98%;
+    width:99%;
     height:100%;
     font-size: 0.8vw;
     line-height: 1.7;
@@ -436,13 +436,14 @@
 	font-size: 0.8vw;
 	line-height: 1.7;
 }
-/*.b1{
+.b1{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Left.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 9px;
     width: 9px;
     cursor: pointer;
+	border: none;
 }
 .b2{
     background-image: url("/Pictures/UI_Scrollbar_Arrow_Right.png");
@@ -451,7 +452,5 @@
     background-size: 9px;
     width: 9px;
     cursor: pointer;
-	border-left: none;
-	border-top: none;
-    border-bottom: none;
-} */
+	border: none;
+}
