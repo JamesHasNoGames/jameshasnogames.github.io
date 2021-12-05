@@ -1,21 +1,19 @@
+.middle {
+	width: 1514px;
+	margin: 0 auto;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+
+}
 .title {
     background-color: #111111;
     display: flex;
     text-align:center;
     vertical-align:middle;  
-	width: 1500px;
+	width: 1511px;
     margin: 0 auto;
-}
-
-.title2 {
-    background-color: #111111;
-    display: flex;
-    text-align:center;
-    vertical-align:middle;  
-	width: 1500px;
-    margin: 0 auto;
-    border-bottom:5px solid #111111;
-	
 }
 .titleFirst{
     color:#999999;
@@ -24,11 +22,11 @@
 	text-align: center;
 	background-color: #222222;	
 	float:left;
-	width:300px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: none;
-	border-bottom: none;
+	width:288px;
+	border-left: 2px solid #111111;
+	border-top: 2px solid #111111;
+	border-right: 2px solid #111111;
+	border-bottom: 2px solid #111111;
     padding: 0px 0px 0px 0px;
 }
 .titleLast{
@@ -38,11 +36,21 @@
 	text-align: center;
 	background-color: #222222;	
 	float:left;
-	width:300px;
-	border-left: 5px solid #111111;
-	border-top: 5px solid #111111;
-	border-right: 5px solid #111111;
-	border-bottom: none;
+	width:288px;
+	border-left: 2px solid #111111;
+	border-top: 2px solid #111111;
+	border-right: 2px solid #111111;
+	border-bottom: 2px solid #111111;
+}
+.title2 {
+    background-color: #111111;
+    display: flex;
+    text-align:center;
+    vertical-align:middle;  
+	width: 1500px;
+    margin: 0 auto;
+    border-bottom:5px solid #111111;
+	
 }
 .main{
     background-color: #111111;
