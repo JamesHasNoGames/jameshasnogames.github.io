@@ -74,7 +74,7 @@ p {
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid #374c2e;  
-    min-width: 1500px; 
+    width: 100%; 
 }
 .menu a{
     display: flex;
