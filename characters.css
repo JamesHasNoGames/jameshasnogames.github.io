@@ -1,5 +1,5 @@
 .middle {
-	width: 1514px;
+	width: 98%;
 	margin: 0 auto;
 	-webkit-user-select: none; /* Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -12,7 +12,7 @@
     display: flex;
     text-align:center;
     vertical-align:middle;  
-	width: 1511px;
+	width: 98%;
     margin: 0 auto;
 }
 .titleFirst{
@@ -65,7 +65,7 @@
 
 .geo, .anemo, .pyro, .electro, .cryo, .hydro{
     background-color: #111111;
-	width: 1511px;
+	width: 98%;
 	height:268px;
     text-align:center;
     vertical-align:middle;  
