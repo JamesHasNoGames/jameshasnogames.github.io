@@ -191,7 +191,7 @@
 	/*width:4vw;*/
 	width:5vw;
 }
-.emptyTable {
+/*.emptyTable {
 	text-align:center;
 	height: 17.12vw;
 	line-height: 0vw;
@@ -275,8 +275,8 @@
 
 }
 [class*="counter"]{
-   /* float: left;*/
-    /*width: 52%;*/
+	float: left;
+    width: 52%;
     text-align: center;
 	line-height: 0.065vw;
     margin-top:0.1vw;
@@ -286,3 +286,4 @@
 	background-color: #222222;
     border-color: #222222;
 }
+*/
