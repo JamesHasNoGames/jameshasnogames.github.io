@@ -64,7 +64,7 @@
 .cell{
 	border-left: 0.065vw solid #111111;
 	border-right:0.065vw solid #111111;
-	width:18.7vw;
+	width:18.75vw;
 }
 .charTableEmpty{
 	background-color: #222222;
@@ -207,7 +207,7 @@
 	border-spacing: 0vw;
 }
 .text1 {
-	width:3.06vw;
+	width:3.05vw;
 	line-height: 0vw;
 	border-right: 0.065vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
@@ -218,7 +218,7 @@
 	font-size:0.84vw;
 }
 .textf1{
-	width:3.06vw;
+	width:3.05vw;
 	line-height: 0vw;
 	border-right: 0.065vw solid #111111;
 	margin: 0vw 0vw 0vw 0vw;
@@ -228,7 +228,7 @@
 	font-size:0.84vw;
 }
 .text2{
-	width:3.06vw;
+	width:3.05vw;
 	line-height: 0vw;
 	/*border-right: 0.065vw solid #111111;*/
 	border-bottom: 0.065vw solid #111111;
@@ -238,7 +238,7 @@
 	font-size:0.84vw;
 }
 .textf2{
-	width:3.06vw;
+	width:3.05vw;
 	line-height: 0vw;
 	margin: 0vw 0vw 0vw 0vw;
 	padding: 0.1vw 0vw 0vw 0.195vw;
