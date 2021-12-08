@@ -293,10 +293,14 @@
 .geoEl{
 	text-align: center;
 	background-color:#b6a16d;
-	
+	line-height: 1.04vw;
+    color:#111111;
+	font-weight: bold;
+	font-size: 1.1vw;
+	text-shadow: -0.13vw 0 #b6a16d, 0 0.13vw #b6a16d, 0.13vw 0 #b6a16d, 0 -0.13vw #b6a16d;
 }
 .sword {
-	background-image: url(Pictures/UI_Buff_Element_Roach.png); 
+	background-image: url(Pictures/Icon_Sword.png); 
 	background-position: center; 
 	background-repeat: no-repeat; 
 	height:2.14vw;
