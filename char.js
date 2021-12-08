@@ -112,7 +112,15 @@ var chars = [
 [110, 'Ganyu', 'Ganyu', 'Гань Юй', 'Character_Ganyu_Thumb.png', '5', 'bow', 'cryo', 763, 1978, 2632, 3939, 4403, 5066, 5686, 6355, 6820, 7495, 7960, 8643, 9108, 9797, 26, 68, 90, 135, 151, 173, 194, 217, 233, 256, 272, 295, 311, 335, 49, 127, 169, 253, 283, 326, 366, 409, 439, 482, 512, 556, 586, 630, 'Crit D', 0, 0, 0, 0, 9.6, 9.6, 19.2, 19.2, 19.2, 19.2, 28.8, 28.8, 38.4, 38.4,'e'],
 [111, 'Aloy', 'Aloy', 'Элой', 'Character_Aloy_Thumb.png', '5', 'bow', 'cryo', 848, 2201, 2928, 4382, 4899, 5636, 6325, 7070, 7587, 8339, 8856, 9616, 10133, 10899, 18, 47, 63, 94, 105, 121, 136, 152, 163, 179, 190, 206, 217, 234, 53, 137, 182, 272, 304, 350, 393, 439, 471, 517, 550, 597, 629, 676, 'Cryo', 0, 0, 0, 0, 7.2, 7.2, 14.4, 14.4, 14.4, 14.4, 21.6, 21.6, 28.8, 28.8, 'b'],
 [112, '', '', '', '', '', 'bow', 'cryo', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
-[113, 'Fischl', 'Fischl', 'Фишль', 'Character_Fischl_Thumb.png', '4', 'bow', 'electro', 770, 1979, 2555, 3827, 4236, 4872, 5418, 6054, 6463, 7099, 7508, 8144, 8553, 9189, 20, 53, 68, 102, 113, 130, 144, 161, 172, 189, 200, 216, 227, 244, 50, 128, 165, 247, 274, 315, 350, 391, 418, 459, 485, 526, 553, 594, 'ATK', 0, 0, 0, 0, 6.0, 6.0, 12.0, 12.0, 12.0, 12.0, 18.0, 18.0, 24.0, 24.0,'es'],
+
+[113, 'Fischl', 'Fischl', 'Фишль', 'Character_Fischl_Thumb.png', '4', 'bow', 'electro',
+ 770, 1979, 2555, 3827, 4236, 4872, 5418, 6054, 6463, 7099, 7508, 8144, 8553, 9189,
+ 20, 53, 68, 102, 113, 130, 144, 161, 172, 189, 200, 216, 227, 244,
+ 50, 128, 165, 247, 274, 315, 350, 391, 418, 459, 485, 526, 553, 594,
+ 'ATK',
+ 0, 0, 0, 0, 6.0, 6.0, 12.0, 12.0, 12.0, 12.0, 18.0, 18.0, 24.0, 24.0,
+ 'es'],
+ 
 [114, 'Kujou Sara', 'Kujou Sara', 'Кудзё Сара', 'Character_Kujou_Sara_Thumb.png', '4', 'bow', 'electro', 802, 2061, 2661, 3985, 4411, 5074, 5642, 6305, 6731, 7393, 7818, 8481, 8907, 9570, 16, 42, 54, 81, 90, 104, 115, 129, 137, 151, 160, 173, 182, 195, 53, 135, 175, 262, 289, 333, 370, 414, 442, 485, 513, 556, 584, 628, 'ATK', 0, 0, 0, 0, 6.0, 6.0, 12.0, 12.0, 12.0, 12.0, 18.0, 18.0, 24.0, 24.0, 'es'],
 [115, '', '', '', '', '', 'bow', 'electro', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
 [116, '', '', '', '', '', 'bow', 'electro', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ''],
@@ -128,8 +136,10 @@ var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbo
 ['cryo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Frost.png); background-position: center; background-repeat: no-repeat; height:2.14vw;background-size: 2.278vw; background-color:#7a89ae;"><h style="text-shadow: -0.13vw 0 #7a89ae, 0 0.13vw #7a89ae, 0.13vw 0 #7a89ae, 0 -0.13vw #7a89ae;" >c<br>r<br>y<br>o</td></h></tr></tbody></table>'],
 ['electro', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Elect.png); background-position: center; background-repeat: no-repeat; height:2.14vw;background-size: 2.278vw; background-color:#887bad;"><h style="text-shadow: -0.13vw 0 #887bad, 0 0.13vw #887bad, 0.13vw 0 #887bad, 0 -0.13vw #887bad;" >e<br>l<br>e<br>c<br>t<br>r<br>o</td></h></tr></tbody></table>'],
 ['hydro', '<table class="weapon" cellspacing="0" cellpadding="0"><tbody><tr><td class="weaponT" style="background-image: url(Pictures/UI_Buff_Element_Water.png); background-position: center; background-repeat: no-repeat; height:2.14vw;background-size: 2.278vw; background-color:#5790a3;"><h style="text-shadow: -0.13vw 0 #5790a3, 0 0.13vw #5790a3, 0.13vw 0 #5790a3, 0 -0.13vw #5790a3;" >h<br>y<br>d<br>r<br>o</td></h></tr></tbody></table>']
+];
 
-
+var skills =[
+[1, '', 'Favonius Bladework - Weiss', 'Talent_Favonius_Bladework_-_Weiss.png',
 
 
 ];
@@ -711,4 +721,9 @@ function leVelUp(nr) {
 
 function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
+
+function showInfo(x) {
+
 }
