@@ -194,7 +194,7 @@
 }
 .emptyTable {
 	text-align:center;
-	height: 17vw;
+	height: 17.1vw;
 	line-height: 0vw;
 	border: none;
 	margin: 0vw 0vw 0vw 0vw;
@@ -265,7 +265,7 @@
     cursor: pointer;
 }
 #button1 {
-    padding-left: 0.86vw;
+    padding-left: 0vw;
     padding-top: 0vw;
 
 }
