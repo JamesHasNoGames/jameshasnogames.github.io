@@ -243,3 +243,11 @@
 	margin: 0vw 0vw 0vw 0vw;
 	padding: 0vw 0vw 0vw 0vw;
 }
+.pic1 {
+	text-align:center;
+	line-height: 0vw;
+	border-bottom: 0.065vw solid #111111;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0.1vw 0vw 0vw 0vw;
+	border-spacing: 0vw;
+}
