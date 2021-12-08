@@ -78,3 +78,25 @@
 	justify-content: center;
 	/*width:18.8vw;*/
 }
+.charTableEmpty{
+	background-color: #222222;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right:0.065vw solid #111111;
+	border-bottom: 0.2vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableEmptyL{
+	background-color: #222222;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: none;
+	border-bottom: 0.2vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
