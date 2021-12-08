@@ -291,7 +291,10 @@
 	font-size:0.8vw;
 }
 .info{
-	border-left: 0.2vw solid #111111;
+	border-left: 0.4vw solid #111111;
+	border-right: 0.4vw solid #111111;
+	border-top: 0.4vw solid #111111;
+	border-bottom: 0.4vw solid #111111;
 	width:100%;
 }
 .geoEl{
