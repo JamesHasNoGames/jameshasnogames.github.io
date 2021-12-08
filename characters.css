@@ -290,6 +290,10 @@
 	border-spacing: 0vw;
 	font-size:0.8vw;
 }
+.info{
+	border-left: 0.2vw solid #111111;
+	width:100%;
+}
 .geoEl{
 	text-align: center;
 	background-color:#b6a16d;
@@ -305,7 +309,7 @@
 	background-repeat: no-repeat; 
 	height:2.14vw;
 	background-size: 2.278vw;
-	border-left: 0.2vw solid #111111;
+
 }
 .skillimg img{
 	width:4vw;
