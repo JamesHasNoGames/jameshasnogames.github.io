@@ -300,7 +300,7 @@
 	text-shadow: -0.13vw 0 #b6a16d, 0 0.13vw #b6a16d, 0.13vw 0 #b6a16d, 0 -0.13vw #b6a16d;
 }
 .sword {
-	background-image: url(Pictures/Icon_Sword.png); 
+	background-image: url(Pictures/Icon_Sword_inv.png); 
 	background-position: center; 
 	background-repeat: no-repeat; 
 	height:2.14vw;
