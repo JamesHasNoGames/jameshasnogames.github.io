@@ -198,12 +198,12 @@
     cursor: pointer;
 }
 #button1 {
-    padding-left: 0vw;
+    padding-left: 0.7vw;
     padding-top: 0.1vw;
 
 }
 #button2 {
-    padding-left: 1.2vw;
+    padding-left: 0vw;
     padding-top: 0.1vw;
 
 
@@ -215,7 +215,7 @@
     line-height: 0.065vw;
     padding-top: 0.45vw;
     font-size: 0.97vw;
-    padding-left: 0.45vw;
+    padding-left: 0.5vw;
 }
 #empty {
 	background-color: #222222;
