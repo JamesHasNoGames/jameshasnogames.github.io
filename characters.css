@@ -86,7 +86,7 @@
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right:0.065vw solid #111111;
-	border-bottom: 0.2vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
     padding: 0vw 0vw 0vw 0vw;
 }
 .charTableEmptyL{
@@ -97,7 +97,7 @@
 	border-left: 0.065vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: none;
-	border-bottom: 0.2vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
     padding: 0vw 0vw 0vw 0vw;
 }
 .charTableNormal{
