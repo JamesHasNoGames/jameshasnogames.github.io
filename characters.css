@@ -62,7 +62,7 @@
 	display:flex;
     margin: 0 auto;
 	justify-content: space-around;
-	border-bottom: 0.4vw solid #111;
+	border-bottom: 0.4vw;
 }
 
 .cell{
@@ -173,7 +173,7 @@
 	font-weight: bold;
 	font-size: 1.1vw;
 	width:2.47vw;
-    height:17.4vw;
+    height:17.5vw;
 	border-left: 0.2vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: 0.2vw solid #111111;
@@ -269,23 +269,22 @@
 }
 #button1 {
     padding-left: 0vw;
-    padding-top: 0.1vw;
+    padding-top: 0vw;
 
 }
 #button2 {
-    padding-left: 1.2vw;
-    padding-top: 0.1vw;
+    padding-left: 0vw;
+    padding-top: -0.5vw;
 
 
 }
 [class*="counter"]{
-    float: left;
-    /* width: 52%; */
+	float: left;
+    width: 52%;
     text-align: center;
-    line-height: 0.065vw;
-    padding-top: 0.45vw;
-    font-size: 0.97vw;
-    padding-left: 0.45vw;
+	line-height: 0.065vw;
+    margin-top:0.1vw;
+	font-size:0.97vw;
 }
 #empty {
 	background-color: #222222;
