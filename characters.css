@@ -203,19 +203,19 @@
 
 }
 #button2 {
-    padding-left: 0vw;
-    padding-top: 0.1vw;
+    padding-left: 2.5vw;
+    margin-top: -0.5vw;
 
 
 }
 [class*="counter"]{
     float: left;
-    /* width: 52%; */
+     width: 52%; 
     text-align: center;
     line-height: 0.065vw;
     padding-top: 0.45vw;
     font-size: 0.97vw;
-    padding-left: 0.5vw;
+    margin-left: -0.5vw;
 }
 #empty {
 	background-color: #222222;
