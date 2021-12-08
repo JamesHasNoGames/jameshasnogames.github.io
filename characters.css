@@ -62,6 +62,7 @@
 	display:flex;
     margin: 0 auto;
 	justify-content: space-around;
+	border-bottom: 1vw;
 }
 
 .cell{
