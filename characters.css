@@ -71,3 +71,97 @@
 	margin: 0vw 0vw 0vw 0vw;
 	padding: 0vw 0vw 0vw 0vw;
 }
+.charTableEmpty{
+	background-color: #222222;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right:0.065vw solid #111111;
+	border-bottom: 0.2vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableNormal{
+	background-color: #222222;
+	color: #ddd;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right:0.065vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableGot{
+	background-color: #333333;
+	width:6.052vw;
+	color: #ddd;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right:0.065vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableTest{
+	color: #555555;
+	background-color: #222222;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right:0.065vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableEmptyL{
+	background-color: #222222;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: none;
+	border-bottom: 0.2vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableNormalL{
+	background-color: #222222;
+	width:6.052vw;
+	color: #ddd;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: none;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableGotL{
+	color: #ddd;
+	background-color: #333333;
+	width:6.052vw;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: none;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
+.charTableTestL{
+	background-color: #222222;
+	width:6.052vw;
+	color: #555555;
+	float:left;
+	line-height: 0vw;
+	border-left: 0.065vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: none;
+	border-bottom: 0.065vw solid #111111;
+    padding: 0vw 0vw 0vw 0vw;
+}
