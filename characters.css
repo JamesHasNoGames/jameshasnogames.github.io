@@ -236,3 +236,10 @@
 	border-right: 0.2vw solid #111111;
 	border-bottom: 0.2vw solid #111111;
 }
+.img1, .img2 {
+	text-align:center;
+	max-height: 6.045vw;
+	border-bottom: 0.065vw solid #111111;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 0vw 0vw;
+}
