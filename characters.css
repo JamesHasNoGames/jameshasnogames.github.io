@@ -63,3 +63,11 @@
 	justify-content: center;
 	border-bottom: 0.4vw solid #111;
 }
+.emptyTable {
+	text-align:center;
+	height: 18vw;
+	line-height: 0vw;
+	border: none;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 0vw 0vw;
+}
