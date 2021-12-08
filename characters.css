@@ -342,5 +342,6 @@
 	border: none;
 	padding-left: 0.4vw; 
 	text-align: center;
+	border-right: 0.2vw solid #111111;
 	border-bottom: 0.065vw solid #111111;
 }
