@@ -330,6 +330,15 @@
     font-weight: bold;
 	border-bottom: 0.065vw solid #111111;
 }
-.blep{
+.cat{
 	height: 1.37vw;
+	border-right: 0.065vw solid #111111;
+	padding-left: 0.4vw; 
+	font-weight: blod;
+}
+.num{
+	height: 1.37vw;
+	border: none;
+	padding-left: 0.4vw; 
+	text-align: center;
 }
