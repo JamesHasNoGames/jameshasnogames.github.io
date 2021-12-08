@@ -55,7 +55,7 @@
 .geo, .anemo, .pyro, .electro, .cryo, .hydro{
     background-color: #111111;
 	width: 100%;
-	height:17.44vw;
+	height:17vw;
     text-align:center;
     vertical-align:middle;  
 	display:flex;
