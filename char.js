@@ -137,7 +137,12 @@ var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbo
 ];
 
 var skills =[
-[1, '', 'Favonius Bladework - Weiss', 'Talent_Favonius_Bladework_-_Weiss.png']
+[0],
+[1, 'Favonius Bladework - Weiss', 'Talent_Favonius_Bladework_-_Weiss.png', 'Normal Attack<br>Perform up to 5 rapid strikes.<br>Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.<br>Plunging Attack<br>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.',36.74,	39.73,	42.72,	46.99,	49.98,	53.4,	58.1,	62.8,	67.5,	72.62,	78.5,
+36.74,	39.73,	42.72,	46.99,	49.98,	53.4,	58.1,	62.8,	67.5,	72.62,	78.5,
+47.45,	51.32,	55.18,	60.7,	64.56,	68.97,	75.04,	81.11,	87.18,	93.81,	101.39,
+49.75,	53.8,	57.85,	63.63,	67.68,	72.31,	78.68,	85.04,	91.4,	98.34,	106.3,
+62.07,	67.13,	72.18,	79.4,	84.45,	90.22,	98.16,	106.1,	114.04,	122.7,	132.63' ]
 
 
 ];
@@ -723,5 +728,6 @@ function numberWithSpaces(x) {
 
 
 function showInfo(x) {
-
+	return 
+	'<table class="info" cellspacing="0" cellpadding="0"><tbody class="charTBody" cellspacing="0" cellpadding="0"><tr><td class="skillimg" colspan="2" cellspacing="0" cellpadding="0"><img src="Pictures/Characters/'+ werte[j][4]+'" ></td></tr></tbody><table>'
 }
