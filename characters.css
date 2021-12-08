@@ -306,6 +306,7 @@
 	font-weight: bold;
 	font-size: 1.1vw;
 	text-shadow: -0.13vw 0 #b6a16d, 0 0.13vw #b6a16d, 0.13vw 0 #b6a16d, 0 -0.13vw #b6a16d;
+	border-bottom: 0.065vw solid #111111;
 }
 .sword {
 	background-image: url(Pictures/Icon_Sword_inv.png); 
@@ -321,7 +322,6 @@
 }
 .skillimg{
 	width:4vw;
+	border-right: 0.065vw solid #111111;
+	border-bottom: 0.065vw solid #111111;
 }	
-.info td {
- border: 1px solid #111111;	
-}
