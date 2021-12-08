@@ -62,7 +62,7 @@
 	display:flex;
     margin: 0 auto;
 	justify-content: space-around;
-	border-bottom: 1vw;
+	border-bottom: 0.4vw solid;
 }
 
 .cell{
@@ -173,7 +173,7 @@
 	font-weight: bold;
 	font-size: 1.1vw;
 	width:2.47vw;
-    height:17.5vw;
+    height:17.4vw;
 	border-left: 0.2vw solid #111111;
 	border-top: 0.2vw solid #111111;
 	border-right: 0.2vw solid #111111;
