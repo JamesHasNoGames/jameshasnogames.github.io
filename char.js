@@ -139,7 +139,7 @@ var elems = [['geo', '<table class="weapon" cellspacing="0" cellpadding="0"><tbo
 ];
 
 var skills =[
-[1, '', 'Favonius Bladework - Weiss', 'Talent_Favonius_Bladework_-_Weiss.png',
+[1, '', 'Favonius Bladework - Weiss', 'Talent_Favonius_Bladework_-_Weiss.png']
 
 
 ];
