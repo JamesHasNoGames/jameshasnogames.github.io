@@ -290,3 +290,15 @@
 	border-spacing: 0vw;
 	font-size:0.8vw;
 }
+.geoEl{
+	text-align: center;
+	background-color:#b6a16d;
+	
+}
+.sword {
+	background-image: url(Pictures/UI_Buff_Element_Roach.png); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	height:2.14vw;
+	background-size: 2.278vw;
+}
