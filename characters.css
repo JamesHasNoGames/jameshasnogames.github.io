@@ -337,6 +337,7 @@
 	padding: 0.4vw 0.4vw;
     font-weight: bold;
 	border-bottom: 0.065vw solid #111111;
+	text-align: center;
 }
 .cat{
 	height: 1.37vw;
@@ -359,4 +360,6 @@
 }
 .skillText{
 	table-layout: fixed;
+	padding: 0.4vw; 
+	text-align: center;
 }
