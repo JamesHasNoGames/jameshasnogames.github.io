@@ -357,3 +357,6 @@
 	border:none;
 	background-color: #222;
 }
+.skillText{
+	table-layout: fixed;
+}
