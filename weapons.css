@@ -54,7 +54,6 @@
 }
 .geo, .anemo, .pyro, .electro, .cryo, .hydro{
     background-color: #111111;
-	/*width:18.37vw;*/
 	height:17.4vw;
     text-align:center;
     vertical-align:middle;  
@@ -63,13 +62,38 @@
 	justify-content: center;
 	border-bottom: none;
 }
-
-
+.emptyTable {
+	text-align:center;
+	/*height: 18vw;*/
+	line-height: 0vw;
+	border: none;
+	margin: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 0vw 0vw;
+}
 .cell{
 	border-left: 0.065vw solid #111111;
 	border-right:0.065vw solid #111111;
-	width:18.75vw;
+	display:flex;
+	justify-content: center;
+	/*width:18.8vw;*/
 }
+.weapon{
+	background-color: #222222;	
+	text-align:center;
+	float:left;
+    line-height: 1.04vw;
+    color:#111111;
+	font-weight: bold;
+	font-size: 1.1vw;
+	width:2.47vw;
+    height:17.5vw;
+	border-left: 0.2vw solid #111111;
+	border-top: 0.2vw solid #111111;
+	border-right: 0.2vw solid #111111;
+	border-bottom: 0.2vw solid #111111;
+}
+
+
 
 
 
